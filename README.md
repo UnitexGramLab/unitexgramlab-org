@@ -1,6 +1,6 @@
 # Unitex/GramLab website
 
-> [Unitex/GramLab][unitex] is an open source, cross-platform, multilingual, lexicon- and grammar-based corpus processing suite.
+> [Unitex/GramLab][unitex] is an open source, cross-platform, multilingual, lexicon- and grammar-based corpus processing suite
 
 This is the copy of the new website running at http://unitex.univ-mlv.fr/. The site is maintained by the Unitex/GramLab Website Editors Team.
 
