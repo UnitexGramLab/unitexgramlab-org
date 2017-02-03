@@ -15,7 +15,7 @@ metadata:
   'og:url': 'http://unitexgramlab.org'
   'og:title': 'Unitex/GramLab'
   'og:description': 'Unitex/GramLab is an open source, cross-platform, multilingual,lexicon- and grammar-based corpus processing suite'
-  'og:image': 'http://graphics8.nytimes.com/images/2011/12/08/technology/bits-newtwitter/bits-newtwitter-tmagArticle.jpg'
+  'og:image': 'https://raw.githubusercontent.com/UnitexGramLab/unitexgramlab-org/master/themes/unitexgramlab/thumbnail.jpg'
   'og:type' : 'website'
 
 summary:
