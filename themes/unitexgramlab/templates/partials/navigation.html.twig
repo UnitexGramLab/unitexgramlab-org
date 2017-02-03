@@ -22,7 +22,7 @@
           <ul class="nav navbar-nav navbar-left">              
               <li class="hidden"></li>
               {% if show_home_menu %}
-                <li><a href="{{ base_url }}"><i class="fa fa-1x fa-fw fa-home"></i>{{site.title}}</a></li>
+                <li><a href="/"><i class="fa fa-1x fa-fw fa-home"></i>{{site.title}}</a></li>
               {% endif %}                
               {% for link in page.header.navbar.left %}
                   {% if link.url | contains('http') %}
