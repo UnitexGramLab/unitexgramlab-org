@@ -184,7 +184,7 @@ iconlinks:
         en: 'Contribute'
         es: 'Contribuye'
     - icon: envelope-o
-      url: 'twig://{{config.unitex.stable.url_support}}'
+      url: 'mailto:unitex-devel@univ-mlv.fr'
       title:
         en: 'Contact'
         es: 'Contactar'
