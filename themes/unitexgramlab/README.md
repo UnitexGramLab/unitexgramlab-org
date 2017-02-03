@@ -4,7 +4,7 @@
 
 This is the [Grav](http://getgrav.org) theme for the website running at http://unitexgramlab.org.
 
-![UnitexGramLab](assets/readme_1.png)
+![UnitexGramLab](assets/readme_1.jpg)
 
 ## Installation
 
