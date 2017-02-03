@@ -237,7 +237,7 @@ iconlinks:
         en: 'Please let us know more about you'
         es: 'Háganos saber más sobre usted'
     - icon: feed
-      url: '/blog.rss'
+      url: '/blog.atom'
       title:
         en: 'Blog RSS'
         es: 'Blog RSS'
