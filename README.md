@@ -37,7 +37,7 @@ We welcome everyone to contribute to improve this project. Below are some of the
 
 ## Credits
 
-* Developed by [Cristian Martinez](http://martinec.org) and powered by [Grav](http://getgrav.org). A comprehensive list of credits can be found [here](CREDITS.md).
+* Developed by [Cristian Martinez](http://martinec.org) and powered by [Grav](http://getgrav.org). A comprehensive list of credits can be found [here](humans.txt).
 
 ---
 [unitex]: http://unitexgramlab.org
