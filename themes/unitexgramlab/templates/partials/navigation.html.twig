@@ -22,7 +22,7 @@
           <ul class="nav navbar-nav navbar-left">              
               <li class="hidden"></li>
               {% if show_home_menu %}
-                <li><a href="{{ base_url_absolute }}"><i class="fa fa-1x fa-fw fa-home"></i>{{site.title}}</a></li>
+                <li><a href="{{ base_url }}"><i class="fa fa-1x fa-fw fa-home"></i>{{site.title}}</a></li>
               {% endif %}                
               {% for link in page.header.navbar.left %}
                   {% if link.url | contains('http') %}
@@ -30,7 +30,7 @@
                   {% elseif link.url | contains('#') %}
                       {% set domain = '' %}
                   {% else %}
-                     {% set domain = base_url_absolute %}
+                     {% set domain = base_url %}
                   {% endif %}
                   {% set current_url  = domain~link.url %}
                   {% set current_page = (link.url == page.url) ? 'active' : '' %}
@@ -60,7 +60,7 @@
                     {% elseif link.url | contains('#') %}
                         {% set domain = '' %}
                     {% else %}
-                       {% set domain = base_url_absolute %}
+                       {% set domain = base_url %}
                     {% endif %}
                     {% if link.title[langswitcher.current] %}
                       <li><a class="page-scroll" href="{{ domain }}{{ link.url }}" {% if link.url | contains('http') or link.external %}target="_blank"{% endif %}>{{ link.title[langswitcher.current] }}</a></li>
@@ -75,7 +75,7 @@
                 {% elseif link.url | contains('#') %}
                     {% set domain = '' %}
                 {% else %}
-                   {% set domain = base_url_absolute %}
+                   {% set domain = base_url %}
                 {% endif %}
                 {% set current_url  = domain~link.url %}
                 {% set current_page = (link.url == page.url) ? 'active' : '' %}

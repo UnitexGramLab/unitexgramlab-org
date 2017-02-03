@@ -32,7 +32,7 @@
             {% set post_title = page.header.banner.title ?: post.title  %}
             <h1 class="banner-title">{{ post_title }}</h1>
             {% set post_author = post.taxonomy.author|first %}        
-            <p>{% if post_author %}<i class="fa fa-1x fa-fw fa-user"></i> by <strong><a href="{{ base_url_absolute }}/blog/author{{ config.system.param_sep }}{{ post_author|url_encode }}" class="tooltip tooltip-s" aria-label="Posts by {{ post_author }}" rel="tag">{{ post_author }}</a></strong> &#8212; {% endif %}<i class="fa fa-1x fa-fw fa-tag"></i> in {% for tag in post.taxonomy.tag|slice(0,3) %}<a href="{{ base_url_absolute }}/blog/tag{{ config.system.param_sep }}{{ tag|url_encode }}" class="tooltip tooltip-s" aria-label="Posts tagged with {{ tag }}" rel="tag">{{ tag }}</a>{%if not loop.last %}&nbsp;&plus;&nbsp;{% endif %}{% endfor %} <i class="fa fa-1x fa-fw fa-calendar-o"></i> <strong><time datetime="{{ post.date | date('Y-m-d H:i:s') }}">{{ post.date | date("d M Y") }}</time></strong></p>
+            <p>{% if post_author %}<i class="fa fa-1x fa-fw fa-user"></i> by <strong><a href="{{ base_url }}/blog/author{{ config.system.param_sep }}{{ post_author|url_encode }}" class="tooltip tooltip-s" aria-label="Posts by {{ post_author }}" rel="tag">{{ post_author }}</a></strong> &#8212; {% endif %}<i class="fa fa-1x fa-fw fa-tag"></i> in {% for tag in post.taxonomy.tag|slice(0,3) %}<a href="{{ base_url }}/blog/tag{{ config.system.param_sep }}{{ tag|url_encode }}" class="tooltip tooltip-s" aria-label="Posts tagged with {{ tag }}" rel="tag">{{ tag }}</a>{%if not loop.last %}&nbsp;&plus;&nbsp;{% endif %}{% endfor %} <i class="fa fa-1x fa-fw fa-calendar-o"></i> <strong><time datetime="{{ post.date | date('Y-m-d H:i:s') }}">{{ post.date | date("d M Y") }}</time></strong></p>
             {% if page.header.banner.summary %}
               <div class="inner">
                 {{ post.summary | striptags }}
@@ -49,7 +49,7 @@
             </div>
             <div class="row">
               <div class="6u 12u$(small)">
-                <a href="{{ base_url_relative }}/blog/random" class="button fit icon alt fa-retweet">I'm Feeling Lucky!</a>                
+                <a href="{{ base_url }}/blog/random" class="button fit icon alt fa-retweet">I'm Feeling Lucky!</a>                
               </div>
               <div class="6u 12u$(small)">
                 <a href="{{ theme_config.github.tree ~ 'CONTRIBUTING.md#creating-a-new-post' }}" class="button fit icon alt fa-pencil">Create a new post</a>

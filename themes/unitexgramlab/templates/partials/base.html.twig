@@ -10,8 +10,8 @@
     {% endif %}    
     <title>{% if page.home() %}{{ page.header.title }} | {{ page.header.subtitle }}{% else %}{% if title %}{{ title }} | {% else %}{% if header.title %}{{ header.title }} | {% endif %}{% endif %}{{ site.title }}{% if page.parent.header.title %} {{ page.parent.header.title }}{% endif %}{% endif %}</title>
     {% include 'partials/metadata.html.twig' %}
-    <link rel="alternate" type="application/atom+xml" href="{{ base_url_absolute}}/feed:atom" title="Atom Feed" />
-    <link rel="alternate" type="application/rss+xml" href="{{ base_url_absolute}}/feed:rss" title="RSS Feed" />
+    <link rel="alternate" type="application/atom+xml" href="{{ base_url}}/feed:atom" title="Atom Feed" />
+    <link rel="alternate" type="application/rss+xml" href="{{ base_url}}/feed:rss" title="RSS Feed" />
     <link rel="shortcut icon" href="{{ theme_url }}/images/favicon.ico">
     <link rel="icon" type="image/png" href="{{ theme_url }}/images/favicon.png" />
     <link rel="apple-touch-icon" href="{{ theme_url }}/images/apple-touch-icon.png">

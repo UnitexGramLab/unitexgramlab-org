@@ -78,7 +78,7 @@
                     {% set url = url|safe_email %}
                     {% set domain = '' %}
                 {% else %}
-                   {% set domain = base_url_absolute %}
+                   {% set domain = base_url %}
                 {% endif %}
                 {% if link.title[curlang] %}
                    {% set title = link.title[curlang] %}
@@ -144,7 +144,7 @@
                     {% set url = url|safe_email %}
                     {% set domain = '' %}
                 {% else %}
-                   {% set domain = base_url_absolute %}
+                   {% set domain = base_url %}
                 {% endif %}
                 {% if link.title[curlang] %}
                    {% set title = link.title[curlang] %}
