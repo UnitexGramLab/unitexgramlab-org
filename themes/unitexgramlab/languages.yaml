@@ -57,7 +57,7 @@ en:
     MORE_RECENT_DISCUSSIONS: 'Recent Discussions'
 # part_ footer
     FOOTER_COPYRIGHT: 'The Unitex/GramLab authors'
-    FOOTER_THEME_ABOUT: '<a href="%s" target="_blank" title="%s Theme">%s Theme <small>v%s</small></a>'
+    FOOTER_THEME_ABOUT: '<a href="%s" target="_blank" title="%s Website">%s <small>v%s</small></a>'
     FOOTER_THEME_BUGS: 'Report a bug on this site'
     FOOTER_THEME_BACKTOTOP: 'Bring me to heaven'
 # Error
@@ -122,7 +122,7 @@ es:
     MORE_RECENT_DISCUSSIONS: 'Discusiones recientes'
 # part_ footer
     FOOTER_COPYRIGHT: 'Los autores de Unitex/GramLab'
-    FOOTER_THEME_ABOUT: '<a href="%s" target="_blank" title="%s Theme">%s <small>v%s</small></a>'
+    FOOTER_THEME_ABOUT: '<a href="%s" target="_blank" title="Sitio web de %s">%s <small>v%s</small></a>'
     FOOTER_THEME_BUGS: 'Informar de un error en este sitio'
     FOOTER_THEME_BACKTOTOP: 'Llévame al cielo'
 # Error
