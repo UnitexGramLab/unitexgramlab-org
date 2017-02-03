@@ -20,6 +20,8 @@ versions of these resources. You can download them for English and French
 You can also use the `Uncompress` program included in Unitex 2.1 or higher to get the text
 version of binary dictionaries distributed with Unitex.
 
+===
+
 The latest Unitex/GramLab distribution contains resources for
 [many languages](https://github.com/UnitexGramLab/unitex-lingua?target=_blank).
 Here is a brief presentation of these resources. THESE RESOURCES ARE NOT THE WHOLE
