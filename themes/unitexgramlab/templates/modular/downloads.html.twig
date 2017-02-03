@@ -1,0 +1,164 @@
+<section id="downloads" class="wrapper style1 special">
+  {% set langobj  = grav['language']      %}
+  {% set curlang  = langobj.getLanguage() %}
+  {% set twigobj = grav['twig'] %}
+  {% set manlang = config.unitex.stable.usermanual_langs[0] %}
+  {% for key in config.unitex.stable.usermanual_langs %}
+      {% if key == curlang %}
+          {% set manlang = curlang %}
+      {% endif %}
+  {% endfor %}  
+  <div class="container">
+    <h2>{{ "DOWNLOAD_HEADER"|t }}</h2>
+    <div class="download-releases">
+      <ul class="icons">
+        <li>
+          <div id="icon-version-stable" aria-label="{{ "DOWNLOAD_GET_STABLE"|t }}" class="tooltip tooltip-s tooltip-hide">
+            <i class="icon fa fa-1x fa-fw fa-rocket icon-toogle selected"></i>
+            <br>
+            <strong>{{ config.unitex.stable.version_string }}</strong>
+          </div>
+        </li>
+        <li>
+          <div id="icon-version-devel" aria-label="{{ "DOWNLOAD_GET_DEVEL"|t }}" class="tooltip tooltip-s">
+            <i class="icon fa fa-1x fa-fw fa-code icon-toogle"></i>
+            <br>
+            <strong>{{ config.unitex.devel.version_string }}</strong>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="download-carousel">
+      <div id="download-stable">
+        <div class="row">
+          <div class="3u 6u(medium) 12u$(xsmall)">
+            <div id="download-stable-for-windows" class="download-card">
+              <h3 class="download-title win-color"><i class="fa fa-fw fa-windows"></i>{{ "TAG_WIN"|t }}<span class="os-64 download-arch js-hidden">{{ 'TAG_64BIT'|t }}</span><span class="os-32 download-arch hidden">{{ 'TAG_32BIT'|t }}</span></h3>
+              <p class="download-description">{{ 'DOWNLOAD_WIN_STABLE'|t(config.unitex.stable.version_string,"MSG_DOWNLOAD_VERSION_FOR_ARCH_OS"|t(config.unitex.stable.version_string,'TAG_64BIT'|t,'TAG_WIN'|t),config.unitex.stable.release_win64,'TAG_64BIT'|t,"MSG_DOWNLOAD_VERSION_FOR_OS"|t(config.unitex.stable.version_string,'TAG_WIN'|t),config.unitex.stable.release_win32,'TAG_32BIT'|t) }}</p>
+              <a href="{{ config.unitex.stable.release_win64 }}" title="{{ "MSG_DOWNLOAD_VERSION_FOR_ARCH_OS"|t(config.unitex.stable.version_string,'TAG_64BIT'|t,'TAG_WIN'|t) }}" class="download-button button win fit icon alt fa-download os-64 js-hidden">{{ 'DOWNLOAD_BTN'|t }}</a><a href="{{ config.unitex.stable.release_win32 }}" title="{{ "MSG_DOWNLOAD_VERSION_FOR_OS"|t(config.unitex.stable.version_string,'TAG_WIN'|t) }}" class="download-button button win fit icon alt fa-download os-32 hidden">{{ 'DOWNLOAD_BTN'|t }}</a>
+            </div>  
+          </div>
+            <div class="3u 6u$(medium) 12u$(xsmall)">
+              <div id="download-stable-for-linux" class="download-card">
+                <h3 class="download-title linux-color" ><i class="fa fa-fw fa-linux"></i>{{ "TAG_LINUX"|t }}<span class="os-64 download-arch js-hidden">{{ 'TAG_64BIT'|t }}</span><span class="os-32 download-arch hidden">{{ 'TAG_32BIT'|t }}</span></h3>
+                <p class="download-description">{{ 'DOWNLOAD_LINUX_STABLE'|t(config.unitex.stable.version_string, "MSG_DOWNLOAD_VERSION_FOR_ARCH_OS"|t(config.unitex.stable.version_string,'TAG_64BIT'|t,'TAG_LINUX'|t), config.unitex.stable.release_linux64, 'TAG_64BIT'|t, "MSG_DOWNLOAD_VERSION_FOR_OS"|t(config.unitex.stable.version_string,'TAG_LINUX'|t), config.unitex.stable.release_linux32, 'TAG_32BIT'|t) }}</p>
+                <a href="{{ config.unitex.stable.release_linux64 }}" title="{{ "MSG_DOWNLOAD_VERSION_FOR_ARCH_OS"|t(config.unitex.stable.version_string,'TAG_64BIT'|t,'TAG_LINUX'|t) }}" class="download-button button linux fit icon alt fa-download os-64 js-hidden">{{ 'DOWNLOAD_BTN'|t }}</a><a href="{{ config.unitex.stable.release_linux32 }}" title="{{ "MSG_DOWNLOAD_VERSION_FOR_OS"|t(config.unitex.stable.version_string,'TAG_LINUX'|t) }}" class="download-button button linux fit icon alt fa-download os-32 hidden">{{ 'DOWNLOAD_BTN'|t }}</a>
+              </div> 
+            </div>
+            <div class="3u 6u(medium) 12u$(xsmall)">
+              <div id="download-stable-for-osx" class="download-card">
+                <h3 class="download-title osx-color"><i class="fa fa-fw fa-apple"></i>{{ "TAG_OSX"|t }}<span class="download-minimal-os">10.7+</span></h3>
+                <p class="download-description">{{ 'DOWNLOAD_OSX_STABLE'|t(config.unitex.stable.version_string) }}</p>
+                <a href="{{ config.unitex.stable.release_osx }}" title="{{ "MSG_DOWNLOAD_VERSION_FOR_ARCH_OS"|t(config.unitex.stable.version_string,'TAG_64BIT'|t,'TAG_OSX'|t) }}" class="download-button button osx fit icon alt fa-download">{{ 'DOWNLOAD_BTN'|t }}</a>
+              </div>
+            </div>
+            <div class="3u$ 6u$(medium) 12u$(xsmall)">
+              <div id="download-stable-for-other" class="download-card">
+                <h3 class="download-title other-color"><i class="fa fa-fw fa-file-archive-o"></i>{{ "TAG_OTHER"|t }}<span class="download-filetype">.zip</span></h3>
+                <p class="download-description">{{ 'DOWNLOAD_OTHER_STABLE'|t(config.unitex.stable.version_string) }}</p>
+                <a href="{{ config.unitex.stable.release_other }}" title="{{ "MSG_DOWNLOAD_VERSION_FOR_OTHER"|t(config.unitex.stable.version_string) }}" class="download-button button other fit icon alt fa-download">{{ 'DOWNLOAD_BTN'|t }}</a>
+              </div>  
+            </div>
+          </div>
+        <div>
+          <ul id="actions-stable" class="actions actions-release piped">
+            <li><a href="{{ config.unitex.stable.url_vinber_info }}" target="_blank"><i class="fa fa-1x fa-fw fa-tag"></i><span>{{ 'v' ~ config.unitex.stable.version_string_full }}</span></a></li>
+            <li><a href="{{ config.unitex.stable.url_vinber_info }}" target="_blank"><i class="fa fa-1x fa-fw fa-calendar"></i><time class="tooltip tooltip-n" aria-label="{{ config.unitex.stable.version_date | date('d M Y') }}" datetime="{{ config.unitex.stable.version_date | date('Y-m-d H:i:s') }}">{{ config.unitex.stable.version_date|nicetime(true) }}</time></a></li>            
+            {% for link in site.quicklinks.download.stable %}
+                {% if link.url | starts_with('twig://') %}
+                   {% set url = twigobj.processString(link.url|slice(7),_context) %}
+                {% else %}
+                   {% set url = link.url %}                     
+                {% endif %}
+                {% if url | contains('http') %}
+                    {% set domain = '' %}
+                {% elseif url | contains('#') %}
+                    {% set domain = '' %}
+                {% elseif url | contains('mailto') %}
+                    {% set url = url|safe_email %}
+                    {% set domain = '' %}
+                {% else %}
+                   {% set domain = base_url_absolute %}
+                {% endif %}
+                {% if link.title[curlang] %}
+                   {% set title = link.title[curlang] %}
+                {% else %}
+                  {% set title  = link.title[grav.language.getDefault] %}
+                {% endif %}
+                {% if link.icon and ( link.title[curlang] or link.translations_fallback ) %}
+                  <li><a title="{{ title }}" href="{{ domain }}{{ url }}" {% if url | contains('http') or link.external %}target="_blank"{% endif %}{% if link.atts %} {{link.atts}}{% endif %}><i class="fa fa-1x fa-fw fa-{{ link.icon }}"></i><span>{{ title }}</span></a></li>
+                {% endif %}
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+      <div id="download-devel">
+        <div class="row">
+          <div class="3u 6u(medium) 12u$(xsmall)">
+            <div id="download-devel-for-windows" class="download-card">
+              <h3 class="download-title win-color"><i class="fa fa-fw fa-windows"></i>{{ "TAG_WIN"|t }}<span class="os-64 download-arch js-hidden">{{ 'TAG_64BIT'|t }}</span><span class="os-32 download-arch hidden">{{ 'TAG_32BIT'|t }}</span></h3>
+              <p class="download-description">{{ 'DOWNLOAD_WIN_DEVEL'|t(config.unitex.devel.version_string,"MSG_DOWNLOAD_VERSION_FOR_ARCH_OS"|t(config.unitex.devel.version_string,'TAG_64BIT'|t,'TAG_WIN'|t),config.unitex.devel.release_win64,'TAG_64BIT'|t,"MSG_DOWNLOAD_VERSION_FOR_OS"|t(config.unitex.devel.version_string,'TAG_WIN'|t),config.unitex.devel.release_win32,'TAG_32BIT'|t) }}</p>
+              <a href="{{ config.unitex.devel.release_win64 }}" title="{{ "MSG_DOWNLOAD_VERSION_FOR_ARCH_OS"|t(config.unitex.devel.version_string,'TAG_64BIT'|t,'TAG_WIN'|t) }}" class="download-button button win fit icon alt fa-download os-64 js-hidden">{{ 'DOWNLOAD_BTN'|t }}</a><a href="{{ config.unitex.devel.release_win32 }}" title="{{ "MSG_DOWNLOAD_VERSION_FOR_OS"|t(config.unitex.devel.version_string,'TAG_WIN'|t) }}" class="download-button button win fit icon alt fa-download os-32 hidden">{{ 'DOWNLOAD_BTN'|t }}</a>
+            </div>  
+          </div>
+            <div class="3u 6u$(medium) 12u$(xsmall)">
+              <div id="download-devel-for-linux" class="download-card">
+                <h3 class="download-title linux-color" ><i class="fa fa-fw fa-linux"></i>{{ "TAG_LINUX"|t }}<span class="os-64 download-arch js-hidden">{{ 'TAG_64BIT'|t }}</span><span class="os-32 download-arch hidden">{{ 'TAG_32BIT'|t }}</span></h3>
+                <p class="download-description">{{ 'DOWNLOAD_LINUX_DEVEL'|t(config.unitex.devel.version_string, "MSG_DOWNLOAD_VERSION_FOR_ARCH_OS"|t(config.unitex.devel.version_string,'TAG_64BIT'|t,'TAG_LINUX'|t), config.unitex.devel.release_linux64, 'TAG_64BIT'|t, "MSG_DOWNLOAD_VERSION_FOR_OS"|t(config.unitex.devel.version_string,'TAG_LINUX'|t), config.unitex.devel.release_linux32, 'TAG_32BIT'|t) }}</p>
+                <a href="{{ config.unitex.devel.release_linux64 }}" title="{{ "MSG_DOWNLOAD_VERSION_FOR_ARCH_OS"|t(config.unitex.devel.version_string,'TAG_64BIT'|t,'TAG_LINUX'|t) }}" class="download-button button linux fit icon alt fa-download os-64 js-hidden">{{ 'DOWNLOAD_BTN'|t }}</a><a href="{{ config.unitex.devel.release_linux32 }}" title="{{ "MSG_DOWNLOAD_VERSION_FOR_OS"|t(config.unitex.devel.version_string,'TAG_LINUX'|t) }}" class="download-button button linux fit icon alt fa-download os-32 hidden">{{ 'DOWNLOAD_BTN'|t }}</a>
+              </div> 
+            </div>
+            <div class="3u 6u(medium) 12u$(xsmall)">
+              <div id="download-devel-for-osx" class="download-card">
+                <h3 class="download-title osx-color"><i class="fa fa-fw fa-apple"></i>{{ "TAG_OSX"|t }}<span class="download-minimal-os">10.7+</span></h3>
+                <p class="download-description">{{ 'DOWNLOAD_OSX_DEVEL'|t(config.unitex.devel.version_string) }}</p>
+                <a href="{{ config.unitex.devel.release_osx }}" title="{{ "MSG_DOWNLOAD_VERSION_FOR_ARCH_OS"|t(config.unitex.devel.version_string,'TAG_64BIT'|t,'TAG_OSX'|t) }}" class="download-button button osx fit icon alt fa-download">{{ 'DOWNLOAD_BTN'|t }}</a>
+              </div>
+            </div>
+            <div class="3u$ 6u$(medium) 12u$(xsmall)">
+              <div id="download-devel-for-other" class="download-card">
+                <h3 class="download-title other-color"><i class="fa fa-fw fa-file-archive-o"></i>{{ "TAG_OTHER"|t }}<span class="download-filetype">.zip</span></h3>
+                <p class="download-description">{{ 'DOWNLOAD_OTHER_DEVEL'|t(config.unitex.devel.version_string) }}</p>
+                <a href="{{ config.unitex.devel.release_other }}" title="{{ "MSG_DOWNLOAD_VERSION_FOR_OTHER"|t(config.unitex.devel.version_string) }}" class="download-button button other fit icon alt fa-download">{{ 'DOWNLOAD_BTN'|t }}</a>
+              </div>  
+            </div>
+          </div>
+        <div>
+          <ul id="actions-devel" class="actions actions-release piped">
+            {% set devel_version_info = httpfully_get_json(config.unitex.devel.url_version_json) %}
+            {% set devel_version_string_full = devel_version_info.value|defined(config.unitex.devel.version_string) %}
+            {% set devel_version_date = devel_version_info.name|defined("now"| date('Y-m-d H:i:s')) %}
+            <li><a href="{{ config.unitex.devel.url_vinber_info }}" target="_blank"><i class="fa fa-1x fa-fw fa-tag"></i><span>{{ 'v' ~ devel_version_string_full }}</span></a></li>
+            <li><a href="{{ config.unitex.devel.url_vinber_info }}" target="_blank"><i class="fa fa-1x fa-fw fa-calendar"></i><time class="tooltip tooltip-n" aria-label="{{ devel_version_date | date('d M Y') }}" datetime="{{ devel_version_date | date('Y-m-d H:i:s') }}">{{ devel_version_date|nicetime(true) }}</time></a></li>
+            {% for link in site.quicklinks.download.devel %}
+                {% if link.url | starts_with('twig://') %}
+                   {% set url = twigobj.processString(link.url|slice(7),_context) %}
+                {% else %}
+                   {% set url = link.url %}                     
+                {% endif %}
+                {% if url | contains('http') %}
+                    {% set domain = '' %}
+                {% elseif url | contains('#') %}
+                    {% set domain = '' %}
+                {% elseif url | contains('mailto') %}
+                    {% set url = url|safe_email %}
+                    {% set domain = '' %}
+                {% else %}
+                   {% set domain = base_url_absolute %}
+                {% endif %}
+                {% if link.title[curlang] %}
+                   {% set title = link.title[curlang] %}
+                {% else %}
+                  {% set title  = link.title[grav.language.getDefault] %}
+                {% endif %}
+                {% if link.icon and ( link.title[curlang] or link.translations_fallback ) %}
+                  <li><a title="{{ title }}" href="{{ domain }}{{ url }}" {% if url | contains('http') or link.external %}target="_blank"{% endif %}{% if link.atts %} {{link.atts}}{% endif %}><i class="fa fa-1x fa-fw fa-{{ link.icon }}"></i><span>{{ title }}</span></a></li>
+                {% endif %}
+            {% endfor %}
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

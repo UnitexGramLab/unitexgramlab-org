@@ -1,0 +1,152 @@
+@import '../libs/vars';
+@import '../libs/functions';
+@import '../libs/mixins';
+
+///
+/// added by martinec
+///
+
+/* Utilities */
+
+.selected {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+// Overthrow CSS:
+// Enable overflow: auto on elements with overthrow class when
+// html element has overthrow class too
+// https://github.com/filamentgroup/Overthrow
+.overthrow-enabled .overthrow {
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/// Some utilities from html5boilerplate.
+/// @source https://html5boilerplate.com
+/// Released under the MIT license
+
+// Hide visually and from screen readers
+// @see http://webaim.org/techniques/css/invisiblecontent/
+.hidden {
+  display: none !important;
+}
+
+// .hidden if js is active
+// @see http://webaim.org/techniques/css/invisiblecontent/
+.js-hidden {
+  display: none !important;
+}
+
+html.no-js .js-hidden {
+  display: inline-block !important;
+}
+
+// Hide visually and from screen readers, but maintain layout
+// @see http://webaim.org/techniques/css/invisiblecontent/
+.invisible{
+  visibility: hidden;
+}
+
+// .invisible if js is active
+.js-invisible {
+  visibility: hidden;
+}
+
+// visible is js is not active
+html.no-js .js-invisible {
+  visibility: visible;
+}
+
+// .hidden if js is disabled
+html.no-js .js-only {
+  display: none !important;
+}
+
+//
+// Screenreaders
+//
+
+// Hide only visually, but have it available for screen readers:
+// http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+.visuallyhidden {
+  @include sr-only();
+}
+
+.sr-only {
+  @include sr-only();
+}
+
+// Extends the .visuallyhidden class to allow the element
+// to be focusable when navigated to via the keyboard:
+// https://www.drupal.org/node/897638
+.visuallyhidden.focusable {
+  @include sr-only-focusable();
+}
+
+.sr-only.focusable {
+  @include sr-only-focusable();
+}
+
+/// Some utilities from Primer CSS by GitHub, Inc.
+/// @source https://github.com/primer/primer
+/// Released under the MIT license
+
+// Text hiding for image based text replacement.
+// Higher performance than -9999px because it only renders
+// the size of the actual text, not a full 9999px box.
+.textuallyhidden {
+  @include hide-text();
+}
+
+// Clear floats
+.clearfix {
+  @include clearfix();
+}
+
+.clear {
+  clear:both
+}
+
+// Floats
+.right { float: right; }
+
+.left { float: left; }
+
+
+// Layout
+
+// Centers content horizontally. Can be used inside or outside the grid.
+.centered {
+  display: block;
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// Truncate
+//
+// truncate will shorten text with an ellipsis.
+
+.truncate {
+  // Truncate double target
+  //
+  // truncate will shorten text with an ellipsis. The maximum width
+  // of the truncated text can be changed by overriding the max-width
+  // of the .truncate-target
+  &.truncate-target,
+  .truncate-target {
+    display: inline-block;
+    max-width: 250px;
+    max-width: calc(100% + #{(_size(element-margin) * 0.25)});
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    vertical-align: top;
+  }
+
+  &.expandable:hover .truncate-target,
+  &.expandable:hover.truncate-target {
+    max-width: 10000px !important;
+  }
+}

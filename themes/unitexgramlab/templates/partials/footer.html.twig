@@ -1,0 +1,56 @@
+<footer id="footer">
+  {% set themeobj  = grav['themes'] %}
+  {% set themeinfo = themeobj.get(config.system.pages.theme).blueprints %}
+  {% set langobj   = grav['language']      %}
+  {% set curlang   = langobj.getLanguage() %}
+  <div class="container">
+    <div class="row">
+      <div class="6u 12u$(medium)">
+        <div id="footer-about">
+          <ul id="footer-about-quicklinks" class="actions piped">
+            {% for link in site.quicklinks.footer.about %}
+                {% if link.url | contains('http') %}
+                    {% set domain = '' %}
+                {% elseif link.url | contains('#') %}
+                    {% set domain = '' %}
+                {% else %}
+                   {% set domain = base_url_absolute %}
+                {% endif %}
+                {% if link.title[curlang] %}
+                  <li><a href="{{ domain }}{{ link.url }}" {% if link.url | contains('http') or link.external %}target="_blank"{% endif %}>{{ link.title[curlang] }}</a></li>
+                {% endif %}
+            {% endfor %}
+          </ul>
+          <ul id="footer-about-credits" class="actions piped">
+            <li>&copy; {{ "now"|date("Y") }} {{ "FOOTER_COPYRIGHT"|t }}</li>
+            <li>{{ "FOOTER_THEME_ABOUT"|t(themeinfo.source,themeinfo.name,themeinfo.name,themeinfo.version) }}</li>            
+          </ul> 
+        </div>
+      </div>
+      <div class="6u$ 12u$(medium) important(medium)">
+        <div id="footer-social">
+          <div itemscope itemtype="http://schema.org/Organization">
+            <ul class="icons">
+            {% for link in site.iconlinks.social %}
+                {% if link.url | contains('http') %}
+                    {% set domain = '' %}
+                {% elseif link.url | contains('#') %}
+                    {% set domain = '' %}
+                {% elseif link.url | contains('mailto') %}
+                    {% set domain = '' %}
+                {% else %}
+                   {% set domain = base_url_absolute %}
+                {% endif %}
+                {% if link.icon %}
+                  <li{% if link.title[curlang] %} aria-label="{{ link.title[curlang] }}" class="tooltip tooltip-nw"{% endif %}><a href="{{ domain }}{{ link.url }}" {% if link.url | contains('http') or link.external %}target="_blank"{% endif %} itemprop="sameAs"><i class="icon-rounded fa fa-1x fa-fw fa-{{ link.icon }}"></i></a></li>
+                {% endif %}
+            {% endfor %}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="backtotop"><a href="#" class="page-scroll" title="{{ 'FOOTER_THEME_BACKTOTOP'|t }}"></a></div>
+  <a id="quick-button" target="_blank" href="{{ theme_config.github.tree ~ 'issues' }}" title="{{ 'FOOTER_THEME_BUGS'|t }}"></a>
+</footer>

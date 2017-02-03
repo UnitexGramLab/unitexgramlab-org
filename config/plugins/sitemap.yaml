@@ -1,0 +1,5 @@
+enabled: true
+route: '/sitemap'
+ignores:
+  - /blog/blog-post-to-ignore
+  - /ignore-this-route

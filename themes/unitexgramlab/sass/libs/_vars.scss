@@ -1,0 +1,140 @@
+// Misc.
+	$misc: (
+		z-index-base:		1000000
+	);
+
+// Duration.
+	$duration: (
+		transition:			0.3s
+	);
+
+// Size.
+	$size: (
+		border-radius:	6px,
+		border-width:		1px,
+		element-height:	2.75em,
+		element-margin:	2em,
+		element-margin-small: 0.5em
+	);
+  
+// Tooltip.
+	$tooltip: (
+		multiline-max-width: 250px
+	);
+
+// Font.
+	$font: (
+		family:				 ('Open Sans', Helvetica, sans-serif),
+		family-fixed:	 ('Ubuntu Mono', monospace),
+		family-styled: ('Raleway', Helvetica, sans-serif),
+		weight:				 normal,
+		weight-bold:	 bold
+	);
+
+// Palette.
+	$palette: (
+		bg:					  #ffffff,
+    bg-bold:      darken(#ffffff,5),
+    bg-alt:       #fefefe,
+		fg:					  #48494f,
+		fg-bold:			#4c4c4c,
+		fg-light:			#e0e0e0,
+		border:				#e6e6e6,
+		border-bg:		rgba(144,144,144,0.075),
+		border2:			#d6d6d6,
+		border2-bg:		rgba(144,144,144,0.15),
+    on-hover:     #555555,
+
+		accent1: (
+			bg:				  #555555,
+      bg-bold:    darken(#555555,5),
+      bg-alt:     #fefefe,
+			fg:				  mix(#555555, #ffffff, 15%),
+			fg-bold:		#ffffff,
+			fg-light:		#ffffff,
+			border:			rgba(255,255,255,0.5),
+			border-bg:	rgba(249,127,79,1.00),
+			border2:		rgba(255,255,255,0.75),
+			border2-bg:	rgba(255,255,255,0.4),
+      on-hover:   #555555,
+			invert:			true
+		),
+
+		accent2: (
+			bg:				  #fbfbfb,
+      bg-bold:    darken(#fbfbfb,5),
+      bg-alt:     #fefefe,
+			fg:				  #48494f,
+			fg-bold:		#4c4c4c,
+			fg-light:		lighten(#48494f,5),
+			border:			#e6e6e6,
+			border-bg:	rgba(144,144,144,0.075),
+			border2:		#d6d6d6,
+			border2-bg:	rgba(144,144,144,0.15),
+      on-hover:   #555555,      
+			invert:			false
+		),
+
+		accent3: (
+			bg:				  #f7f7f7,
+      bg-bold:    darken(#f7f7f7,5),
+      bg-alt:     #fefefe,
+			fg:				  #757574,
+			fg-bold:		#4c4c4c,
+			fg-light:		#b0b0b0,
+			border:			#d6d6d6,
+			border-bg:	rgba(144,144,144,0.075),
+			border2:		#c6c6c6,
+			border2-bg:	rgba(144,144,144,0.15),
+      on-hover:   #f97f4f,      
+			invert:			false
+		),
+    
+		accent4: (
+			bg:				  #f97f4f,
+      bg-bold:    darken(#f97f4f,5),
+      bg-alt:     #fefefe,
+			fg:				  mix(#f97f4f, #ffffff, 15%),
+			fg-bold:		#ffffff,
+			fg-light:		#75564f,
+			border:			rgba(255,255,255,0.5),
+			border-bg:	rgba(255,255,255,0.15),
+			border2:		rgba(255,255,255,0.75),
+			border2-bg:	rgba(255,255,255,0.4),
+      on-hover:   #555555,      
+			invert:			true
+		),
+
+		accent5: (
+			bg:				  #ffffff,
+      bg-bold:    darken(#f97f4f,5),
+      bg-alt:     #fefefe,
+			fg:				  #5e5e5e,
+			fg-bold:		#4c4c4c,
+			fg-light:		#f97f4f,
+			border:			rgba(255,255,255,0.5),
+			border-bg:	rgba(255,255,255,0.15),
+			border2:		rgba(255,255,255,0.75),
+			border2-bg:	rgba(255,255,255,0.4),
+      on-hover:   #555555,      
+			invert:			true,
+      underline:  true
+		)     
+	);
+
+// Colors
+
+$color1:  rgba(38, 70, 83, 1);
+$color2:  rgba(42, 157, 143, 1);
+$color3:  rgba(233, 196, 106, 1);
+$color4:  rgba(244, 162, 97, 1);
+$color5:  rgba(165, 190, 0, 1);
+$color6:  rgba(139, 130, 145, 1);
+$color7:  rgba(236, 235, 236, 1);
+$color8:  rgba(238, 127, 143, 1);
+$color9:  rgba(173, 162, 181, 1);
+$color10: rgba(211, 208, 154, 1);
+$color11: rgba(178, 142, 110, 1);
+$color12: rgba(169, 199, 182, 1);
+$color13: rgba(239, 112, 99, 1);
+$color14: rgba(242, 216, 86, 1);

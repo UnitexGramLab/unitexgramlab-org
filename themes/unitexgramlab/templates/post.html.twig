@@ -1,0 +1,28 @@
+{% embed 'blog.html.twig' %}
+
+{% block content %}
+  {% block tabs %}    
+    {% include 'partials/post-navigation.html.twig' with {'tooltip_direction':'s'} %}
+  {% endblock %}
+  <section id="summer-post" class="wrapper style2">
+    <main class="summer-post-container container 75%">
+        <article class="summer-post-content post">
+          <div>
+              {{ content }}
+          </div>
+        </article>
+      <div class="clearfix"></div>
+    </main>
+    <footer>
+      <div class="container 75%">
+        <div>
+           {% include 'partials/last-updated.html.twig' %}
+        </div>
+      </div>
+    </footer>
+  </section>
+  {% include 'partials/post-navigation.html.twig' with {'tooltip_direction':'n'} %}
+{% endblock %}
+
+{% endembed %}
+

@@ -1,0 +1,362 @@
+/*
+ * @author martinec
+ */
+ 
+/* add shadow to navbar items
+ */
+.navbar-default .navbar-nav > li > a:hover {
+  box-shadow: inset 0 0 40px rgba(0, 0, 0, 0.1);
+  color: rgba(255, 255, 255, 0.8);
+  background-color: transparent;
+}
+
+/* header customs
+ */
+/*
+#header .main-download-button {
+  margin-bottom: 0.5em;
+}
+*/
+
+#header .main-download-button:before {
+  font-size: 1.2em;
+}
+
+#header #other-platforms {
+  font-size: 1em;
+  line-height: 1em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}  
+
+#header .button.fit {
+  margin: 0px;
+}
+
+#downloads .download-card {
+  position: relative;
+  display: block;
+  margin-bottom: 1em; /*small 2em*/
+}
+
+/*
+#downloads .download-title,
+#downloads .download-description,
+#downloads .download-button {
+  width: 100%; 
+}
+*/
+
+#downloads h3 {
+  font-weight: bold;
+}
+
+.summer-content {
+  line-height: 1.2;
+}
+
+.summer-content .summer-index-post {
+    padding-top: 2.5em;
+    padding-bottom: 2.5em;
+    border-bottom: 0.0625em solid #d9d9d9;
+    visibility: hidden;
+}
+
+.summer-content .summer-index-post:first-of-type {
+    padding-top: 0.5em;
+}
+
+.summer-content .summer-index-post .datetime {
+    margin-bottom: 2.5em;
+}
+
+@media only screen and (min-width: 40.063em) {
+    .summer-content .summer-index-post {
+        padding-top: 4.375em;
+        padding-bottom: 4.375em;
+    }
+    .summer-content .summer-index-post:first-of-type {
+        padding-top: 0.5em;
+    }
+    .summer-content .summer-index-post .datetime {
+        margin-bottom: 0;
+    }
+}
+
+.summer-content .summer-index-post .summer-post-meta {
+    display: block;
+    text-align: center;
+}
+
+.summer-content .summer-index-post .summer-post-meta .day {
+    display: block;
+    font-size: 3.25em;
+    font-weight: 800;
+    color: #f97f4f;
+}
+
+.summer-content .summer-index-post .summer-post-meta .month-year {
+    display: block;
+    font-size: 1em;
+
+    font-size: 0.875em;
+    text-transform: uppercase;
+}
+
+.summer-content .summer-index-post .summer-post-header .summer-post-title {
+
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.625em;
+    margin: 0;
+    padding: 0;
+    line-height: 1.2;
+}
+
+.summer-content .summer-index-post .summer-post-header .summer-post-title a {
+
+}
+
+@media only screen and (min-width: 40.063em) {
+    .summer-content .summer-index-post .summer-post-header .summer-post-title {
+        text-align: left;
+        font-size: 2.125em;
+        margin-bottom: 0.9375em;
+    }
+}
+
+.summer-content .summer-index-post .summer-post-excerpt {
+
+    font-size: 1.25em;
+    margin-top: 0.625em;
+    text-align: center;
+}
+
+.summer-content .summer-index-post .summer-post-excerpt p {
+    margin: 0;
+    font-size: 1em;
+}
+
+@media only screen and (min-width: 40.063em) {
+    .summer-content .summer-index-post .summer-post-excerpt {
+        text-align: left;
+    }
+}
+
+.summer-content .summer-index-post .summer-index-post-tags {
+    font-size: 0.8125em;
+
+    margin-top: 1.5625em;
+    text-align: center;
+}
+
+.summer-content .summer-index-post .summer-index-post-tags a {
+    display: inline-block;
+    padding: 0.3125em 0.625em;
+
+    border: 0.0625em solid black;
+    border-radius: 0.125em;
+}
+
+.summer-content .summer-index-post .summer-index-post-tags a:hover {
+    color: #f97f4f;
+    border: 0.0625em solid #f97f4f;
+}
+
+@media only screen and (min-width: 40.063em) {
+    .summer-content .summer-index-post .summer-index-post-tags {
+        text-align: left;
+    }
+}
+
+.fadeInDown {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+    visibility: visible !important;
+}
+
+@-webkit-keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-20px);
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-20px);
+        -ms-transform: translateY(-20px);
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+nav.pagination {
+    padding-top: 0.1em;
+    padding-bottom: 0.1em;
+    text-align: center;
+    margin: 2.5em 0px;
+}
+
+nav.pagination .newer-posts,
+nav.pagination .older-posts,
+nav.pagination .page-number {
+    font-size: 0.875em;
+    display: inline-block;
+    padding: 0.625em 1.25em;
+    border-radius: 0.1875em;
+    border: 0.125em solid black;
+}
+
+nav.pagination .newer-posts:hover,
+nav.pagination .older-posts:hover {
+    border: 0.125em solid #f97f4f;
+    color: #f97f4f;
+}
+
+nav.pagination .newer-posts.faded,
+nav.pagination .older-posts.faded {
+    color: gray;
+    border: 0.125em solid gray;
+}
+
+nav.pagination .newer-posts.faded a,
+nav.pagination .older-posts.faded a {
+    color: gray;
+}
+
+nav.pagination .newer-posts .fa {
+    margin-right: 0.625em;
+}
+
+nav.pagination .older-posts .fa {
+    margin-left: 0.625em;
+}
+
+
+.post-list {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.post-list li {
+    padding: 8px 0;
+    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    *zoom: 1;
+}
+
+.post-list li:after,
+.post-list li:before {
+    display: table;
+    line-height: 0;
+    content: "";
+}
+
+.post-list li:after {
+    clear: both;
+}
+
+.post-list a>span {
+    float: right;
+}
+
+.post-list .entry-date {
+    display: none;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+@media only screen and (min-width:48em) {
+    .post-list .entry-date {
+        display: inline;
+    }
+}
+
+.blog-tags {
+  background-color: #f97f4f;
+  color: #fff;
+  padding-bottom: 0px;
+  border-bottom: 1px solid #e3e5e6;
+}
+
+.blog-tags .navbar-nav {
+  width: 100%;
+  text-align: center;
+  margin-right: 0;
+  margin-left: 0;  
+}
+
+.blog-tags .navbar-nav > li {
+  float: none;
+  display: inline-block;
+  padding: 0;
+}
+
+.blog-tags .navbar-nav > .active > a,
+.blog-tags .navbar-nav > .active > a:hover,
+.blog-tags .navbar-nav > .active > a:focus {
+    color: #48494a;
+    background-color: #fff;
+}
+
+.blog-tags .navbar-nav > li > a.disabled,
+.blog-tags .navbar-nav > li > a:disabled {
+  -moz-pointer-events: none;
+  -webkit-pointer-events: none;
+  -ms-pointer-events: none;
+  pointer-events: none;
+  cursor: default;
+  opacity: 0.25;
+}
+
+.summer-post-content {
+  font-size: 110%;
+  margin: 0 auto;
+  padding: 0;
+  font-weight: 300;
+}
+
+.summer-post-content > div:not(.summer-post-title) p {
+  margin: 1em auto 1.5em auto;
+}
+
+.summer-post-content > div:not(.summer-post-title) p:first-child {
+}
+
+.summer-post-content > div:not(.summer-post-title) p.with-image {
+  text-align: center;
+  padding-top: 1.125rem;
+  padding-bottom: 1.125rem;
+}
+
+.summer-post-content > div:not(.summer-post-title) a {
+  color: #f97f4f;
+}
+
+.summer-post-content > div:not(.summer-post-title) h1,
+.summer-post-content > div:not(.summer-post-title) h2 {
+  font-weight: bold;
+}
+
+#summer-post footer hr {
+  margin: 0px;
+}

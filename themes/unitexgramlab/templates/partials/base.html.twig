@@ -1,0 +1,95 @@
+{% set theme_config  = attribute(config.themes, config.system.pages.theme) %}
+<!DOCTYPE html>
+<html class="no-js" lang="{{ grav.language.getActive ?: theme_config.default_lang }}" dir="{{ theme_config.default_dir }}">
+<head>
+  {% block head %}
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    {% if browser.getBrowser == 'msie' and browser.getVersion < 11 %}
+      <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    {% endif %}    
+    <title>{% if page.home() %}{{ page.header.title }} | {{ page.header.subtitle }}{% else %}{% if title %}{{ title }} | {% else %}{% if header.title %}{{ header.title }} | {% endif %}{% endif %}{{ site.title }}{% if page.parent.header.title %} {{ page.parent.header.title }}{% endif %}{% endif %}</title>
+    {% include 'partials/metadata.html.twig' %}
+    <link rel="alternate" type="application/atom+xml" href="{{ base_url_absolute}}/feed:atom" title="Atom Feed" />
+    <link rel="alternate" type="application/rss+xml" href="{{ base_url_absolute}}/feed:rss" title="RSS Feed" />
+    <link rel="shortcut icon" href="{{ theme_url }}/images/favicon.ico">
+    <link rel="icon" type="image/png" href="{{ theme_url }}/images/favicon.png" />
+    <link rel="apple-touch-icon" href="{{ theme_url }}/images/apple-touch-icon.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="canonical" href="{{ page.url(true, true) }}" />
+  {% block stylesheets %}
+    {% do assets.addCss('theme://css/unitexgramlab.css') %}
+    {% do assets.addCss('theme://css/error.css') %}
+    {% do assets.addCss('theme://css/menu.css') %}
+    {% do assets.addCss('theme://css/language-dropdown.css') %}
+    {% do assets.addCss('theme://css/card-block.css') %}
+    {% do assets.addCss('theme://css/jquery.fancybox.css') %}
+    {% do assets.addCss('theme://css/dialogbox.css') %}
+    {% do assets.addCss('theme://css/custom.css') %}
+  {% endblock %}
+  {{ assets.css() }}
+  {% endblock head%}
+  {% block top %}
+      {{ assets.js('top') }}
+      <script>
+        const RELEASE_STABLE  = '{{ config.unitex.stable.version_string }}';
+        const RELEASE_DEVEL   = '{{ config.unitex.devel.version_string }}';
+        var urlQueryLang = '{{ uri.query("lang")|defined("en") }}';
+      </script>
+  {% endblock %}
+</head>
+<body id="unitex-gramlab-org"{% if page.header.body_classes %} class="{{ page.header.body_classes }}"{% endif %}>
+  {% block header_navigation %}
+    {% if show_navbar %}
+      {% include 'partials/navigation.html.twig' %}
+    {% endif %}  
+  {% endblock %}  
+  {% block body %}
+    {% block header  %}{% endblock %}
+    {% block content %}{% endblock %}
+  {% endblock %}
+  {% block more %}
+    {% include 'partials/more.html.twig' %}
+  {% endblock %}  
+  {% block footer %}
+    {% include 'partials/footer.html.twig' %}
+  {% endblock %}
+  {% block javascripts %}
+    {% do assets.add('jquery',101) %}
+    {% do assets.addJs('theme://js/modernizr.js') %}
+    {% do assets.addJs('theme://js/fractal/skel.min.js') %}
+    {% do assets.addJs('theme://js/fractal/util.js') %}
+    {% do assets.addJs('theme://js/fractal/main.js') %}
+    {% do assets.addJs('theme://js/slick.min.js') %}
+    {% do assets.addJs('theme://js/jquery.ba-throttle-debounce.min.js') %}
+    {% do assets.addJs('theme://js/jquery.dropotron.min.js') %}
+    {% do assets.addJs('theme://js/jquery.scrollgress.min.js') %}
+    {% do assets.addJs('theme://js/jquery.fancybox.min.js') %}
+    {% do assets.addJs('theme://js/jquery.matchHeight.min.js') %}
+    {% do assets.addJs('theme://js/jquery.scrollspy.min.js') %}
+    {% if show_navbar %}
+      {% do assets.addJs('theme://js/menu/jquery.easing.min.js') %}
+      {% do assets.addJs('theme://js/menu/classie.js') %}
+      {% do assets.addJs('theme://js/menu/cbpAnimatedHeader.js') %}
+      {% do assets.addJs('theme://js/menu/agency.js') %}
+      {% do assets.addJs('theme://js/menu/collapse.min.js') %}
+      {% if show_langswitcher %}
+        {% do assets.addJs('theme://js/language-dropdown.js') %}
+      {% endif %}
+    {% endif %}
+    {% do assets.addJs('theme://js/detectizr.min.js') %}
+    {% do assets.addJs('theme://js/overthrow.min.js') %}
+    {% do assets.addJs('theme://js/clipboard.min.js') %}
+    {% do assets.addJs('theme://js/plugins.js') %}
+    {% do assets.addJs('theme://js/unitex/release.js') %}
+    {% do assets.addJs('theme://js/unitex/dialogbox.js') %}
+    {% do assets.addJs('theme://js/custom.js') %}
+  {% endblock %}
+  {{ assets.js() }}
+  {% block bottom %}
+    {{ assets.js('bottom') }}
+    <script>
+    </script>
+  {% endblock %}  
+</body>
+</html>

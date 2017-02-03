@@ -1,0 +1,20 @@
+/*error page*/
+#error{
+  margin:5% auto 10px auto;
+  width:90%;
+  text-align:center;
+}
+#error h1{
+  font-size:4em;
+  color:#48494A;
+}
+#error .button {
+  background: #48494A;
+  color: #fff;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+ #error .button:hover{
+   background-color: rgba(42, 96, 203, 0.8);
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2);
+}

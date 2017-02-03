@@ -1,0 +1,39 @@
+@import '../libs/vars';
+@import '../libs/functions';
+@import '../libs/mixins';
+
+///
+/// added by martinec
+///
+
+/* More */
+
+	#more {
+		@include padding(3em,0,(0,0,1em,0));
+
+    ul {
+      margin: 0;
+    }
+
+    .row.uniform {
+      margin-bottom: 1em;
+    }
+
+    i:hover {
+      @include transform(scale(1.1));
+    }
+    
+		h3 {
+			line-height: 1;
+			margin-top: 1em;
+		}
+
+		// Small.
+		@include breakpoint(small) {
+			@include padding(3em, 0);
+
+      h2,h3,h4,h5,h6 {
+        text-align: center;
+      }
+		}
+	}

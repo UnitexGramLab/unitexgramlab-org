@@ -1,0 +1,65 @@
+@import '../libs/vars';
+@import '../libs/functions';
+@import '../libs/mixins';
+
+///
+/// added by martinec
+///
+
+/* Downloads */
+
+	#downloads {
+		@include padding(3em, 0);
+    @include background-overlay("images/overlay.png",
+                                "images/unitex-pattern.png");
+
+    //.slick-prev,
+    //.slick-next {
+    //  top: 15%;
+    //}
+
+    .slick-slider {
+      margin-bottom: 0px;
+    }
+
+    .download-minimal-os,
+    .download-filetype,
+    .download-arch {
+      vertical-align: super;
+      font-size: 0.5em;
+      margin-left: 3px;
+    }
+
+    @include os-customs();
+
+    .download-description a,
+    .download-description a:visited,
+    .download-description a:active {
+      text-decoration: none;
+      border-bottom: 1px dotted;
+    }    
+
+    .tooltip:after {
+      font-size: 0.8em;
+    }
+
+    .actions-release {
+      margin-top: 1em;
+    }
+
+		// Small.
+    @include breakpoint(small) {
+      @include padding(3em, 0);
+      .slick-prev {
+        left: 0;
+      }
+      
+      .slick-next {
+        right: 0;
+      }
+
+      .actions-release {
+        margin-top: 2em;
+      }      
+    }
+	}

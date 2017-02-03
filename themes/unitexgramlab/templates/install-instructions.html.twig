@@ -1,0 +1,14 @@
+<div id="install-instructions" class="dialogbox-container">
+  <div class="dialogbox-content os-icon">
+    <div class="dialogbox-header">
+      <h4><a class="icon fa-times-circle-o dialogbox-close" aria-hidden="true"></a>&nbsp;<i class="fa fa-download"></i>&nbsp;<span class="dialogbox-title os-text os-other hidden" data-text="{{ 'INSTALL_INSTRUCTIONS_CAPTION_VERSION_SOURCE'|t(config.unitex.stable.version_string) }}"></span><span class="dialogbox-title os-text os-linux os-osx os-win js-hidden" data-text="{{ 'INSTALL_INSTRUCTIONS_CAPTION_VERSION_OS'|t(config.unitex.stable.version_string,'{oslabel}') }}"></span></h4>
+    </div>
+    <div class="dialogbox-body overthrow">
+      <div class="os-win hidden">{{ shortcode.section.win }}</div>      
+      <div class="os-linux hidden">{{ shortcode.section.linux }}</div>
+      <div class="os-osx hidden">{{ shortcode.section.osx }}</div>
+      <div class="os-other hidden">{{ shortcode.section.other }}</div>        
+    </div>
+    <div class="dialogbox-footer">{{ shortcode.section.footer }}</div>
+  </div>
+</div>

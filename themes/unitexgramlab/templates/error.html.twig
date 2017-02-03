@@ -1,0 +1,29 @@
+{% extends 'partials/base.html.twig' %}
+
+{% set show_navbar  = false %}
+{# block header #}
+{# endblock #}
+
+{% block content %}
+<header id="header" role="main">
+  <div class="container">
+    <div class="content">
+			<h1>{{ "ERROR_TYPE"|t }} {{ page.header.http_response_code }}</h1>
+			<h2>{{ page.content }}</h2>
+      <div class="inner">
+        <div class="row">
+          <div class="6u 12u$(small)">
+            <a href="{{ base_url_absolute }}" class="button fit special">{{ page.header.back_button }}</a>
+          </div>
+          <div class="6u 12u$(small)">
+            <a id="learn-button" href="#more" class="button fit icon alt fa-chevron-down page-scroll">{{ page.header.links_button }}</a>
+          </div>
+        </div>
+      </div>      
+    </div>
+  </div>
+</header>
+{% endblock %}
+
+{# block footer #}
+{# endblock #}

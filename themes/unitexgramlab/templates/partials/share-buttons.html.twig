@@ -1,0 +1,38 @@
+<li class="tooltip tooltip-{{ tooltip_direction }} share-email" aria-label="Send by email">
+  <a href="mailto:?subject={{title}}&amp;body={{ summary }}%0A{{ url }}">
+    <i class="fa fa-1x fa-fw fa-envelope-o"></i>
+  </a>
+</li>
+<li class="tooltip tooltip-{{ tooltip_direction }} share-linkedin" aria-label="Share on LinkedIn">
+  <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url={{ url }}&amp;title={{ title }}&amp;summary={{ summary }}"
+ >
+    <i class="fa fa-1x fa-fw fa-linkedin "></i>
+  </a>
+</li>
+<li class="tooltip tooltip-{{ tooltip_direction }} share-twitter" aria-label="Share on Twitter">
+  {% set twitter_site  = attribute(site.metadata, 'twitter:site') %}
+  <a href="https://twitter.com/intent/tweet?text={{ summary }}%20{{twitter_site|e('url')}}&amp;url={{ url }}"
+ >
+    <i class="fa fa-1x fa-fw fa-twitter"></i>
+  </a>
+</li>
+<li class="tooltip tooltip-{{ tooltip_direction }} share-github" aria-label="Edit on GitHub">
+  <a class="nav nav-back" target="_blank" href="{{ theme_config.github.tree ~ ('/'~page.filePathClean)|replace({'/user/':''}) }}">
+    <i class="fa fa-2x fa-fw fa-fw fa-github"></i>
+  </a>
+</li>
+<li class="tooltip tooltip-{{ tooltip_direction }} share-reddit" aria-label="Share on Reddit">
+  <a href="http://www.reddit.com/submit?url={{url}}&amp;title={{ title }}&amp;text={{ summary }}">
+    <i class="fa fa-1x fa-fw fa-reddit-alien"></i>
+  </a>
+</li>
+<li class="tooltip tooltip-{{ tooltip_direction }} share-googleplus" aria-label="Share on Google+">
+  <a href="https://plus.google.com/share?url={{ url }}">
+    <i class="fa fa-1x fa-fw fa-google-plus"></i>
+  </a>
+</li>
+<li class="tooltip tooltip-{{ tooltip_direction }} share-print" aria-label="Print">
+  <a href="javascript:window.print()">
+    <i class="fa fa-1x fa-fw fa-print"></i>
+  </a>
+</li>

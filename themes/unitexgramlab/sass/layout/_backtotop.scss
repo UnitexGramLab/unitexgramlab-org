@@ -1,0 +1,55 @@
+@import '../libs/vars';
+@import '../libs/functions';
+@import '../libs/mixins';
+
+///
+/// added by martinec
+///
+
+/* Back to top */
+
+	#backtotop {
+    display: none;
+    
+    a {
+      @include icon("\f102");
+      @include hide-text();
+      position: fixed;
+      right: 2em;
+      bottom: 1.55rem;
+      text-decoration:none;
+      outline : none;
+      width: 2.3rem;
+      height: 2.3rem;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 2.3rem;
+      vertical-align: middle;
+      color: _palette(bg) !important;
+      background-color: _palette(accent1, bg);
+      @include vendor('transition', ('opacity #{_duration(transition)} 0s', 'visibility 0s #{_duration(transition)}'));
+      opacity: 0.8;
+      z-index: 1;
+
+      &:before {
+        font-size: 1.8rem;
+        margin-left: -1.25em;
+      }
+
+      &:hover {
+        background-color: _palette(accent1, bg);
+        opacity: 1;
+        @include vendor('transition', ('opacity #{_duration(transition)} 0s', 'visibility 0s'));
+      }
+
+      // Medium.
+      @include breakpoint(medium) {
+      }
+
+      // Small.
+      @include breakpoint(small) {
+        right: 1em;
+        bottom: 2em;
+      }
+    }
+	}

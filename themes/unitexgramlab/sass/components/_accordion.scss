@@ -1,0 +1,153 @@
+@import '../libs/vars';
+@import '../libs/functions';
+@import '../libs/mixins';
+
+/// jQuery Accordion 0.0.1
+/// (c) 2014 Victor Fernandez <victor@vctrfrnndz.com>
+/// MIT Licensed.
+
+/* Requirements */
+
+[data-accordion] [data-content] {
+    overflow: hidden;
+    max-height: 0;
+}
+
+/* Basic Theme */
+
+[data-accordion] {
+}
+
+[data-control],
+[data-content] > * {
+    padding: 10px;
+}
+
+[data-content] [data-accordion] {
+    border: 0;
+    padding: 0;
+}
+
+[data-accordion] [data-control] {
+    position: relative;
+    width: 100%;
+    line-height: 1em;
+    font-weight: normal;
+    text-align: left;
+    height: 51px;
+    margin-bottom: 0.25em;
+    overflow: hidden;
+}
+
+[data-accordion] > [data-control]:after {
+    content: "";
+    position: absolute;
+    right: 10px;
+    top: 18px;
+    font-size: 25px;
+    font-weight: 200;
+    color: #444;
+    height: 15px;
+    width: 24px;
+    background: url('images/down.png') center center no-repeat;
+    background-size: 50%;
+}
+
+[data-accordion].open > [data-control]:after {
+    -webkit-transform: rotate(-180deg); 
+    -ms-transform: rotate(-180deg); 
+    transform: rotate(-180deg); 
+}
+
+.ug-label,
+.ug-badge {
+  background-color: #babdc0;
+  color: #fff;
+  font-size: inherit;
+  padding: 3px 7px;
+  text-align: center;
+  vertical-align: baseline;
+  white-space: nowrap;
+  margin-left: 2.5px;
+  margin-right: 2.5px;
+  
+  &.c1 {
+    background-color: $color1;
+  }
+  &.c2 {
+    background-color: $color2;
+  }
+  &.c3 {
+    background-color: $color3;
+  }
+  &.c4 {
+    background-color: $color4;
+  }
+  &.c5 {
+    background-color: $color5;
+  }
+  &.c6 {
+    background-color: $color6;
+  }
+  &.c7 {
+    background-color: $color7;
+  }
+  &.c8 {
+    background-color: $color8;
+  }
+  &.c9 {
+    background-color: $color9;
+  }
+  &.c10 {
+    background-color: $color10;
+  }
+  &.c11 {
+    background-color: $color11;
+  }
+  &.c12 {
+    background-color: $color12;
+  }
+  &.c13 {
+    background-color: $color13;
+  }
+  &.c14 {
+    background-color: $color14;
+  }    
+}
+
+.ug-label {
+  border-radius: 4px;
+  display: inline;
+}
+
+.ug-badge {
+  border-radius: 10px;
+  display: inline-block;
+  padding: 1px 7px;
+}
+
+.ug-label[href]:hover, .ug-label[href]:focus {
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a.ug-badge:hover, a.ug-badge:focus {
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.ug-label a,
+.ug-badge a {
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.ug-label:empty,
+.ug-badge:empty {
+  display: none;
+}
+
+

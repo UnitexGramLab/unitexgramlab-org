@@ -1,0 +1,166 @@
+/// Makes an element's :before pseudoelement a FontAwesome icon.
+/// @param {string} $content Optional content value to use.
+/// @param {string} $where Optional pseudoelement to target (before or after)
+@mixin icon($content: false, $where: before) {
+
+	text-decoration: none;
+
+	&:#{$where} {
+
+		@if $content {
+			content: $content;
+		}
+
+		-moz-osx-font-smoothing: grayscale;
+		-webkit-font-smoothing: antialiased;
+		font-family: FontAwesome;
+		font-style: normal;
+		font-weight: normal;
+		text-transform: none !important;
+
+	}
+
+}
+
+/// Applies padding to an element, taking the current element-margin value into account.
+/// @param {mixed} $tb Top/bottom padding.
+/// @param {mixed} $lr Left/right padding.
+/// @param {list} $pad Optional extra padding (in the following order top, right, bottom, left)
+/// @param {bool} $important If true, adds !important.
+@mixin padding($tb, $lr, $pad: (0,0,0,0), $important: null) {
+
+	@if $important {
+		$important: '!important';
+	}
+
+	padding: ($tb + nth($pad,1)) ($lr + nth($pad,2)) max(0.1em, $tb - _size(element-margin) + nth($pad,3)) ($lr + nth($pad,4)) #{$important};
+
+}
+
+/// Clearfix
+///
+/// Clears floats via mixin (avoid using as a class).
+/// @source https://github.com/primer/primer
+@mixin clearfix {
+  &:before {
+    display: table;
+    content: "";
+  }
+
+  &:after {
+    display: table;
+    clear: both;
+    content: "";
+  }
+}
+
+/// Text hiding for image based text replacement.
+/// Higher performance than -9999px because it only renders
+/// the size of the actual text, not a full 9999px box.
+/// @source https://github.com/primer/primer
+@mixin hide-text() {
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+}
+
+/// added by martinec
+@mixin background-overlay($overlay,$pattern: none,$pattern-large: null, $pattern-small: null) {
+  background: {
+    image: url($overlay), url($pattern);
+    position: top left, center center;
+    attachment: fixed, fixed;
+    size: auto, cover;
+  }
+
+  @if $pattern-large {      
+    // Large
+    @include breakpoint(large) {
+      background-image: url($overlay), url($pattern-large);
+    }
+  }  
+
+  @if $pattern-small {
+    // Small
+    @include breakpoint(small) {
+      background-image: url($overlay), url($pattern-small);
+    }
+  }
+}
+
+// Only display content to screen readers
+//
+// See: http://a11yproject.com/posts/how-to-hide-content/
+@mixin sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+
+// Use in conjunction with .sr-only to only display content when it's focused.
+//
+// Useful for "Skip to main content" links; see http://www.w3.org/TR/2013/NOTE-WCAG20-TECHS-20130905/G1
+//
+// Credit: HTML5 Boilerplate
+@mixin sr-only-focusable {
+  &:active,
+  &:focus {
+    position: static;
+    width: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    clip: auto;
+  }
+}
+
+/// added by martinec
+@mixin os-customs {
+    .win-color {
+      color: #00aef0;
+    }
+
+    .linux-color {
+      color: #f97f4f;
+    }
+
+    .osx-color {
+      color: #b7b1b1;
+    }
+
+    .other-color {
+      color: #fdbf2e;
+    }
+
+    input[type="submit"],
+    input[type="reset"],
+    input[type="button"],
+    button,
+    .button {
+      &.win {
+        &:hover {
+          background-color: #00aef0 !important;
+        }
+      }
+      &.linux {
+        &:hover {
+          background-color: #f97f4f !important;
+        }
+      }
+      &.osx {
+        &:hover {
+          background-color: #b7b1b1 !important;
+        }
+      }
+      &.other {
+        &:hover {
+          background-color: #fdbf2e !important;
+        }
+      }                  
+    }  
+}

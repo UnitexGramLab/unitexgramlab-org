@@ -1,0 +1,33 @@
+<article class="summer-index-post post row 0%">
+    <div class="2u 3u(medium) 12u$(small) datetime">
+        <span class="summer-post-meta">
+            <time datetime="{{ page.date | date('Y-m-d H:i:s') }}">
+                <span class="day">
+                    {{ page.date | date("d") }}
+                </span>
+                <span class="month-year">
+                    {{ page.date | date("M Y") }}
+                </span>
+            </time>
+        </span>
+    </div>
+    <div class="10u$ 9u$(medium) 12u$(small)">
+      <header class="summer-post-header">
+          {% if page.header.link %}
+           <h3 class="summer-post-title"><a href="{{ page.url }}" rel="bookmark" title="{{ page.title }}" itemprop="url"><i class="fa fa-bookmark"></i></a> <a href="{{ page.header.link }}">{{ page.title }}</a></h3>
+          {% else %}
+           <h3 class="summer-post-title"><a href="{{ page.url }}" itemprop="url">{{ page.title }}</a></h3>
+          {% endif %}
+      </header>
+      <section class="summer-post-excerpt">
+        {% if page.header.link %}
+         <p><a href="{{ page.url }}" itemprop="url">{{ page.content | striptags | safe_truncate(40) | trim }}...</a></p>
+        {% else %}
+         <p>{{ page.summary | striptags }}</p>
+        {% endif %}
+      </section>       
+      <div class="summer-index-post-tags">
+        {% for tag in page.taxonomy.tag %}<span class="post-tag-{{tag|url_encode}}"><a href="{{ blog.url|rtrim('/') }}/tag{{ config.system.param_sep }}{{ tag|url_encode }}">{{ tag }}</a></span>{%if not loop.last %} {% endif %}{% endfor %}
+      </div>
+    </div>
+</article>

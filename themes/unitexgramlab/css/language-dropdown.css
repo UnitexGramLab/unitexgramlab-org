@@ -1,0 +1,124 @@
+/*
+ * Language language-dropdown switcher for the Unitex/GramLab website theme
+ * @source http://www.cssscript.com/creating-popup-language-dropdowns-with-javascript-and-css3/
+ */
+.language-dropdown {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+}
+
+.language-dropdown > .outer-list {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: scale(0);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.35s ease;
+}
+
+.language-dropdown > .outer-list.top {
+  align-items: flex-start;
+  transform-origin: 50% 0;
+}
+
+.language-dropdown > .outer-list.left { justify-content: flex-start; }
+
+.language-dropdown > .outer-list.bottom {
+  align-items: flex-end;
+  transform-origin: 50% 100%;
+}
+
+.language-dropdown > .outer-list.right { justify-content: flex-end; }
+
+.language-dropdown > .outer-list > ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.1);
+  border-radius: .2em;
+}
+
+.language-dropdown > .outer-list > ul li {
+  padding: .1em;
+  width: 100%;
+  cursor: pointer;
+  transition: background 0.35s ease;
+}
+
+.language-dropdown > .outer-list > ul li a {
+  display: block;
+  padding: 0.25em 3em;
+  outline: none;
+}
+
+.language-dropdown > .outer-list > ul li:hover { background: rgba(0, 0, 0, 0.07); }
+
+.language-toggler {
+  position: relative;
+  display: block;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  padding: 1em;
+  border-radius: .15em;
+  cursor: pointer;
+  transition: all 0.35s ease;
+  overflow: hidden;
+  outline: none;
+}
+
+.language-toggler:after {
+  content: '';
+  position: absolute;
+  bottom: -50%;
+  right: -50%;
+  z-index: 1;
+  overflow: hidden;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.35);
+  transition: all 0.35s ease;
+}
+
+.language-toggler i.icon {
+  color:#fff;
+}
+
+.language-toggler:active:after,
+.language-toggler.language-dropdown-open:after {
+  width: 200%;
+  height: 200%;
+}
+
+.language-toggler:hover {
+  box-shadow: inset 0 0 40px rgba(0, 0, 0, 0.1);
+  color: rgba(255, 255, 255, 0.8);
+  background-color: transparent;
+}
+
+.language-toggler.language-dropdown-open + .outer-list {
+  transform: scale(1);
+  opacity: 1;
+  visibility: visible;
+}
+
+.language-dropdown > .outer-list > ul li:last-child {
+  font-size: 0.65em;
+  color:rgba(54, 58, 66, 0.72);
+}
+
+

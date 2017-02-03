@@ -1,0 +1,252 @@
+@import '../libs/vars';
+@import '../libs/functions';
+@import '../libs/mixins';
+
+///
+/// added by martinec
+///
+
+/* Banner */
+
+	.banner {
+		@include color(accent1);
+    @include padding(6em, 0);
+		@include vendor('align-items', 'center');
+		@include vendor('display', 'flex');
+		@include vendor('justify-content', 'center');
+    @include background-overlay("images/overlay.png",
+                                "images/unitex-pattern.png");
+                                
+    height: 100vh;
+		min-height: 35em;
+    
+    &.post {
+      height: 15em;
+      min-height: 14em;
+    }
+
+    &.blog,
+    &.category {
+  		height: 90vh;
+      min-height: 23em;
+      @include padding(8em, 0);
+    }
+  
+		h1 {
+      display: block;
+      color: #fff;
+      line-height: 1.1em;
+      text-shadow: 0px 1px 0px rgba(50, 59, 64, 0.56);
+			font-size: 3em;
+			font-weight: _font(weight-bold);
+			margin-bottom: _size(element-margin) * 0.1;
+      margin-top: _size(element-margin) * 0.1;
+		}
+
+		p {
+			font-size: 1.1em;
+			line-height: 1;
+      margin-bottom: _size(element-margin) * 0.5;
+
+			br {
+				display: inline;
+			}
+		}
+
+		.content {
+			@include vendor('transition', ('opacity 0.5s ease', 'transform 1s ease'));
+			@include vendor('transform', 'translateX(0)');
+			opacity: 1;
+			text-align: center;
+
+      .banner-heading {
+        display: inline-block;
+        margin-bottom: 0px;
+        padding: 0px;
+        border-radius: 3px;
+        color: rgba(255, 255, 255, 0.58);
+        font-size: 1em;
+        line-height: 0.5em;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+      }
+
+			> :last-child {
+				margin-bottom: 0;
+			}
+
+      > .inner {
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        display: block;
+        color: rgba(255, 255, 255, 0.78);
+        line-height: 1.3em;
+        font-size: 1.2em;
+        font-weight: 300;
+        margin-top: _size(element-margin) * 1;
+        margin-bottom: _size(element-margin) * 1;
+      }
+		}
+
+		.image {
+			@include vendor('transition', ('opacity 1s ease', 'transform 1s ease'));
+			@include vendor('transform', 'translateY(0)');
+			opacity: 1;
+
+			img {
+				@include vendor('transition', 'opacity 0.75s ease');
+				@include vendor('transition-delay', '0.75s');
+				opacity: 1;
+			}
+		}
+
+		// Large.
+    @include breakpoint(large) {
+    }
+
+		// Medium.
+    @include breakpoint(medium) {
+      &.summary {
+        height: auto;
+        min-height: 0;
+      }
+    
+      height: auto;
+      min-height: 0;
+
+      .content {
+        margin: (_size(element-margin) * 1) (_size(element-margin) * 0) 0 0;
+
+        > .inner {
+          width: 90%;
+        }
+      }
+
+      // Portrait.
+      @include orientation(portrait) {
+        @include padding(8em, 3em);
+        @include vendor('flex-direction', 'column-reverse');
+
+        .content {
+          display: block;
+          width: 100%;
+          text-align: center;
+          margin: 0 0 _size(element-margin) 0;
+        }
+
+        .image {
+          overflow: hidden;
+        }
+      }
+    }
+
+		// Small.
+    @include breakpoint(small) {
+      .content {
+        > .inner {
+          width: 100%;
+        }
+      }
+          
+      h1 {
+        font-size: 2em;
+        margin-top: 0.5em;
+      }
+
+      p {
+        font-size: 1em;
+        line-height: inherit;
+      }
+
+      // Landscape.
+      @include orientation(landscape) {
+        @include padding(6em, 2em);
+
+        .content {
+          margin: 0 0 _size(element-margin) 0;
+        }
+
+        .image {
+          font-size: 0.8em;
+          width: 15em;
+          max-width: 20vw;
+
+          .inner, &:before, &:after {
+            font-size: 0.8em;
+          }
+        }
+      }
+
+      // Portrait.
+      @include orientation(portrait) {
+        @include padding(3em, 1.5em);
+
+        .image {
+          font-size: 0.6em;
+          max-width: 60vw;
+        }
+      }
+    }
+
+		// XSmall.
+    @include breakpoint(xsmall) {
+
+      // Landscape.
+      @include orientation(landscape) {
+        @include padding(3em, 1.5em);
+
+        .image {
+          font-size: 0.7em;
+        }
+
+        .actions {
+          font-size: 0.8em;
+        }
+      }
+
+      // Portrait.
+      @include orientation(portrait) {
+        @include padding(7em, 1em);
+      }
+
+    }
+
+		// Mobile.
+    body.is-mobile & {
+      background-attachment: scroll, scroll;
+    }
+
+		// Loading.
+    body.is-loading & {
+      .content {
+        @include vendor('transform', 'translateX(2em)');
+        opacity: 0;
+      }
+
+      .image {
+        @include vendor('transform', 'translateY(4em)');
+        opacity: 0;
+
+        img {
+          opacity: 0;
+        }
+      }
+
+      // Medium.
+      @include breakpoint(medium) {
+
+        // Portrait.
+        @include orientation(portrait) {
+          .content {
+            @include vendor('transform', 'none');
+            opacity: 1;
+          }
+
+          .image {
+            @include vendor('transform', 'translateY(2em)');
+          }
+        }
+      }
+    }
+	}

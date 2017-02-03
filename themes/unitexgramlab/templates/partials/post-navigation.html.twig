@@ -1,0 +1,23 @@
+<nav class="blog-tags">
+  <div class="container">
+    {% set cats = attribute(page.header.content.items, '@taxonomy.category') %}
+    {% set progress = page.collection({'items':{'@taxonomy.category': 'blog'},'order': {'by': 'date', 'dir': 'desc'}}) %}
+    <ul class="nav navbar-nav">
+      {% if not progress.isLast(page.path) %}
+        <li class="tooltip tooltip-{{ tooltip_direction }}" aria-label="First Post: {{ progress|last.title }}"><a class="nav nav-last" href="{{ progress|last.url }}"><i class="fa fa-1x fa-fw fa-fw fa-fast-backward"></i></a></li>
+        <li class="tooltip tooltip-{{ tooltip_direction }}" aria-label="Previous Post: {{ progress.prevSibling(page.path).title }}"><a class="nav nav-next" href="{{ progress.prevSibling(page.path).url }}"><i class="fa fa-1x fa-fw fa-fw fa-backward"></i></a></li>        
+      {% else %}
+        <li><a class="nav nav-first disabled"><i class="fa fa-1x fa-fw fa-fw fa-fast-backward"></i></a></li>
+        <li><a class="nav nav-prev disabled"><i class="fa fa-1x fa-fw fa-fw fa-backward"></i></a></li>
+      {% endif %}
+      {% include 'partials/share-buttons.html.twig' with { title : ((header.title ? header.title ~ ' | ' : '') ~ site.title ~ (page.parent.header.title ? ' ' ~ page.parent.header.title : ''))|e('url'), url: page.url(true)|e('url'), summary: page.summary|striptags|trim|e('url') }  %}
+      {% if not progress.isFirst(page.path) %}
+        <li class="tooltip tooltip-{{ tooltip_direction }}" aria-label="Next Post: {{ progress.nextSibling(page.path).title }}"><a class="nav nav-prev" href="{{ progress.nextSibling(page.path).url }}"><i class="fa fa-1x fa-fw fa-fw fa-forward"></i></a></li>      
+        <li class="tooltip tooltip-{{ tooltip_direction }}" aria-label="Latest Post: {{ progress|first.title }}"><a class="nav nav-first" href="{{ progress|first.url }}"><i class="fa fa-1x fa-fw fa-fw fa-fast-forward"></i></a></li>
+      {% else %}
+        <li><a class="nav nav-next disabled"><i class="fa fa-1x fa-fw fa-fw fa-forward"></i></a></li>
+        <li><a class="nav nav-last disabled"><i class="fa fa-1x fa-fw fa-fw fa-fast-forward"></i></a></li>            
+      {% endif %}
+    </ul>
+  </div>
+</nav>

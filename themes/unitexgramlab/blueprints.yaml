@@ -1,0 +1,28 @@
+name: Unitex/GramLab
+version: 1.0.0
+description: "Unitex/GramLab website theme"
+icon: underline
+author:
+  name: Cristian Martinez
+  email: me@martinec.org
+  url: http://martinec.org
+homepage: https://github.com/UnitexGramLab/unitexgramlab-org
+source: https://github.com/UnitexGramLab/unitexgramlab-org/blob/master/user/themes/unitexgramlab
+demo: http://unitexgramlab.org
+keywords: unitex, html5, css3
+bugs: https://github.com/UnitexGramLab/unitexgramlab-org/issues
+license: MIT
+
+form:
+  validation: loose
+  fields:
+    dropdown.enabled:
+        type: toggle
+        label: Dropdown in navbar
+        highlight: 1
+        default: 0
+        options:
+          1: Enabled
+          0: Disabled
+        validate:
+          type: bool

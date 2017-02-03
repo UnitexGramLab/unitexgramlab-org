@@ -1,0 +1,39 @@
+@import '../libs/vars';
+@import '../libs/functions';
+@import '../libs/mixins';
+
+///
+/// added by martinec
+///
+
+/* Javascript disabled */
+
+	html.no-js {
+    // hide navbar
+    .navbar {
+      @include sr-only();
+    }
+
+    .download-description {
+      height: 9em;
+      overflow: hidden;
+    }
+    
+    // Large.
+    @include breakpoint(large) {
+    }
+    
+    // Medium.
+    @include breakpoint(medium) {
+      .download-description {
+        height: 7em;
+      }    
+    }
+
+    // Small.
+    @include breakpoint(small) {
+      .download-description {
+        height: 6em;
+      }
+    }
+	}

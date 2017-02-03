@@ -1,0 +1,30 @@
+<header id="header">
+  <div class="container">
+    <div class="content">
+      <div itemscope itemtype="http://schema.org/Organization">
+        <h1><a itemprop="url" href="{{ base_url_absolute }}"><span itemprop="name">{{ 'HOME_TITLE'|t }}</span></a></h1>
+        {% set langobj  = grav['language'] %}
+        {% set lang     = langobj.getLanguage() %}
+        {% set features = langobj.getTranslation(lang,'HOME_FEATURES',true) %}
+        <p itemprop="description">{{ 'HOME_DESCRIPTION'|t|format("<span data-ticker='%s' id='unitexgramalab-tagline'>%s</span>")|format(features|join(','),random(features)) }}</p>
+      </div>
+      <div class="inner">
+        <div class="row">
+          <div class="6u 12u$(small)">
+            <div class="row">
+              <div class="12u$">
+                <a id="main-setup-download-button" href="{{ config.unitex.stable.release_win64 }}" data-href="{{ config.unitex.stable.release_link }}" data-title="{{ 'MSG_DOWNLOAD_VERSION_FOR_OS'|t(config.unitex.stable.version_string,'{oslabel}') }}" title="{{ 'MSG_DOWNLOAD_VERSION_FOR_OS'|t(config.unitex.stable.version_string,'TAG_WIN'|t) }}" class="main-download-button download-release-link install-instructions button fit icon special win fa-windows os-linux os-osx os-win js-hidden"><span class="os-text" data-text="{{ 'HOME_BTN_DOWNLOAD_FOR'|t('{oslabel}') }}">{{ 'HOME_BTN_DOWNLOAD_FOR'|t('TAG_WIN'|t) }}</span></a><a id="main-other-download-button" href="{{ config.unitex.stable.release_other }}" title="{{ 'MSG_DOWNLOAD_VERSION_FOR_OTHER'|t(config.unitex.stable.version_string) }}" class="main-download-button download-release-link install-instructions button fit icon special fa-file-archive-o other os-other hidden">{{ 'HOME_BTN_DOWNLOAD_SOURCES'|t }}</a>
+              </div>
+              <div class="12u$">
+                <p id="other-platforms" class="small"><a href="#downloads" class="page-scroll"><span>{{ 'HOME_OTHER_PLATFORMS'|t("</span><span aria-label='%s' class='tooltip tooltip-s'><i class='fa fa-fw fa-windows os-linux os-osx os-other hidden'></i></span><span aria-label='%s' class='tooltip tooltip-s'><i class='fa fa-fw fa-linux os-win os-osx os-other js-hidden'></i></span><span aria-label='%s' class='tooltip tooltip-s'><i class='fa fa-fw fa-apple os-win os-linux os-other js-hidden'></i></span>")|format( 'TAG_WIN'|t, 'TAG_LINUX'|t, 'TAG_OSX'|t ) }}</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="6u 12u$(small)">
+            <a id="learn-button" href="#about" class="button fit icon alt fa-chevron-down page-scroll">{{ 'HOME_BTN_LEARN'|t }}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>

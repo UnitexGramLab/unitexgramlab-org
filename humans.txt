@@ -1,0 +1,214 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+  Cristian Martinez -- Conception, website architecture and development -- https:/github/martinec
+
+# TECHNOLOGY COLOPHON
+
+  Grav by Grav Team
+  http://getgrav.org
+  Released under the MIT license
+
+  Skel by n33
+  http://skel.io
+  Released under the MIT license
+
+  jQuery throttle / debounce by Ben Alman
+  http://benalman.com/projects/jquery-throttle-debounce-plugin
+  Released under the MIT license
+
+  jQuery dropotron by n33
+  https://github.com/ajlkn/jquery.dropotron
+  Released under the MIT license
+
+  fancyBox by fancyApps
+  http://fancyapps.com/fancybox
+  Released under the CC BY-NC 3.0 license
+
+  jQuery-match-height by @liabru
+  http://brm.io/jquery-match-height
+  Released under the MIT license
+
+  jQuery.scrollgress  by n33
+  https://github.com/ajlkn/skel
+  Released under the MIT license
+
+  Respond.js by Scott Jehl
+  http://j.mp/respondjs
+  Released under the MIT license
+
+  HTML5 Shiv by @afarkas @jdalton @jon_neal @rem
+  https://github.com/aFarkas/html5shiv
+  Released under the MIT license
+
+  jQuery Easing by Robert Penner
+  http://gsgd.co.uk/sandbox/jquery/easing
+  Released under the BSD license
+
+  classie by Dustin Diaz
+  https://github.com/ded/bonzo
+  Released under the MIT license
+
+  cbpAnimatedHeader by codrops
+  http://www.codrops.com
+  Licensed under the MIT license
+
+  jQuery.scroll by n33
+  https://github.com/ajlkn/skel
+  Released under the MIT license
+
+  Bootstrap by Twitter
+  http://getbootstrap.com
+  Released under the MIT license
+
+  Modernizr by Faruk Ates, Paul Irish, Alex Sexton
+  http://www.modernizr.com
+  Released under the MIT license
+
+  Slick.js by Ken Wheeler
+  http://github.com/kenwheeler/slick
+  Released under the MIT license
+
+  clipboard.js by Zeno Rocha
+  https://zenorocha.github.io/clipboard.js
+  Released under the MIT license
+
+  Detectizr by Baris Aydinoglu
+  https://github.com/barisaydinoglu/Detectizr
+  Released under the MIT license
+
+  Overthrow by Scott Jehl, Filament Group, Inc
+  https://github.com/filamentgroup/Overthrow
+  Released under the MIT license
+
+  jQuery Accordion by Victor Fernandez
+  https://vctrfrnndz.github.io/jquery-accordion
+  Released under the MIT license
+
+  Unitex/GramLab Theme by martinec
+  https://github.com/UnitexGramLab/unitexgramlab-org
+  Released under the MIT license
+
+  Fractal by HTML5 UP
+  http://html5up.net
+  Released under the CCA 3.0 license
+
+  Skel.scss by n33
+  http://skel.io
+  Released under the MIT license
+
+  Bourbon by thoughtbot, inc.
+  http://bourbon.io
+  Released under the MIT license
+
+  Jeet by MojoTech
+  http://jeet.gs
+  Released under the MIT license
+
+  Slick by Ken Wheeler
+  https://github.com/kenwheeler/slick
+  Released under the MIT license
+
+  HTML5 Boilerplate
+  https://html5boilerplate.com
+  Released under the MIT License
+
+  Primer by GitHub, Inc.
+  https://github.com/primer/primer
+  Released under the MIT license
+
+  kbdfun by kremalicious
+  http://kremalicious.com/using-kbd-for-fun-and-profit/
+  Released under the MIT license
+
+  RRSSB by dbox and joshuatuscan
+  http://www.kurtnoble.com/labs/rrssb
+  Released under the MIT license
+
+  jQuery Accordion CSS
+  http://vctrfrnndz.com
+  Released under the MIT license
+
+  fancyBox CSS
+  http://fancyapps.com/fancybox
+  Released under the CC BY-NC 3.0 license
+
+  Beautiful Flat Icons by Nick Roach
+  Released under the GPL License
+
+  Office Vol.5 by Kokota
+  https://www.facebook.com/Iconko-1093341900698327
+  Released under the CCA 2.5 License
+
+  Font Awesome by Dave Gandy
+  http://fontawesome.io
+  Released under the SIL OFL 1.1 License
+
+  Grav Random Plugin by Team Grav
+  https://github.com/getgrav/grav-plugin-random
+  Released under the MIT license
+
+  Grav Problems Plugin by Team Grav
+  https://github.com/getgrav/grav-plugin-problems
+  Released under the MIT license
+
+  Grav Twig Feeds Plugin by Ole Vik
+  https://github.com/olevik/grav-plugin-twigfeeds
+  Released under the MIT license
+
+  Grav Error Plugin by Team Grav
+  https://github.com/getgrav/grav-plugin-error
+  Released under the MIT license
+
+  Grav Sitemap Plugin by Team Grav
+  https://github.com/getgrav/grav-plugin-sitemap
+  Released under the MIT license
+
+  Grav Shortcode Core Plugin by Team Grav
+  https://github.com/getgrav/grav-plugin-shortcode-core
+  Released under the MIT license
+
+  Grav Assets Plugin by Team Grav
+  https://github.com/getgrav/grav-plugin-assets
+  Released under the MIT license
+
+  Grav LangSwitcher Plugin by Team Grav
+  https://github.com/getgrav/grav-plugin-langswitcher
+  Released under the MIT license
+
+  Grav Httpfully Plugin by Cristian Martinez
+  https://github.com/martinec/grav-plugin-httpfully
+  Released under the MIT license
+
+  Grav Feed Plugin by Team Grav
+  https://github.com/getgrav/grav-plugin-feed
+  Released under the MIT license
+
+  Grav BibTeXify Plugin by Cristian Martinez
+  https://github.com/martinec/grav-plugin-bibtexify
+  Released under the MIT license
+
+  Grav Shortcode UI Plugin by Team Grav
+  https://github.com/getgrav/grav-plugin-shortcode-ui
+  Released under the MIT license
+
+  Grav Pagination Plugin by Team Grav
+  https://github.com/getgrav/grav-plugin-pagination
+  Released under the MIT license
+
+  Grav Anchors Plugin by Team Grav
+  https://github.com/getgrav/grav-plugin-anchors
+  Released under the MIT license
+
+  Grav Email Plugin by Team Grav
+  https://github.com/getgrav/grav-plugin-email
+  Released under the MIT license
+
+  Grav SimpleSearch Plugin by Team Grav
+  https://github.com/getgrav/grav-plugin-simplesearch
+  Released under the MIT license
+
+  Grav Google Analytics Plugin by John Linhart
+  https://github.com/escopecz/grav-ganalytics

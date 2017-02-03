@@ -1,0 +1,283 @@
+@import '../libs/vars';
+@import '../libs/functions';
+@import '../libs/mixins';
+
+///
+/// added by martinec
+/// Based on Primer Tooltip by GitHub, Inc.
+/// https://github.com/primer/primer
+/// Released under the MIT license
+///
+
+/* Tooltip */
+
+  .tooltip {
+    position: relative;
+  }
+
+  // This is the tooltip bubble
+  .tooltip:after {
+    position: absolute;
+    z-index: _misc(z-index-base);
+    display: none;
+    padding: 0.5em 0.5em;
+    font: normal normal 0.75em _font(family-styled);
+    text-align: center;
+    text-decoration: none;
+    text-shadow: none;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: break-word;
+    white-space: pre;
+    pointer-events: none;
+    content: attr(aria-label);
+    border-radius: 3px;
+    -webkit-font-smoothing: subpixel-antialiased;
+  }
+
+  // This is the tooltip arrow
+  .tooltip:before {
+    position: absolute;
+    z-index: _misc(z-index-base) + 1;
+    display: none;
+    width: 0;
+    height: 0;
+    pointer-events: none;
+    content: "";
+    border: 5px solid transparent;
+  }
+
+  // This will indicate when we'll activate the tooltip
+  .tooltip:hover,
+  .tooltip:active,
+  .tooltip:focus {
+    &:before,
+    &:after {
+      display: inline-block;
+      text-decoration: none;
+    }
+  }
+
+  .tooltip-multiline:hover,
+  .tooltip-multiline:active,
+  .tooltip-multiline:focus {
+    &:after {
+      display: table-cell;
+    }
+  }
+
+  // Tooltip south
+  .tooltip-s,
+  .tooltip-se,
+  .tooltip-sw {
+    &:after {
+      top: 100%;
+      right: 50%;
+      margin-top: 5px;
+    }
+
+    &:before {
+      top: auto;
+      right: 50%;
+      bottom: -5px;
+      margin-right: -5px;
+    }
+  }
+
+  .tooltip-se {
+    &:after {
+      right: auto;
+      left: 50%;
+      margin-left: -15px;
+    }
+  }
+
+  .tooltip-sw:after {
+    margin-right: -15px;
+  }
+
+  // Tooltips above the object
+  .tooltip-n,
+  .tooltip-ne,
+  .tooltip-nw {
+    &:after {
+      right: 50%;
+      bottom: 100%;
+      margin-bottom: 5px;
+    }
+
+    &:before {
+      top: -5px;
+      right: 50%;
+      bottom: auto;
+      margin-right: -5px;
+    }
+  }
+
+  .tooltip-ne {
+    &:after {
+      right: auto;
+      left: 50%;
+      margin-left: -15px;
+    }
+  }
+
+  .tooltip-nw:after {
+    margin-right: -15px;
+  }
+
+  // Move the tooltip body to the center of the object.
+  .tooltip-s:after,
+  .tooltip-n:after {
+    transform: translateX(50%);
+  }
+
+  // Tooltip to the left
+  .tooltip-w {
+    &:after {
+      right: 100%;
+      bottom: 50%;
+      margin-right: 5px;
+      transform: translateY(50%);
+    }
+
+    &:before {
+      top: 50%;
+      bottom: 50%;
+      left: -5px;
+      margin-top: -5px;
+    }
+  }
+
+  // tooltip to the right
+  .tooltip-e {
+    &:after {
+      bottom: 50%;
+      left: 100%;
+      margin-left: 5px;
+      transform: translateY(50%);
+    }
+
+    &:before {
+      top: 50%;
+      right: -5px;
+      bottom: 50%;
+      margin-top: -5px;
+    }
+  }
+
+  // Multiline tooltips
+  //
+  // `.tooltip-multiline` Add this class when you have long content.
+  // The downside is you cannot preformat the text with newlines and `[w,e]`
+  // are always `_tooltip(multiline-max-width)` wide.
+  .tooltip-multiline {
+    &:after {
+      width: max-content;
+      max-width: _tooltip(multiline-max-width);
+      word-break: break-word;
+      word-wrap: normal;
+      white-space: pre-line;
+      border-collapse: separate;
+    }
+
+    &.tooltip-s:after,
+    &.tooltip-n:after {
+      right: auto;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    &.tooltip-w:after,
+    &.tooltip-e:after {
+      right: 100%;
+    }
+  }
+
+  @media screen and (min-width:0\0) {
+    // IE9 and IE10 rule sets go here
+    .tooltip-multiline:after {
+      width: _tooltip(multiline-max-width);
+    }
+  }
+
+  // Sticky tooltips
+  //
+  // Always show the tooltip.
+  .tooltip-sticky {
+    &:before,
+    &:after {
+      display: inline-block;
+    }
+
+    &.tooltip-multiline {
+      &:after {
+        display: table-cell;
+      }
+    }
+  }
+
+  // Hide tooltip
+  //
+  // Always hide the tooltip.
+  .tooltip-hide {
+    &:before,
+    &:after {
+      visibility: hidden;
+    }
+  }
+
+  // Alert tooltips
+  //
+  // Colors for different tooltips
+
+
+  
+  @mixin color-tooltip($p: null) {
+    .tooltip {
+      // This is the tooltip bubble
+      &:after {
+        color:  _palette($p, bg);
+        background: _palette($p, fg-bold);
+      }
+
+      // This is the tooltip arrow
+      &:before {
+        color: _palette($p, fg-bold);
+      }
+
+      // Tooltip south
+      &.tooltip-s,
+      &.tooltip-se,
+      &.tooltip-sw {
+        &:before {
+          border-bottom-color: _palette($p, fg-bold);
+        }
+      }
+
+      // Tooltips above the object  
+      &.tooltip-n,
+      &.tooltip-ne,
+      &.tooltip-nw {
+        &:before {
+          border-top-color: _palette($p, fg-bold);
+        }
+      }
+
+      // Tooltip to the left
+      &.tooltip-w {
+        &:before {
+          border-left-color: _palette($p, fg-bold);
+        }  
+      }
+      
+      // tooltip to the right
+      &.tooltip-e {
+        &:before {
+          border-right-color: _palette($p, fg-bold);
+        }  
+      }
+    }  
+  }
+
+  @include color-tooltip;

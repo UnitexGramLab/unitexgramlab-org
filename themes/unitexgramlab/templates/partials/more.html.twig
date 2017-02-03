@@ -1,0 +1,84 @@
+<section id="more" class="wrapper style3">
+  {% set langobj = grav['language']      %}
+  {% set curlang = langobj.getLanguage() %}
+  {% set twigobj = grav['twig'] %}
+  {% set manlang = config.unitex.stable.usermanual_langs[0] %}
+  {% for key in config.unitex.stable.usermanual_langs %}
+      {% if key == curlang %}
+          {% set manlang = curlang %}
+      {% endif %}
+  {% endfor %}
+  <div class="container">
+    <div class="row">
+      <div class="6u 12u$(medium)">
+        <h2><a class="page-scroll" href="#">Unitex/GramLab</a></h2>
+        <div class="row uniform">
+          {% for link in site.iconlinks.footer %}
+              {% if link.url | starts_with('twig://') %}
+                 {% set url = twigobj.processString(link.url|slice(7),_context) %}
+              {% else %}
+                 {% set url = link.url %}                     
+              {% endif %}
+              {% if url | contains('http') %}
+                  {% set domain = '' %}
+              {% elseif url | contains('#') %}
+                  {% set domain = '' %}
+              {% elseif url | contains('mailto') %}
+                  {% set url = url|safe_email %}
+                  {% set domain = '' %}
+              {% else %}
+                 {% set domain = base_url_absolute %}
+              {% endif %}
+              {% if link.title[curlang] %}
+                 {% set title = link.title[curlang] %}
+              {% else %}
+                {% set title  = link.title[grav.language.getDefault] %}
+              {% endif %}
+              {% if link.icon and ( link.title[curlang] or link.translations_fallback ) %}
+                <div class="6u(xxsmall) 6u(xsmall) 4u">
+                  <a href="{{ domain }}{{ url }}" title="{{ title }}" {% if url | contains('http') or link.external %}target="_blank"{% endif %}{% if link.atts %} {{link.atts}}{% endif %}><i class="fa fa-2x fa-fw fa-{{ link.icon }}"></i><span class="label">{{ title }}</span></a>
+                </div>
+              {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+      <div class="3u 6u(medium) 12u$(small)">
+        <h3><a href="/blog">{{ 'MORE_RECENT_POSTS'|t }}</a></h3>
+        <div>
+          <ul class="alt truncate-items">
+          {% for p in taxonomy.findTaxonomy({'category':'blog'}).order('date', 'desc').slice(0, 7) %}
+              {% if not p.visible %}
+                <li><a href="{{ p.url }}"><span>{{ p.title }}</span></a></li>
+              {% endif %}
+          {% endfor %}
+          </ul>
+        </div>
+      </div>
+      <div class="3u$ 6u$(medium) 12u$(small)">
+        <h3><a href="/forum">{{ 'MORE_RECENT_DISCUSSIONS'|t }}</a></h3>
+        <div>
+          <ul class="alt truncate-items">
+            {% for title, feed in twig_feeds %}
+                {% for item in feed.items %}
+                    <li><a target="_blank" href="{{ item.url }}"><span>{{ item.title }}</span></a></li>
+                    {#
+                      item.id
+                      item.title
+                      item.url
+                      item.author
+                      item.date
+                      item.publishedDate
+                      item.updatedDate
+                      item.content
+                      item.enclosureUrl
+                      item.enclosureType
+                      item.language
+                    #}
+                {% endfor %}
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

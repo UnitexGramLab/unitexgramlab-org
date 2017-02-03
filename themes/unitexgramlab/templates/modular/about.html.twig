@@ -1,0 +1,108 @@
+<section id="about" class="wrapper style2 special section-features">
+  <div class="container 125%">
+    <header class="major">
+      <h2>{{ shortcode.section.header }}</h2>
+    </header>
+    <div class="row">
+      <div class="4u 12u$(medium)">
+        <div class="card">
+          <div class="card-block">
+            {% set image_a = 'theme://images/' ~ shortcode.section.a_image|striptags %}
+            <div class="image">
+              <img src="{{ url(image_a) }}" alt="{{ shortcode.section.a_title|striptags }}" />
+            </div>
+            <h4 class="card-title">{{ shortcode.section.a_title }}</h4>
+            <h6 class="card-subtitle text-muted">{{ shortcode.section.a_subtitle }}</h6>
+            <p class="card-text">{{ shortcode.section.a_text }}</p>
+          </div>
+        </div>
+      </div>
+      <div class="4u 12u$(medium)">
+        <div class="card">
+          <div class="card-block">
+            {% set image_b = 'theme://images/' ~ shortcode.section.b_image|striptags %}
+            <div class="image">
+              <img src="{{ url(image_b) }}" alt="{{ shortcode.section.b_title|striptags }}" />
+            </div>
+            <h4 class="card-title">{{ shortcode.section.b_title }}</h4>
+            <h6 class="card-subtitle text-muted">{{ shortcode.section.b_subtitle }}</h6>
+            <p class="card-text">{{ shortcode.section.b_text }}</p>
+          </div>
+        </div>
+      </div>
+      <div class="4u$ 12u$(medium)">
+        <div class="card">
+          <div class="card-block">
+            {% set image_c = 'theme://images/' ~ shortcode.section.c_image|striptags %}
+            <div class="image">
+              <img src="{{ url(image_c) }}" alt="{{ shortcode.section.c_title|striptags }}" />
+            </div>
+            <h4 class="card-title">{{ shortcode.section.c_title }}</h4>
+            <h6 class="card-subtitle text-muted">{{ shortcode.section.c_subtitle }}</h6>
+            <p class="card-text">{{ shortcode.section.c_text }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>  
+</section>
+<section id="about-features" class="wrapper style5">
+  <div class="inner alt">
+    <section class="spotlight" id="{{ shortcode.section.feature_1_class|striptags }}">
+      <div class="image">
+        {% set image_feature_1 = 'theme://images/' ~ shortcode.section.feature_1_image|striptags %}        
+        <img src="{{ url(image_feature_1) }}" alt="{{ shortcode.section.feature_1_title|striptags }}" />
+      </div>
+      <div class="content">
+        <h3>{{ shortcode.section.feature_1_title }}</h3>
+        <p>{{ shortcode.section.feature_1_description }}</p>
+      </div>
+    </section>
+    <section class="spotlight" id="{{ shortcode.section.feature_2_class|striptags }}">
+      <div class="image">
+        {% set image_feature_2 = 'theme://images/' ~ shortcode.section.feature_2_image|striptags %}        
+        <img src="{{ url(image_feature_2) }}" alt="{{ shortcode.section.feature_2_title|striptags }}" />
+      </div>
+      <div class="content">
+        <h3>{{ shortcode.section.feature_2_title }}</h3>
+        <p>{{ shortcode.section.feature_2_description }}</p>
+      </div>
+    </section>
+    <section class="spotlight" id="{{ shortcode.section.feature_3_class|striptags }}">
+      <div class="image">
+        {% set image_feature_3 = 'theme://images/' ~ shortcode.section.feature_3_image|striptags %}        
+        <img src="{{ url(image_feature_3) }}" alt="{{ shortcode.section.feature_3_title|striptags }}" />
+      </div>
+      <div class="content">
+        <h3>{{ shortcode.section.feature_3_title }}</h3>
+        <p>{{ shortcode.section.feature_3_description }}</p>
+      </div>
+    </section>
+    <section class="spotlight" id="{{ shortcode.section.feature_4_class|striptags }}">
+      <div class="image">
+        {% set image_feature_4 = 'theme://images/' ~ shortcode.section.feature_4_image|striptags %}        
+        <img src="{{ url(image_feature_4) }}" alt="{{ shortcode.section.feature_4_title|striptags }}" />
+      </div>
+      <div class="content">
+        <h3>{{ shortcode.section.feature_4_title }}</h3>
+        <p>{{ shortcode.section.feature_4_description }}</p>
+      </div>
+    </section>
+    <section class="spotlight" id="{{ shortcode.section.feature_5_class|striptags }}">
+      <div class="image">
+        {% set image_feature_5 = 'theme://images/' ~ shortcode.section.feature_5_image|striptags %}        
+        <img src="{{ url(image_feature_5) }}" alt="{{ shortcode.section.feature_5_title|striptags }}" />
+      </div>
+      <div class="content">
+        <h3>{{ shortcode.section.feature_5_title }}</h3>
+        <p>{{ shortcode.section.feature_5_description }}</p>
+      </div>
+    </section>    
+    <section class="special" id="{{ shortcode.section.special_class|striptags }}">
+      <div class="content">
+      <h2>{{ shortcode.section.special_title }}</h2>
+      {{ shortcode.section.special_description }}
+      </div>
+    </section>
+  </div>
+</section>

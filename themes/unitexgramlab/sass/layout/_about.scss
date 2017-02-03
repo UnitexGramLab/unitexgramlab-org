@@ -1,0 +1,37 @@
+@import '../libs/vars';
+@import '../libs/functions';
+@import '../libs/mixins';
+
+///
+/// added by martinec
+///
+
+/* About */
+
+	#about {
+		.image {
+			box-shadow: unset;
+		}
+  }
+  
+	#about-features {
+  
+    #functions-items {
+      margin-bottom: 7px;
+    }
+
+    #corpus-processing-suite {
+        padding-top: 0em;
+
+        ul.actions.piped li {
+          padding: 0;
+          line-height: 2em;
+        }
+    }
+
+    .ug-label, .ug-badge {
+      padding: 5px 7px;
+      font-size: 110%;
+      margin-bottom: 7px;
+    }
+	}

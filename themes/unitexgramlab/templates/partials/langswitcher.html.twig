@@ -1,0 +1,18 @@
+<div class="language-dropdown">
+  {% set langobj = grav['language'] %}
+  {% set key = langswitcher.current %}
+  {% set language = langswitcher.languages[key] %}
+  {% set lang_url = base_url_simple ~ langobj.getLanguageURLPrefix(key)~langswitcher.page_route ?: '/' %}
+  <a id="language-current" hreflang="{{key}}" rel="alternate" href="{{ lang_url }}" class="language-toggler"><i class="icon fa-globe"></i>&nbsp;<span>{{ language.nativeName|capitalize }}</span></a>
+  <div class="outer-list top">
+    <ul>
+      {% for key, language in langswitcher.languages %}
+          {% if key != langswitcher.current %}
+              {% set lang_url = base_url_simple ~ langobj.getLanguageURLPrefix(key)~langswitcher.page_route ?: '/' %}
+              <li><a hreflang="{{key}}" rel="alternate" href="{{ lang_url }}"><span>{{ language.nativeName|capitalize }}</span></a></li>
+          {% endif %}
+      {% endfor %}
+      <li><a target="_blank" href="{{ theme_config.github.tree ~ 'README.md#translations' }}"><i class="fa fa-github"></i>&nbsp;<span>{{ "MSG_HELP_TRANSLATE"|t }}</span></a></li>
+    </ul>
+  </div>
+</div>

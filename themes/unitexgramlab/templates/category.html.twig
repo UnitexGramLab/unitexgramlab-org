@@ -1,0 +1,26 @@
+{% embed 'blog.html.twig' %}
+
+{% block content %}
+  {% block tabs %}
+    {{ parent() }}
+  {% endblock %}
+  {% block posts %}
+    {% if collection|length > 0 %}
+      {% set post_icon = page.header.menu_icon ?: 'sticky-note-o' %}
+      <section id="tag-posts" class="wrapper style2">
+        <main class="summer-page-content container 75%" itemscope itemtype="http://schema.org/WebPage">
+          <div>
+            <ul class="post-list">
+              {% for post in collection %}
+                <li><article><i class="fa fa-fw fa-{{ post_icon }}"></i> <a href="{{ post.url }}">{{ post.title }} <span class="entry-date"><time datetime="{{ post.date | date(site.date_long) }}">{{ post.date | date("d M Y") }}</time></span></a></article></li>
+              {% endfor %}
+            </ul>
+          </div>
+          <div class="clearfix"></div>
+        </main>
+      </section>
+    {% endif %}
+  {% endblock %}
+{% endblock %}
+
+{% endembed %}

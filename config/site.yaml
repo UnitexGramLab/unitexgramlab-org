@@ -1,0 +1,243 @@
+title: 'Unitex/GramLab'                     # Name of the site
+
+author:
+  name: 'Cristian Martinez'                 # Default author name
+  email: 'me@martinec.org'                  # Default author email
+
+taxonomies: [category,tag,author]           # Arbitrary list of taxonomy types
+
+metadata:
+  'description': 'Unitex/GramLab is an open source, cross-platform, multilingual,lexicon- and grammar-based corpus processing suite'
+  'keywords': 'NLP, Corpus, Unitex, GramLab'
+  'twitter:card': 'summary'
+  'twitter:site': '@UnitexGramLab'
+  'og:site_name': 'Unitex/GramLab'
+  'og:url': 'http://unitexgramlab.org'
+  'og:title': 'Unitex/GramLab'
+  'og:description': 'Unitex/GramLab is an open source, cross-platform, multilingual,lexicon- and grammar-based corpus processing suite'
+  'og:image': 'http://graphics8.nytimes.com/images/2011/12/08/technology/bits-newtwitter/bits-newtwitter-tmagArticle.jpg'
+  'og:type' : 'website'
+
+summary:
+  enabled: true                             # enable or disable summary of page
+  format: short                             # long = summary delimiter will be ignored; short = use the first occurrence of delimiter or size
+  size: 140                                 # Maximum length of summary (characters)
+  delimiter: '==='                          # The summary delimiter
+
+redirects:
+#  /redirect-test: /                         # Redirect test goes to home page
+#  /old/(.*): /new/$1                        # Would redirect /old/my-page to /new/my-page
+
+routes:
+#  /something/else: '/blog/sample-3'         # Alias for /blog/sample-3
+#  /new/(.*): '/blog/$1'                     # Regex any /new/my-page URL to /blog/my-page Route
+
+blog:
+  route: '/blog'                            # Custom value added (accessible via system.blog.route)
+
+# Links
+# For external links add external: true
+links:
+  # Header navigation bar
+  navbar:
+  - url: '#more'
+    title:
+      en: 'More'
+      es: 'Más'
+
+# Quick Links
+# For external links add external: true
+quicklinks:
+  # Links to include at the bottom of the download section
+  download:
+    stable:
+      #- icon: inbox
+        #url:  '/changes'
+        #title:
+          #en: 'Change Log'
+          #es: 'Registro de cambios'
+      - icon: book
+        url:  'twig://{{config.unitex.stable.release_manual}}{{manlang}}.pdf'
+        external: true
+        atts:  'type="application/pdf"'
+        title:
+          en: 'User manual'
+          es: 'Manual'
+      - icon: life-ring
+        url: 'twig://{{config.unitex.stable.url_support}}'
+        title:
+          en: 'Support'
+          es: 'Soporte'
+      - icon: bug
+        url: '/how-to-report-a-bug'
+        title:
+          en: 'Report a bug'
+          es: 'Informar de un fallo'
+      - icon: cube
+        url: 'http://releases.unitexgramlab.org'
+        external: true
+        title:
+          en: 'All releases'
+          es: 'Más versiones'
+    devel:
+      #- icon: inbox
+        #url:  '/changes'
+        #title:
+          #en: 'Change Log'
+          #es: 'Registro de cambios'
+      - icon: code
+        url:  'http://localhost:9999/how-to-contribute#how-to-start'
+        title:
+          en: 'Build from sources'
+          es: 'Compilar fuentes'
+      - icon: book
+        url:  'twig://{{config.unitex.devel.release_manual}}{{manlang}}.pdf'
+        external: true
+        atts:  'type="application/pdf"'
+        title:
+          en: 'User manual'
+          es: 'Manual'
+      - icon: life-ring
+        url: 'twig://{{config.unitex.devel.url_support}}'
+        title:
+          en: 'Support'
+          es: 'Soporte'
+      - icon: bug
+        url: '/how-to-report-a-bug'
+        title:
+          en: 'Report a bug'
+          es: 'Informar de un fallo'
+      - icon: cube
+        url: 'http://releases.unitexgramlab.org'
+        external: true
+        title:
+          en: 'All releases'
+          es: 'Más versiones'
+  # Links to include at the left-bottom of the footer
+  footer:
+    about:
+      - url:  'https://getgrav.org'
+        external: true
+        title:
+          en: 'Built with Grav CMS'
+          es: 'Construido con Grav CMS'
+      - url:  '/humans.txt'
+        external: true
+        title:
+          en: 'Made by Humans'
+          es: 'Creado por Humanos'
+      - url: 'http://infolingu.univ-mlv.fr'
+        external: true
+        title:
+          en: 'Our NLP team'
+          es: 'Nuestro equipo NLP'
+
+# Iconlinks
+# For external links add external: true
+iconlinks:
+  # Footer links
+  footer:
+    - icon: home
+      url: ''
+      title:
+        en: 'Home'
+        es: 'Inicio'
+    - icon: quote-left
+      url: '/blog'
+      translations_fallback: true
+      title:
+        en: 'Blog'
+    - icon: users
+      url: 'twig://{{config.unitex.stable.url_support}}'
+      title:
+        en: 'Forum'
+        es: 'Foro'
+    - icon: book
+      url:  'twig://{{config.unitex.stable.release_manual}}{{manlang}}.pdf'
+      external: true
+      atts:  'type="application/pdf"'
+      title:
+        en: 'Manual'
+        es: 'Manual'
+    - icon: language
+      url:  '/language-resources?lang=en'
+      title:
+        en: 'Resources'
+    - icon: language
+      url:  '/language-resources?lang=es'
+      title:
+        es: 'Recursos'
+    - icon: bug
+      url: '/how-to-report-a-bug'
+      translations_fallback: true
+      title:
+        en: 'Bugs'
+    - icon: github
+      url: 'http://code.unitexgramlab.org'
+      external: true
+      title:
+        en: 'Sources'
+        es: 'Código'
+    - icon: code
+      url: '/how-to-contribute'
+      title:
+        en: 'Contribute'
+        es: 'Contribuye'
+    - icon: envelope-o
+      url: 'twig://{{config.unitex.stable.url_support}}'
+      title:
+        en: 'Contact'
+        es: 'Contactar'
+    - icon: newspaper-o
+      url: '/blog/news'
+      title:
+        en: 'News'
+        es: 'Noticias'
+    - icon: bullhorn
+      url: '/blog/announcements'
+      title:
+        en: 'Announces'
+        es: 'Anuncios'
+    - icon: book
+      url: '/related-publications'
+      title:
+        en: 'Publications'
+        es: 'Artículos'
+    - icon: graduation-cap
+      url: '/student-project-proposals'
+      title:
+        en: 'Projects'
+        es: 'Proyectos'
+    - icon: link
+      url: '/partners'
+      title:
+        en: 'Partners'
+        es: 'Socios'
+    - icon: cogs
+      url: '/who-uses-unitexgramlab'
+      title:
+        en: 'with Unitex'
+        es: 'con Unitex'
+
+  # Social networks
+  social:
+    - icon: github
+      url: 'https://github.com/UnitexGramLab'
+      title:
+        en: 'Fork us'
+        es: 'Crea un fork'
+    - icon: comments-o
+      url: 'http://forum.unitexgramlab.org'
+      title:
+        en: "User's forum"
+        es: 'Foro de usuarios'
+    - icon: user-plus
+      url: 'https://unitexgramlab.typeform.com/to/nLE4sb'
+      title:
+        en: 'Please let us know more about you'
+        es: 'Háganos saber más sobre usted'
+    - icon: feed
+      url: '/blog.rss'
+      title:
+        en: 'Blog RSS'
+        es: 'Blog RSS'

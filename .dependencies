@@ -1,0 +1,162 @@
+git:
+    anchors:
+        url: https://github.com/getgrav/grav-plugin-anchors
+        path: user/plugins/anchors
+        branch: develop
+    assets:
+        url: https://github.com/getgrav/grav-plugin-assets
+        path: user/plugins/assets
+        branch: develop
+    bibtexify:
+        url: https://github.com/martinec/grav-plugin-bibtexify
+        path: user/plugins/bibtexify
+        branch: develop
+    email:
+        url: https://github.com/getgrav/grav-plugin-email
+        path: user/plugins/email
+        branch: develop
+    error:
+        url: https://github.com/getgrav/grav-plugin-error
+        path: user/plugins/error
+        branch: develop
+    feed:
+        url: https://github.com/getgrav/grav-plugin-feed
+        path: user/plugins/feed
+        branch: develop
+    ganalytics:
+        url: https://github.com/escopecz/grav-ganalytics
+        path: user/plugins/ganalytics
+        branch: develop
+    httpfully:
+        url: https://github.com/martinec/grav-plugin-httpfully
+        path: user/plugins/httpfully
+        branch: develop
+    langswitcher:
+        url: https://github.com/getgrav/grav-plugin-langswitcher
+        path: user/plugins/langswitcher
+        branch: develop
+    markdown-notices:
+        url: https://github.com/getgrav/grav-plugin-markdown-notices
+        path: user/plugins/markdown-notices
+        branch: develop
+    pagination:
+        url: https://github.com/getgrav/grav-plugin-pagination
+        path: user/plugins/pagination
+        branch: develop
+    problems:
+        url: https://github.com/getgrav/grav-plugin-problems
+        path: user/plugins/problems
+        branch: develop
+    random:
+        url: https://github.com/getgrav/grav-plugin-random
+        path: user/plugins/random
+        branch: develop
+    simplesearch:
+        url: https://github.com/getgrav/grav-plugin-simplesearch
+        path: user/plugins/simplesearch
+        branch: develop
+    shortcode-core:
+        url: https://github.com/getgrav/grav-plugin-shortcode-core
+        path: user/plugins/shortcode-core
+        branch: develop
+    shortcode-ui:
+        url: https://github.com/getgrav/grav-plugin-shortcode-ui
+        path: user/plugins/shortcode-ui
+        branch: develop
+    simplesearch:
+        url: https://github.com/getgrav/grav-plugin-simplesearch
+        path: user/plugins/simplesearch
+        branch: develop
+    sitemap:
+        url: https://github.com/getgrav/grav-plugin-sitemap
+        path: user/plugins/sitemap
+        branch: develop
+    twigfeeds:
+        url: https://github.com/olevik/grav-plugin-twigfeeds
+        path: user/plugins/twigfeeds
+        branch: develop
+    unitexgramlab:
+        url: https://github.com/UnitexGramLab/unitexgramlab-org
+        path: user/themes/unitexgramlab
+        branch: master
+links:
+    anchors:
+        src: grav-plugin-anchors
+        path: user/plugins/anchors
+        scm: github
+    assets:
+        src: grav-plugin-assets
+        path: user/plugins/assets
+        scm: github
+    bibtexify:
+        src: grav-plugin-bibtexify
+        path: user/plugins/bibtexify
+        scm: github
+    email:
+        src: grav-plugin-email
+        path: user/plugins/email
+        scm: github
+    error:
+        src: grav-plugin-error
+        path: user/plugins/error
+        scm: github
+    feed:
+        src: grav-plugin-feed
+        path: user/plugins/feed
+        scm: github
+    ganalytics:
+        src: grav-ganalytics
+        path: user/plugins/ganalytics
+        scm: github
+    httpfully:
+        src: grav-plugin-httpfully
+        path: user/plugins/httpfully
+        scm: github
+    langswitcher:
+        src: grav-plugin-langswitcher
+        path: user/plugins/langswitcher
+        scm: github
+    markdown-notices:
+        src: grav-plugin-markdown-notices
+        path: user/plugins/markdown-notices
+        scm: github
+    pagination:
+        src: grav-plugin-pagination
+        path: user/plugins/pagination
+        scm: github
+    problems:
+        src: grav-plugin-problems
+        path: user/plugins/problems
+        scm: github
+    random:
+        src: grav-plugin-random
+        path: user/plugins/random
+        scm: github
+    simplesearch:
+        src: grav-plugin-simplesearch
+        path: user/plugins/simplesearch
+        scm: github
+    shortcode-core:
+        src: grav-plugin-shortcode-core
+        path: user/plugins/shortcode-core
+        scm: github
+    shortcode-ui:
+        src: grav-plugin-shortcode-ui
+        path: user/plugins/shortcode-ui
+        scm: github
+    simplesearch:
+        src: grav-plugin-simplesearch
+        path: user/plugins/simplesearch
+        scm: github
+    sitemap:
+        src: grav-plugin-sitemap
+        path: user/plugins/sitemap
+        scm: github
+    twigfeeds:
+        src: grav-plugin-twigfeeds
+        path: user/plugins/twigfeeds
+        scm: github
+    unitexgramlab:
+        src: unitexgramlab-org
+        path: user/themes/unitexgramlab
+        branch: master

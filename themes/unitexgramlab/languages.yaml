@@ -1,0 +1,129 @@
+# English
+# Cristian Martinez (martinec)
+en:
+# tags
+    TAG_WIN: 'Windows'
+    TAG_LINUX: 'Linux'
+    TAG_OSX: 'OS X'
+    TAG_OTHER: 'Other'
+    TAG_DOWNLOAD: 'Download'
+    TAG_32BIT: '32-bit'
+    TAG_64BIT: '64-bit'
+# messages
+    MSG_DOWNLOAD: 'Download %s'
+    MSG_DOWNLOAD_VERSION: 'Download Unitex/GramLab %s'
+    MSG_DOWNLOAD_VERSION_FOR_OS: 'Download Unitex/GramLab %s for %s'
+    MSG_DOWNLOAD_VERSION_FOR_OTHER: 'Download Unitex/GramLab %s for other platforms'
+    MSG_DOWNLOAD_VERSION_FOR_ARCH_OS: 'Download Unitex/GramLab %s for %s %s'
+    MSG_HELP_TRANSLATE: 'Help us translating'
+    MSG_READ_MORE: 'Read More'
+# mod_ home
+    HOME_TITLE: 'Unitex/GramLab'
+    HOME_FEATURES: [Open Source,Cross-platform,Multilingual,Lexicon-based,Grammar-based]
+    HOME_DESCRIPTION: '%s Corpus Processing Suite'
+    HOME_OTHER_PLATFORMS: 'Available also for %s'
+    HOME_BTN_DOWNLOAD_FOR: 'Download for %s'
+    HOME_BTN_DOWNLOAD_SOURCES : 'Download Sources'
+    HOME_BTN_LEARN: 'Learn More'
+# mod_ highlights
+    HIGHLIGHT_OUTDATED: 'You are using an <strong>outdated</strong> browser. Please <a target="_blank" href="http://browsehappy.com/">upgrade your browser</a> to improve your experience'
+    HIGHLIGHT_JSDISABLED: 'We recommend you enable JavaScript to take full advantage of this website'
+# mod_ download
+    DOWNLOAD_HEADER: 'Download Unitex/GramLab'
+    DOWNLOAD_STABLE: 'Stable'
+    DOWNLOAD_DEVEL: 'Devel'
+    DOWNLOAD_GET_STABLE: 'Get the latest stable version'
+    DOWNLOAD_GET_DEVEL: 'Get the most recent development version'
+    DOWNLOAD_AVALAIBLE_STABLE: 'is already available'
+    DOWNLOAD_AVALAIBLE_DEVEL: 'is currently under active development'
+    DOWNLOAD_BTN: 'Download'
+    DOWNLOAD_BTN_SETUP: 'Setup Installer'
+    DOWNLOAD_BTN_SOURCE: 'Source Distribution'
+    DOWNLOAD_BTN_MANUAL: 'User Manual'
+    DOWNLOAD_BTN_RELEASES: 'All Releases'
+    DOWNLOAD_WIN_STABLE: 'Unitex/GramLab %s for Windows. Supports Windows XP, Vista, 7, 8 and 10. Installer packages are available for download both for <a title="%s" href="%s">%s</a> and <a title="%s" href="%s">%s</a> platforms'
+    DOWNLOAD_WIN_DEVEL: 'Unitex/GramLab %s for Windows. Supports Windows XP, Vista, 7, 8 and 10. Installer packages are available for download both for <a title="%s" href="%s">%s</a> and <a title="%s" href="%s">%s</a> platforms'
+    DOWNLOAD_LINUX_STABLE: 'Unitex/GramLab %s for Linux. Installer packages are available for download both for <a title="%s" href="%s">%s</a> and <a title="%s" href="%s">%s</a> platforms'
+    DOWNLOAD_LINUX_DEVEL: 'Unitex/GramLab %s for Linux. Installer packages are available for download both for <a title="%s" href="%s">%s</a> and <a title="%s" href="%s">%s</a> platforms'
+    DOWNLOAD_OSX_STABLE: 'Unitex/GramLab %s for Mac OS X. Supports OS X 10.7 (Lion), 10.8 (Mountain Lion), 10.9 (Mavericks), 10.10 (Yosemite), 10.11 (El Capitan) and 10.12 (Sierra)'
+    DOWNLOAD_OSX_DEVEL: 'Unitex/GramLab %s for Mac OS X. Supports OS X 10.7 (Lion), 10.8 (Mountain Lion), 10.9 (Mavericks), 10.10 (Yosemite), 10.11 (El Capitan) and 10.12 (Sierra)'
+    DOWNLOAD_OTHER_STABLE: 'Unitex/GramLab %s for other platforms comes with the sources necessary to compile this release'
+    DOWNLOAD_OTHER_DEVEL: 'Unitex/GramLab %s for other platforms comes with the sources necessary to compile this release'
+# mod_ install
+    INSTALL_INSTRUCTIONS_CAPTION_VERSION_SOURCE: 'Installing Unitex/GramLab %s using the source distribution'
+    INSTALL_INSTRUCTIONS_CAPTION_VERSION_OS: 'Installing Unitex/GramLab %s on %s'
+# part_ more
+    MORE_RECENT_POSTS: 'Recent Posts'
+    MORE_RECENT_DISCUSSIONS: 'Recent Discussions'
+# part_ footer
+    FOOTER_COPYRIGHT: 'The Unitex/GramLab authors'
+    FOOTER_THEME_ABOUT: '<a href="%s" target="_blank" title="%s Theme">%s Theme <small>v%s</small></a>'
+    FOOTER_THEME_BUGS: 'Report a bug on this site'
+    FOOTER_THEME_BACKTOTOP: 'Bring me to heaven'
+# Error
+    ERROR_TYPE: 'Error'
+
+# Spanish
+# Cristian Martinez (martinec)
+es:
+# tags
+    TAG_WIN: 'Windows'
+    TAG_LINUX: 'Linux'
+    TAG_OSX: 'OS X'
+    TAG_OTHER: 'Otros'
+    TAG_DOWNLOAD: 'Descargar'
+    TAG_32BIT: '32 bits'
+    TAG_64BIT: '64 bits'
+# messages
+    MSG_DOWNLOAD: 'Descargar %s'
+    MSG_DOWNLOAD_VERSION: 'Descargar Unitex/GramLab %s'
+    MSG_DOWNLOAD_VERSION_FOR_OS: 'Descargar Unitex/GramLab %s para %s'
+    MSG_DOWNLOAD_VERSION_FOR_OTHER: 'Descargar Unitex/GramLab %s para otros sistemas'
+    MSG_DOWNLOAD_VERSION_FOR_ARCH_OS: 'Descargar Unitex/GramLab %s para %s %s'
+    MSG_HELP_TRANSLATE: 'Ayúdanos a traducir'
+    MSG_READ_MORE: 'Leer Más'
+# mod_ home
+    HOME_TITLE: 'Unitex/GramLab'
+    HOME_FEATURES: [Libre,Multiplataforma,Plurilingüe,basada en Léxicos,basada en Gramáticas]
+    HOME_DESCRIPTION: 'Suite %s para el Procesamiento de Corpus Textuales'
+    HOME_OTHER_PLATFORMS: 'También disponible para %s'
+    HOME_BTN_DOWNLOAD_FOR: 'Descargar para %s'
+    HOME_BTN_DOWNLOAD_SOURCES : 'Descargar código fuente'
+    HOME_BTN_LEARN: 'Aprender más'
+# mod_ highlights
+    HIGHLIGHT_OUTDATED: 'Está utilizando un navegador strong>obsoleto</strong>.Le recomendamos que <a target="_blank" href="http://browsehappy.com/">actualice el navegador</a> para mejorar su experiencia en este sitio web'
+    HIGHLIGHT_JSDISABLED: 'Le recomendamos habilitar JavaScript para aprovechar al máximo de este sitio web'
+# mod_ download
+    DOWNLOAD_HEADER: 'Descargar Unitex/GramLab'
+    DOWNLOAD_STABLE: 'Estable'
+    DOWNLOAD_DEVEL: 'en Desarrollo'
+    DOWNLOAD_GET_STABLE: 'Obtenga la última versión estable'
+    DOWNLOAD_GET_DEVEL: 'Obtenga la versión de desarrollo más reciente'
+    DOWNLOAD_AVALAIBLE_STABLE: 'ya está disponible'
+    DOWNLOAD_AVALAIBLE_DEVEL: 'está actualmente en desarrollo activo'
+    DOWNLOAD_BTN: 'Descargar'
+    DOWNLOAD_BTN_SETUP: 'Instalador'
+    DOWNLOAD_BTN_SOURCE: 'Código Fuente'
+    DOWNLOAD_BTN_MANUAL: 'Manual de usuario'
+    DOWNLOAD_BTN_RELEASES: 'Todos los lanzamientos'
+    DOWNLOAD_WIN_STABLE: 'Unitex/GramLab %s para Windows. Soporta Windows XP, Vista, 7, 8 and 10. Los paquetes de instalación están disponibles para sistemas de <a title="%s" href="%s">%s</a> y <a title="%s" href="%s">%s</a>'
+    DOWNLOAD_WIN_DEVEL: 'Unitex/GramLab %s para Windows. Soporta Windows XP, Vista, 7, 8 and 10. Los paquetes de instalación están disponibles para sistemas de <a title="%s" href="%s">%s</a> y <a title="%s" href="%s">%s</a>'
+    DOWNLOAD_LINUX_STABLE: 'Unitex/GramLab %s para Linux. Los paquetes de instalación están disponibles para sistemas de <a title="%s" href="%s">%s</a> y <a title="%s" href="%s">%s</a>'
+    DOWNLOAD_LINUX_DEVEL: 'Unitex/GramLab %s para Linux. Los paquetes de instalación están disponibles para <a title="%s" href="%s">%s</a> y <a title="%s" href="%s">%s</a>'
+    DOWNLOAD_OSX_STABLE: 'Unitex/GramLab %s para Mac OS X. Soporta OS X 10.7 (Lion), 10.8 (Mountain Lion), 10.9 (Mavericks), 10.10 (Yosemite), 10.11 (El Capitan) y 10.12 (Sierra)'
+    DOWNLOAD_OSX_DEVEL: 'Unitex/GramLab %s para Mac OS X. Soporta OS X 10.7 (Lion), 10.8 (Mountain Lion), 10.9 (Mavericks), 10.10 (Yosemite), 10.11 (El Capitan) y 10.12 (Sierra)'
+    DOWNLOAD_OTHER_STABLE: 'Unitex/GramLab %s para otros sistemas viene con los archivos necesarias para compilar esta versión'
+    DOWNLOAD_OTHER_DEVEL: 'Unitex/GramLab %s para otros sistemas viene con los archivos necesarias para compilar esta versión'
+# mod_ install
+    INSTALL_INSTRUCTIONS_CAPTION_VERSION_SOURCE: 'Instalar Unitex/GramLab %s utilizando el código fuente'
+    INSTALL_INSTRUCTIONS_CAPTION_VERSION_OS: 'Instalar Unitex/GramLab %s en %s'
+# part_ more
+    MORE_RECENT_POSTS: 'Entradas recientes'
+    MORE_RECENT_DISCUSSIONS: 'Discusiones recientes'
+# part_ footer
+    FOOTER_COPYRIGHT: 'Los autores de Unitex/GramLab'
+    FOOTER_THEME_ABOUT: '<a href="%s" target="_blank" title="%s Theme">%s <small>v%s</small></a>'
+    FOOTER_THEME_BUGS: 'Informar de un error en este sitio'
+    FOOTER_THEME_BACKTOTOP: 'Llévame al cielo'
+# Error
+    ERROR_TYPE: 'Error'

@@ -1,0 +1,18 @@
+<section id="screenshots" class="wrapper style3">
+  <div class="container">
+    <div class="content">
+      <div class="row uniform">
+        <div class="12u$(xxsmall) 12u$(xsmall) -2u 8u$">
+         <div class="screenshots-carousel">
+          {% set images = page.header.images %}
+          {% for image in images %}
+           <div>
+              <h3>{{ image.title }}</h3><span class="image fit"><img src="user/themes/unitexgramlab/images/{{ image.name }}" alt="{{ image.title }}"></span>
+           </div> 
+          {% endfor %}
+         </div>        
+        </div>
+      </div>       
+    </div>
+  </div>
+</section>

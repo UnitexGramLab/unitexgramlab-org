@@ -1,0 +1,93 @@
+@import '../libs/vars';
+@import '../libs/functions';
+@import '../libs/mixins';
+
+///
+/// Fractal by HTML5 UP
+/// html5up.net | @n33co
+/// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+///
+
+/* Icon */
+
+	.icon {
+		@include icon;
+		border-bottom: none;
+		position: relative;
+    outline: none;
+
+		> .label {
+			display: none;
+		}
+
+    &.icon-button {
+      width: 7.5em;
+      height: 7.5em;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 7em;
+      vertical-align: middle;
+      text-decoration:none;
+      @include vendor('transition', ('opacity #{_duration(transition)} 0s', 'visibility 0s #{_duration(transition)}'));
+/*
+      opacity: 0.8;
+*/
+      overflow:hidden;
+    
+      &:before {
+        font-size: 4rem;
+      }
+
+      &:hover,
+      &:focus,
+      &:active,
+      &.selected {
+        @include vendor('transition', ('opacity #{_duration(transition)} 0s', 'visibility 0s'));
+      }
+
+      &.selected {
+/*
+        opacity: 0.9;
+*/
+      }
+      
+      &:hover,
+      &:focus,
+      &:active {
+/*
+        opacity: 1;
+*/
+      }
+    }
+
+    &.icon-button {
+      cursor: pointer;
+    }   
+	}
+
+	@mixin color-icon($p: null) {
+		.icon {
+			color: _palette($p, fg-light);
+
+      &.icon-button {
+        color: darken(_palette($p, bg),20);
+
+        border: 2x solid _palette($p, border);
+        box-shadow: 0 0 2px _palette($p, border);        
+
+        
+        &.selected {
+          color: #434D60;
+          background: transparent linear-gradient(#fefefe, #cfdcec) repeat scroll 0% 0%;
+          &:hover,
+          &:focus,
+          &:active {
+            color: darken(#434D60,10);
+            background: transparent linear-gradient(#fefefe, #cfdcec) repeat scroll 0% 0%;
+          }          
+        }
+      }      
+		}
+	}
+
+	@include color-icon;

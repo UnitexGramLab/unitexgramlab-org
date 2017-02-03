@@ -1,0 +1,98 @@
+{% macro menu_item(page) %}
+  {% set current_page = page.active() ? 'active' : '' %}
+  <li data-nav-id="{{ page.route }}"{% if current_page %} class="{{ current_page }}"{% endif %}>
+      <a href="{{ page.url }}">
+          <i class="fa fa-fa-fw fa-{{ page.header.menu_icon }}"></i>
+          <span>{{ page.menu }}</span>
+      </a>
+  </li>
+{% endmacro %}
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header page-scroll">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+          </button>
+      </div>
+      <div class="collapse navbar-collapse" id="main-navbar-collapse">
+          <ul class="nav navbar-nav navbar-left">              
+              <li class="hidden"></li>
+              {% if show_home_menu %}
+                <li><a href="{{ base_url_absolute }}"><i class="fa fa-1x fa-fw fa-home"></i>{{site.title}}</a></li>
+              {% endif %}                
+              {% for link in page.header.navbar.left %}
+                  {% if link.url | contains('http') %}
+                      {% set domain = '' %}
+                  {% elseif link.url | contains('#') %}
+                      {% set domain = '' %}
+                  {% else %}
+                     {% set domain = base_url_absolute %}
+                  {% endif %}
+                  {% set current_url  = domain~link.url %}
+                  {% set current_page = (link.url == page.url) ? 'active' : '' %}
+                  <li{% if current_page %} class="{{ current_page }}"{% endif %}><a href="{{ current_url }}" {% if link.url | contains('http') or link.external %}target="_blank"{% endif %}>{% if link.icon %}<i class="fa fa-1x fa-fw fa-{{ link.icon }}"></i> {% endif %}{{ link.title }}</a></li>
+              {% endfor %}              
+              {% if show_onpage_menu %}
+                {% for module in page.collection() %}
+                    {% set current_menu_visible = module.header.menu_visible == true or module.header.menu_visible is null %}
+                    {% if current_menu_visible == true %}
+                      <li><a class="page-scroll" href="#{{ module.menu | lower | replace({' ':'_'}) }}">{{ module.title }}</a></li>
+                    {% endif %}
+                {% endfor %}
+              {% endif %}
+              {% if show_folder_menu %}
+                {% set proot = page.find('/blog') %}
+                {{ _self.menu_item(proot) }}
+                {% for p in proot.children %}
+                    {% if p.visible %}
+                      {{ _self.menu_item(p) }}
+                    {% endif %}
+                {% endfor %}
+              {% endif %}
+              {% if show_site_menu %}
+                {% for link in site.links.navbar %}
+                    {% if link.url | contains('http') %}
+                        {% set domain = '' %}
+                    {% elseif link.url | contains('#') %}
+                        {% set domain = '' %}
+                    {% else %}
+                       {% set domain = base_url_absolute %}
+                    {% endif %}
+                    {% if link.title[langswitcher.current] %}
+                      <li><a class="page-scroll" href="{{ domain }}{{ link.url }}" {% if link.url | contains('http') or link.external %}target="_blank"{% endif %}>{{ link.title[langswitcher.current] }}</a></li>
+                    {% endif %}
+                {% endfor %}
+              {% endif %}
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            {% for link in page.header.navbar.right %}
+                {% if link.url | contains('http') %}
+                    {% set domain = '' %}
+                {% elseif link.url | contains('#') %}
+                    {% set domain = '' %}
+                {% else %}
+                   {% set domain = base_url_absolute %}
+                {% endif %}
+                {% set current_url  = domain~link.url %}
+                {% set current_page = (link.url == page.url) ? 'active' : '' %}
+                <li{% if current_page %} class="{{ current_page }}"{% endif %}><a href="{{ current_url }}" {% if link.url | contains('http') or link.external %}target="_blank"{% endif %}>{% if link.icon %}<i class="fa fa-1x fa-fw fa-{{ link.icon }}"></i> {% endif %}{{ link.title }}</a></li>
+            {% endfor %}
+            {% if page.header.feed %}
+              <li><a href="{{ page.url }}.rss"><i class="fa fa-fw fa-feed feed"></i></a></li>
+            {% elseif page.parent and page.parent.header.feed %}
+              <li><a href="{{ page.parent.url }}.rss"><i class="fa fa-fw fa-feed feed"></i></a></li>
+            {% endif %}            
+            {% if show_langswitcher %}
+              <li>{% include 'partials/langswitcher.html.twig' %}</li>
+            {% endif %}
+            {% if show_searchbar %}
+              <li>{% include 'partials/search-bar.html.twig' %}</li>
+            {% endif %}
+          </ul>
+      </div>
+  </div>
+</nav>

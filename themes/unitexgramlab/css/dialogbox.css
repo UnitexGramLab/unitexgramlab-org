@@ -1,0 +1,105 @@
+.dialogbox-container {
+  height: 100%;
+  width: 100%;
+  background:#fff;
+}
+
+.dialogbox-content {
+  position:relative;
+  margin: auto;
+  width: 100%;
+  height: 100%;  
+}
+
+.dialogbox-content p {
+  margin: 0em 0.5em 0.5em 0.5em;
+}
+
+.dialogbox-content .dialogbox-title {
+  margin:0 0 .5em;
+}
+
+.dialogbox-content .dialogbox-header {
+  position: relative;
+  text-align: left;
+  padding: 1px 1em 0.5em 1.5em;
+  border-bottom: 1px solid #e5e5e5;
+  z-index: 3;
+  width: 100%;
+  margin-bottom: 0px;
+}
+
+.dialogbox-content .dialogbox-body {
+  position: relative;
+  padding: 0px 2em 0 1em;
+  margin-top: 0.5em;
+  z-index: 2;
+  width: 100%;
+}
+
+/* Overthrow
+ * https://github.com/filamentgroup/Overthrow
+ * */
+.overthrow-enabled .dialogbox-body {
+  height: 26em;
+}
+
+.dialogbox-content .dialogbox-close {
+  outline:none;
+  cursor:pointer;
+	float: right;
+	font-size: 2.5em;
+	font-weight: bold;
+	z-index: 2;
+  line-height: 0.8;
+}
+
+.dialogbox-content .dialogbox-footer {
+  padding: 0.5em 1em 0.5em 1em;
+  margin-top: 1.5em;
+  border-top: 1px solid #e5e5e5;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  min-height: 3em;
+  z-index: 3;
+  font-size: 80%;
+  color: #808080;
+  background-color: #fff;
+}
+
+.dialogbox-content > pre {
+  margin: 0px;
+}
+
+.dialogbox-content {
+  text-align: justify;
+  position:relative;
+}
+
+.dialogbox-content:before {
+  position: absolute;
+  content: attr(data-icon);
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 23em;
+  color: #f2f2f2;
+  line-height: 1;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+@media (max-width:767px) {
+  .dialogbox-content:before {
+    font-size: 15em;
+  }
+  .overthrow-enabled .dialogbox-body {
+    height: 100%;
+    margin-left: 0; 
+  }
+ .dialogbox-content .dialogbox-close {
+    font-size: 2em;
+  }  
+}
