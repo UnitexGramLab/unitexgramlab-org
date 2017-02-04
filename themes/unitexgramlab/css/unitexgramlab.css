@@ -5506,7 +5506,7 @@ table.alt tbody tr td {
 .banner.blog, .banner.category {
   height: 90vh;
   min-height: 23em;
-  padding: 8em 0 6em 0 ;
+  padding: 8em 0 8em 0;
 }
 .banner h1 {
   display: block;
@@ -5673,7 +5673,7 @@ table.alt tbody tr td {
 }
 @media screen and (max-width: 480px) and (orientation: portrait) {
   .banner {
-    padding: 7em 1em 5em 1em ;
+    padding: 8em 1em 7em 1em;
   }
 }
 

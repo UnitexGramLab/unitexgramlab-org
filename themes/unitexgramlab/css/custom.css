@@ -296,6 +296,7 @@ nav.pagination .older-posts .fa {
   color: #fff;
   padding-bottom: 0px;
   border-bottom: 1px solid #e3e5e6;
+  min-height: 11vh;
 }
 
 .blog-tags .navbar-nav {
@@ -326,6 +327,13 @@ nav.pagination .older-posts .fa {
   pointer-events: none;
   cursor: default;
   opacity: 0.25;
+}
+
+@media only screen and (max-width: 480px) {
+  .blog-tags .navbar-nav > li > a {
+      padding-right: 1px;
+      padding-left: 1px;
+  }
 }
 
 .summer-post-content {

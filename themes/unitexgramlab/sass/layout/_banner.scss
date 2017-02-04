@@ -29,7 +29,7 @@
     &.category {
   		height: 90vh;
       min-height: 23em;
-      @include padding(8em, 0);
+      padding: 8em 0 8em 0;
     }
   
 		h1 {
@@ -207,7 +207,8 @@
 
       // Portrait.
       @include orientation(portrait) {
-        @include padding(7em, 1em);
+        ///@include padding(7em, 1em);
+        padding: 8em 1em 7em 1em;
       }
 
     }
