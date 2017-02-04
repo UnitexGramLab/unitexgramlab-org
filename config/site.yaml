@@ -8,7 +8,7 @@ taxonomies: [category,tag,author]           # Arbitrary list of taxonomy types
 
 metadata:
   'description': 'Unitex/GramLab is an open source, cross-platform, multilingual,lexicon- and grammar-based corpus processing suite'
-  'keywords': 'NLP, Corpus, Unitex, GramLab'
+  'keywords': 'Natural Language Processing, NLP, Corpus, Unitex, GramLab'
   'twitter:card': 'summary'
   'twitter:site': '@UnitexGramLab'
   'og:site_name': 'Unitex/GramLab'
