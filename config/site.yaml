@@ -1,8 +1,8 @@
 title: 'Unitex/GramLab'                     # Name of the site
 
 author:
-  name: 'Cristian Martinez'                 # Default author name
-  email: 'me@martinec.org'                  # Default author email
+  name:  'Unitex/GramLab'                   # Default author name
+  email: 'webmaster@unitexgramlab.org'      # Default author email
 
 taxonomies: [category,tag,author]           # Arbitrary list of taxonomy types
 
