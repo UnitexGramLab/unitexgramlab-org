@@ -1,4 +1,4 @@
-# Unitex/GramLab website
+# Unitex/GramLab website  [![Code Climate](https://codeclimate.com/github/UnitexGramLab/unitexgramlab-org/badges/gpa.svg)](https://codeclimate.com/github/UnitexGramLab/unitexgramlab-org)
 
 > [Unitex/GramLab][unitex] is an open source, cross-platform, multilingual, lexicon- and grammar-based corpus processing suite
 
