@@ -190,8 +190,21 @@
    * using jquery.matchHeight.js
    */
    $('.download-description').matchHeight();
-   
-   
+
+  /*
+   * Launch survey on lightbox
+   */
+  $("a#survey").fancybox({
+    'width'				  : '90%',
+    'height'			  : '90%',
+    'autoScale'     : false,
+    'transitionIn'	: 'none',
+    'transitionOut' : 'none',
+    'type'				  : 'iframe',
+    'closeBtn'      : false,
+    'padding'       : 0,
+  });   
+      
   $(window).on('load', function() {
     window.setTimeout(function() { 
     console.log([

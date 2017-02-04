@@ -232,6 +232,7 @@ iconlinks:
         en: "User's forum"
         es: 'Foro de usuarios'
     - icon: user-plus
+      id:  'survey'
       url: 'https://unitexgramlab.typeform.com/to/nLE4sb'
       title:
         en: 'Please let us know more about you'

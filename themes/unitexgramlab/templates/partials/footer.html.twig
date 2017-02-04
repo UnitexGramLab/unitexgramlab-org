@@ -42,7 +42,7 @@
                    {% set domain = base_url %}
                 {% endif %}
                 {% if link.icon %}
-                  <li{% if link.title[curlang] %} aria-label="{{ link.title[curlang] }}" class="tooltip tooltip-nw"{% endif %}><a href="{{ domain }}{{ link.url }}" {% if link.url | contains('http') or link.external %}target="_blank"{% endif %} itemprop="sameAs"><i class="icon-rounded fa fa-1x fa-fw fa-{{ link.icon }}"></i></a></li>
+                  <li{% if link.title[curlang] %} aria-label="{{ link.title[curlang] }}" class="tooltip tooltip-nw"{% endif %}><a{% if link.id %} id="{{ link.id }}"{% endif %} href="{{ domain }}{{ link.url }}" {% if link.url | contains('http') or link.external %}target="_blank"{% endif %} itemprop="sameAs"><i class="icon-rounded fa fa-1x fa-fw fa-{{ link.icon }}"></i></a></li>
                 {% endif %}
             {% endfor %}
             </ul>
