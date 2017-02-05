@@ -21,6 +21,6 @@ content:
     limit: 10
 
 feed:
-    description: 'Unitex/GramLab Featured Posts'
+    description: 'Featured Posts'
     limit: 10       
 ---

@@ -21,6 +21,6 @@ content:
     limit: 10
 
 feed:
-    description: 'Unitex/GramLab News'
+    description: 'News'
     limit: 10       
 ---

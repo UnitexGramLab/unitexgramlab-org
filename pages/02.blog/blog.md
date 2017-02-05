@@ -22,7 +22,7 @@ content:
     pagination: true
 
 feed:
-    description: 'Unitex/GramLab Latest Posts'
+    description: 'Latest Posts'
     limit: 10
 
 pagination: true

@@ -17,6 +17,7 @@ en:
     MSG_DOWNLOAD_VERSION_FOR_ARCH_OS: 'Download Unitex/GramLab %s for %s %s'
     MSG_HELP_TRANSLATE: 'Help us translating'
     MSG_READ_MORE: 'Read More'
+    MSG_SUBSCRIBE_TO: 'Subscribe to the %s feed'
 # mod_ home
     HOME_TITLE: 'Unitex/GramLab'
     HOME_FEATURES: [Open Source,Cross-platform,Multilingual,Lexicon-based,Grammar-based]
@@ -82,6 +83,7 @@ es:
     MSG_DOWNLOAD_VERSION_FOR_ARCH_OS: 'Descargar Unitex/GramLab %s para %s %s'
     MSG_HELP_TRANSLATE: 'Ayúdanos a traducir'
     MSG_READ_MORE: 'Leer Más'
+    MSG_SUBSCRIBE_TO: 'Subscribite al flujo de %s'
 # mod_ home
     HOME_TITLE: 'Unitex/GramLab'
     HOME_FEATURES: [Libre,Multiplataforma,Plurilingüe,basada en Léxicos,basada en Gramáticas]

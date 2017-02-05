@@ -1,4 +1,6 @@
 title: 'Unitex/GramLab'                     # Name of the site
+url: 'http://unitexgramlab.org'             # URL of the site
+logo: 'user/logo.png'                       # Logo of the site
 
 author:
   name:  'Unitex/GramLab'                   # Default author name

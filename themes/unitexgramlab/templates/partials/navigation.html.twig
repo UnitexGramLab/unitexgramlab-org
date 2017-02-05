@@ -82,9 +82,9 @@
                 <li{% if current_page %} class="{{ current_page }}"{% endif %}><a href="{{ current_url }}" {% if link.url | contains('http') or link.external %}target="_blank"{% endif %}>{% if link.icon %}<i class="fa fa-1x fa-fw fa-{{ link.icon }}"></i> {% endif %}{{ link.title }}</a></li>
             {% endfor %}
             {% if page.header.feed %}
-              <li><a href="{{ page.url }}.atom"><i class="fa fa-fw fa-feed feed"></i></a></li>
+              <li><a rel="alternate" type="application/atom+xml" title="{{ 'MSG_SUBSCRIBE_TO'|t(page.title|lower) }}" href="{{ page.url }}.atom"><i class="fa fa-fw fa-feed feed"></i></a></li>
             {% elseif page.parent and page.parent.header.feed %}
-              <li><a href="{{ page.parent.url }}.atom"><i class="fa fa-fw fa-feed feed"></i></a></li>
+              <li><a rel="alternate" type="application/atom+xml" title="{{ 'MSG_SUBSCRIBE_TO'|t(page.parent.title|lower) }}" href="{{ page.parent.url }}.atom"><i class="fa fa-fw fa-feed feed"></i></a></li>
             {% endif %}            
             {% if show_langswitcher %}
               <li>{% include 'partials/langswitcher.html.twig' %}</li>
