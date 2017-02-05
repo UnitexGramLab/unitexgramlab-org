@@ -88,7 +88,7 @@ quicklinks:
           #en: 'Change Log'
           #es: 'Registro de cambios'
       - icon: code
-        url:  'http://localhost:9999/how-to-contribute#how-to-start'
+        url:  '/how-to-contribute#how-to-start'
         title:
           en: 'Build from sources'
           es: 'Compilar fuentes'
