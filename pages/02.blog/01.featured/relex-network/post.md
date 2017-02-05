@@ -70,4 +70,4 @@ A lexicon of 25,000 elementary sentences with at least one frozen argument is al
 
 # Resources distributed with Unitex/GramLab
 
-The information related to the resources distributed with Unitex/GramLab is available [here](../language-resources).
+The information related to the resources distributed with Unitex/GramLab is now available [here](../language-resources).
