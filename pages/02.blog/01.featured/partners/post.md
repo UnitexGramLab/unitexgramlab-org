@@ -15,6 +15,10 @@ routes:
   default: '/partners'    
 ---
 
+Unitex/GramLab grows with the help of many people. Below is the list of our partners and sponsors:
+
+===
+
 # Language Resources
 
 Unitex/GramLab [Language Resources](/language-resources) are mainly built
