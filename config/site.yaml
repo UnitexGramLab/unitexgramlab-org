@@ -140,7 +140,7 @@ iconlinks:
   # Footer links
   footer:
     - icon: home
-      url: ''
+      url: '/'
       title:
         en: 'Home'
         es: 'Inicio'
