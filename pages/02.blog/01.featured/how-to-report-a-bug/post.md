@@ -56,7 +56,8 @@ To report an issue, please observe the following steps:
 
 
     ```
-    Detailed description goes here.
+    A detailed summary of the issue goes here. If suitable, include the steps required to reproduce the problem.
+    
     
     **What steps will reproduce the problem?**
 
@@ -71,9 +72,12 @@ To report an issue, please observe the following steps:
 
 
     **More info**
-    - Version:
+    
+    Any other information you want to share that is relevant to the issue being reported. For example:
+    
+    - Did this work before?: yes[] no[]
     - Forum thread:
-    - Log file:
+    - Log (.ulp) file:
 
     ```
     
