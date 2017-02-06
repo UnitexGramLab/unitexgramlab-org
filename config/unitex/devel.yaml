@@ -13,7 +13,7 @@ url_releases: 'http://releases.unitexgramlab.org'
 url_vinber: 'http://unitex.univ-mlv.fr/v6'
 url_vinber_info: 'http://unitex.univ-mlv.fr/v6/#bundle=nightly&q=latest-deployed&line=1'
 url_version_json: 'http://unitex.univ-mlv.fr/v6/badge/nightly/latest-deployed.json?subject=build.started&status=product.version.string'
-url_support: 'mailto://unitex-devel@univ-mlv.fr'
+url_support: 'mailto:unitex-devel@univ-mlv.fr'
 # --------------------------------------------------------------
 release_file: "Unitex-GramLab-3.2alpha{suffix}"
 release_link: "http://releases.unitexgramlab.org/3.2alpha/{arch}/Unitex-GramLab-3.2alpha{suffix}"
