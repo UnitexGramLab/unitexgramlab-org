@@ -17,9 +17,6 @@
         <item>
             <title>{{ item.title|e }}</title>
             <link>{{ site.url }}{{ item.route() }}</link>
-            {% if  item.taxonomy.author|first %}
-            <author>{{ item.taxonomy.author|first }}</author>
-            {% endif %}
             <description>
                 <![CDATA[
                 {% if banner %}
