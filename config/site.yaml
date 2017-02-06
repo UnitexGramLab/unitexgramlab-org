@@ -17,7 +17,7 @@ metadata:
   'og:url': 'http://unitexgramlab.org'
   'og:title': 'Unitex/GramLab'
   'og:description': 'Open Source Corpus Processing Suite'
-  'og:image': 'https://raw.githubusercontent.com/UnitexGramLab/unitexgramlab-org/master/themes/unitexgramlab/thumbnail.jpg'
+  'og:image': 'https://raw.githubusercontent.com/UnitexGramLab/unitexgramlab-org/master/themes/unitexgramlab/og.png'
   'og:type' : 'website'
 
 summary:
