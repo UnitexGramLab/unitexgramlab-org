@@ -79,6 +79,7 @@ cache:
     method: none
   driver: auto
   prefix: 'g'
+  gzip: true
 
 twig:
   cache: true
