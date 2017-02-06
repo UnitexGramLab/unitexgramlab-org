@@ -23,7 +23,7 @@
                 {{ banner.cropZoom(600,400).html|absolute_url|raw }}
                 {% endif %}
                 {{ item.summary|safe_truncate_html(collection.params.length)|raw }}
-                {% set readMore = '[Read More](' ~ site.url ~ item.route() ~ ' )' %}
+                {% set readMore = '[Read More](' ~ site.url ~ item.route() ~ '?target=_blank)' %}
                 {{ readMore|markdown }}
                 ]]>
             </description>
