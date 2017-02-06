@@ -11,7 +11,7 @@ routes:
   default: '/lgpllr-licensed-resources'
 ---
 
-This is a non-exhaustive list of language resources released under the terms of the [LGPLLR](../lgpllr) license, in addition to all [resources distributed with Unitex/GramLab](../unitexgramlab-resources):
+This is a non-exhaustive list of language resources released under the terms of the [LGPLLR](../lgpllr) license, in addition to all [resources distributed with Unitex/GramLab](../language-resources):
 
 - [Tables du lexique-grammaire du français](http://ladl.univ-mlv.fr/DonneesLinguistiques/Lexiques-Grammaires/Visualisation.html?target=_blank)
 - [Lefff: lexique des formes fléchies du français](http://www.labri.fr/perso/clement/lefff/?target=_blank)
