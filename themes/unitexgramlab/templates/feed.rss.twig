@@ -2,26 +2,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>{{ page.title }}</title>
-        <link>{{ uri.url(true) }}.{{ uri.extension() }}</link>
+        <title>The {{ site.title }} {{ page.title }}</title>
+        <link>{{ site.url }}{{ uri.path() }}.{{ uri.extension() }}</link>
+        <image>
+          <url>{{ site.url }}/{{ site.logo }}</url>
+          <title>{{ site.title }}</title>
+          <link>{{ site.url }}</link>
+        </image>
         <description>{{ collection.params.description }}</description>
         <language>{{ collection.params.lang }}</language>
-        <atom:link href="{{ uri.url(true) }}.{{  uri.extension }}" rel="self" type="application/rss+xml"/>
+        <atom:link href="{{ site.url }}{{ uri.path() }}.{{ uri.extension() }}" rel="self" type="application/rss+xml"/>
         {% for item in collection %}
         {% set banner = item.media.images|first %}
         <item>
             <title>{{ item.title|e }}</title>
-            <link>{{ item.url(true) }}</link>
+            <link>{{ site.url }}{{ item.route() }}</link>
+            {% if  item.taxonomy.author|first %}
+            <author>{{ item.taxonomy.author|first }}</author>
+            {% endif %}
             <description>
                 <![CDATA[
                 {% if banner %}
-                {{ banner.cropZoom(600,400).html|absolute_url }}
+                {{ banner.cropZoom(600,400).html|absolute_url|raw }}
                 {% endif %}
-                {{ item.summary|truncate_html(collection.params.length) }}
+                {{ item.summary|safe_truncate_html(collection.params.length)|raw }}
+                {% set readMore = '[Read More](' ~ site.url ~ item.route() ~ ' )' %}
+                {{ readMore|markdown }}
                 ]]>
             </description>
             <category>{{ item.taxonomy.tag|join(',') }}</category>
-            <guid>{{ item.url(true) }}</guid>
+            <guid>{{ site.url }}{{ item.route() }}</guid>
             <pubDate>{{ item.date|date('D, d M Y H:i:s O') }}</pubDate>
         </item>
         {% endfor %}
