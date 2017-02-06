@@ -3,6 +3,7 @@ timezone: Europe/Paris
 default_locale: null
 param_sep: ':'
 wrapped_site: false
+custom_base_url: 'http://unitexgramlab.org'
 
 languages:
   supported:
