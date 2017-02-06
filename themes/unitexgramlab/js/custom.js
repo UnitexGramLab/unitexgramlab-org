@@ -14,7 +14,7 @@
   $('.truncate-items').children().each(function() {
     var $this = $(this);
     if(this.offsetWidth < this.scrollWidth && !$this.attr('aria-label')){
-       $this.attr('aria-label',$this.text()).addClass('tooltip tooltip-s');
+       $this.attr('aria-label',$this.text()).addClass('tooltip tooltip-multiline tooltip-s');
     }
   });
 

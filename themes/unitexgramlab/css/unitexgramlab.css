@@ -3869,6 +3869,9 @@ table.alt tbody tr td {
 }
 
 .tooltip-multiline:after {
+  width: -moz-max-content;
+  width: -o-max-content;
+  width: -webkit-max-content;
   width: max-content;
   max-width: 250px;
   word-break: break-word;

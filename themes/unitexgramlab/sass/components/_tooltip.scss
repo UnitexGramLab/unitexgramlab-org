@@ -173,7 +173,10 @@
   // are always `_tooltip(multiline-max-width)` wide.
   .tooltip-multiline {
     &:after {
-      width: max-content;
+      width:-moz-max-content;
+      width:-o-max-content;
+      width:-webkit-max-content;
+      width:max-content;
       max-width: _tooltip(multiline-max-width);
       word-break: break-word;
       word-wrap: normal;
