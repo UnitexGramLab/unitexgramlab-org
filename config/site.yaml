@@ -16,7 +16,7 @@ metadata:
   'og:site_name': 'Unitex/GramLab'
   'og:url': 'http://unitexgramlab.org'
   'og:title': 'Unitex/GramLab'
-  'og:description': 'Unitex/GramLab is an open source, cross-platform, multilingual,lexicon- and grammar-based corpus processing suite'
+  'og:description': 'Open Source Corpus Processing Suite'
   'og:image': 'https://raw.githubusercontent.com/UnitexGramLab/unitexgramlab-org/master/themes/unitexgramlab/thumbnail.jpg'
   'og:type' : 'website'
 
