@@ -24,11 +24,11 @@ Unitex/GramLab project decision-making is based on a [community meritocratic pro
 
 # Unitex
 
-Unitex is the C++ Natural Language Processing (NLP) engine of Unitex/GramLab. It is distributed under the terms of the [GNU Lesser General Public License version 2.1](http://opensource.org/licenses/lgpl-2.1?target=_blank) (LGPLv2) and contain little third-party code dependencies (LibYAML, Pstdin, TRE, WinGetOpt) licensed under more-permissive licenses.
+Unitex is the C++ Natural Language Processing (NLP) engine of Unitex/GramLab. It is distributed under the terms of the [GNU Lesser General Public License version 2.1](http://opensource.org/licenses/lgpl-2.1?target=_blank) (LGPLv2) and contains only few third-party code dependencies (LibYAML, Pstdin, TRE, WinGetOpt) licensed under more-permissive licenses.
 
 # GramLab
 
-GramLab is the Project-oriented integrated development environment (IDE) of Unitex/GramLab. There is also a Classic IDE (Unitex.jar) that we are currently integrating with GramLab (see project PRJ-02 below). They are distributed under the terms of the [GNU Lesser General Public License version 2.1](http://opensource.org/licenses/lgpl-2.1?target=_blank) (LGPLv2) and contains only few third-party code (XAlign, Xerces2-j) licensed under equal or more-permissive licenses.
+GramLab is the Project-oriented integrated development environment (IDE) of Unitex/GramLab. There is also a Classic IDE (Unitex.jar) that we are currently integrating with GramLab. They are distributed under the terms of the [GNU Lesser General Public License version 2.1](http://opensource.org/licenses/lgpl-2.1?target=_blank) (LGPLv2) and contains only few third-party dependencies (XAlign, Xerces2-j) licensed under equal or more-permissive licenses.
 
 # Language resources
 
@@ -61,7 +61,8 @@ It's common to refer to the Unitex/GramLab Core as "Unitex", and to the Unitex P
 - Main website: 	[http://unitexgramlab.org](http://unitexgramlab.org)
 - Binary releases: 	[http://releases.unitexgramlab.org](http://releases.unitexgramlab.org)
 - User's manual: 	[http://releases.unitexgramlab.org/latest-stable/man](http://releases.unitexgramlab.org/latest-stable/man)
-- Users forum: 	[http://forum.unitexgramlab.org](http://forum.unitexgramlab.org)
+- Bug reporting: [http://unitexgramlab.org/how-to-report-a-bug]()
+- User's forum: 	[http://forum.unitexgramlab.org](http://forum.unitexgramlab.org)
 - Developers list: 	[unitex-devel at univ-mlv.fr](mailto://unitex-devel@univ-mlv.fr)
 - Code hosting: 	[http://code.unitexgramlab.org](http://code.unitexgramlab.org)
 - Your contribution: 	[Contribution rules](#)
