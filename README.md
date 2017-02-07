@@ -35,9 +35,9 @@ We welcome everyone to contribute to improve this project. Below are some of the
 -  [Fork us](https://github.com/UnitexGramLab/unitexgramlab-org/fork) and [request a pull](https://github.com/UnitexGramLab/unitexgramlab-org/pulls) to the [develop branch](https://github.com/UnitexGramLab/unitexgramlab-org/tree/develop).
 -  Submit [bug reports or feature requests](https://github.com/UnitexGramLab/unitexgramlab-org/issues)
 
-## Credits
+## Contributors and Credits
 
-* Developed by [Cristian Martinez](http://martinec.org) and powered by [Grav](http://getgrav.org). A comprehensive list of credits can be found [here](humans.txt).
+* Developed by [Cristian Martinez](http://martinec.org) and powered by [Grav](http://getgrav.org). A complete list of contributors is avalaible [here](https://github.com/UnitexGramLab/unitexgramlab-org/graphs/contributors). A comprehensive list of credits can be found [here](humans.txt).
 
 ---
 [unitex]: http://unitexgramlab.org
