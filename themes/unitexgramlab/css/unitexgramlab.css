@@ -6247,8 +6247,19 @@ body.is-loading #header .image img {
   padding-top: 0em;
 }
 #about-features #corpus-processing-suite ul.actions.piped li {
-  padding: 0;
+  padding: 2px;
   line-height: 2em;
+}
+@media screen and (max-width: 736px) {
+  #about-features #corpus-processing-suite ul.actions.piped li {
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+  #about-features #corpus-processing-suite ul.actions.piped li > * {
+    width: 100%;
+    margin: 0 !important;
+  }
 }
 #about-features .ug-label, #about-features .ug-badge {
   padding: 5px 7px;
