@@ -1,4 +1,4 @@
 enabled: true
 route: '/sitemap'
 ignores:
-  - /home/install-instructions
+  - /install-instructions
