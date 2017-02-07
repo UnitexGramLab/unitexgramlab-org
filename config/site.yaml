@@ -63,7 +63,7 @@ quicklinks:
         external: true
         atts:  'type="application/pdf"'
         title:
-          en: 'User manual'
+          en: 'Manual'
           es: 'Manual'
       - icon: life-ring
         url: 'twig://{{config.unitex.stable.url_support}}'
@@ -243,4 +243,4 @@ iconlinks:
       url: '/blog.atom'
       title:
         en: "Blog's Feed"
-        es: "Blog's Feed"
+        es: 'Suscríbase al Blog'
