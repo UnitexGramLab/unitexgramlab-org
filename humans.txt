@@ -96,6 +96,10 @@
   http://html5up.net
   Released under the CCA 3.0 license
 
+  Notepad Grav Theme by Grav Team
+  https://github.com/getgrav/grav-theme-notepad
+  Released under the MIT license
+
   Skel.scss by n33
   http://skel.io
   Released under the MIT license
