@@ -4,6 +4,7 @@
 # TEAM
 
   Cristian Martinez -- Conception, website architecture and development -- https:/github/martinec
+  Patrice Herault -- Web server administrator -- patrice.herault at u-pem.fr
 
 # TECHNOLOGY COLOPHON
 
