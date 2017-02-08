@@ -17,7 +17,7 @@ $(function() {
         if( $($anchor.attr('href')).length ) {
           if ( $('.navbar-fixed-top').length ) {
             $top = $($anchor.attr('href')).offset().top -
-                   $('.navbar-fixed-top').outerHeight();
+                   $('.navbar-fixed-top').height() + 2;
           } else {
             $top = $($anchor.attr('href')).offset().top;
           }
