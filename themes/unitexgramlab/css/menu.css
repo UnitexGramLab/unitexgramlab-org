@@ -17,7 +17,10 @@ Menu
 .nav > li {
   position: relative;
   display: block;
+  padding-left: 0.5em;
+  padding-top: 0.1em;
 }
+
 .nav > li > a {
   position: relative;
   display: block;
