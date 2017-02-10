@@ -14,11 +14,22 @@ Menu
   padding-left: 0;
   list-style: none;
 }
+
 .nav > li {
   position: relative;
   display: block;
   padding-left: 0.5em;
   padding-top: 0.1em;
+}
+
+.nav > li.tooltip:after {
+  color: #595959;
+  background: #eee;
+}
+
+.nav > li.tooltip:before {
+  color: #595959;
+  border-bottom-color: #eee;
 }
 
 .nav > li > a {
