@@ -75,7 +75,7 @@
         arrows: false,
       }
     }]
-  });  
+  });
 
   /*
    * download carrousel
@@ -147,7 +147,7 @@
     return {
       init:   init,
       select: select
-    }
+    };
   }()).init();
 
   /*
