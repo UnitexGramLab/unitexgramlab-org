@@ -24,9 +24,9 @@ Thank you for your interest in contributing with Unitex/GramLab development! Thi
 
 # Is it a bug ?
 
-The first step after discovering a bug is to check in the [Unitex/GramLab forum](https://forum.unitexgramlab.org?target=_blank) if there is already a thread on it. If not, post a short description of the problem you identified. To avoid confusion, *do not post in an existing thread*, unless your problem is exactly the same: start a new thread instead. Wait for feedback. Unitex/GramLab community is quite active and responsive. If you feel a consensus of opinions that the problem is real and that it is a bug, the next step is to report it as a bug in more detail.
+The first step after discovering a bug is to check in the [Unitex/GramLab forum](http://forum.unitexgramlab.org?target=_blank) if there is already a thread on it. If not, post a short description of the problem you identified. To avoid confusion, *do not post in an existing thread*, unless your problem is exactly the same: start a new thread instead. Wait for feedback. Unitex/GramLab community is quite active and responsive. If you feel a consensus of opinions that the problem is real and that it is a bug, the next step is to report it as a bug in more detail.
 
-Attention! Please be clear whether you are describing an Unitex/GramLab bug or doing something else: requesting support, discussing features, proposing ideas or reporting a bug for a package or program not provided by the Unitex/GramLab distribution. If you need help, please visit the [Unitex/GramLab forum](https://forum.unitexgramlab.org?target=_blank).
+Attention! Please be clear whether you are describing an Unitex/GramLab bug or doing something else: requesting support, discussing features, proposing ideas or reporting a bug for a package or program not provided by the Unitex/GramLab distribution. If you need help, please visit the [Unitex/GramLab forum](http://forum.unitexgramlab.org?target=_blank).
 
 # Bug reporting
 
