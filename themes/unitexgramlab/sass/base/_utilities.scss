@@ -46,6 +46,14 @@ html.no-js .js-hidden {
 // @see http://webaim.org/techniques/css/invisiblecontent/
 .invisible{
   visibility: hidden;
+  opacity: 0;
+  @include vendor('transition', 'opacity 1s, visibility 1.3s');
+}
+
+.visible {
+  visibility:visible;
+  opacity: 1;
+  @include vendor('transition', 'opacity 1s, visibility 1.3s');
 }
 
 // .invisible if js is active
