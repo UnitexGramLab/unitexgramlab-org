@@ -38,7 +38,7 @@ $('body').scrollspy({
     target: '.navbar-fixed-top',
     // modified by martinec
     offset: $('.navbar-fixed-top').height()
-}) 
+});
 
 // Closes the Responsive Menu on Menu Item Click
 $('.navbar-collapse ul li a').click(function() {
