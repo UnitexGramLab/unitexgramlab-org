@@ -9,6 +9,7 @@ en:
     TAG_DOWNLOAD: 'Download'
     TAG_32BIT: '32-bit'
     TAG_64BIT: '64-bit'
+    TAG_CLOSE: 'Close'
 # messages
     MSG_DOWNLOAD: 'Download %s'
     MSG_DOWNLOAD_VERSION: 'Download Unitex/GramLab %s'
@@ -75,6 +76,7 @@ es:
     TAG_DOWNLOAD: 'Descargar'
     TAG_32BIT: '32 bits'
     TAG_64BIT: '64 bits'
+    TAG_CLOSE: 'Cerrar'
 # messages
     MSG_DOWNLOAD: 'Descargar %s'
     MSG_DOWNLOAD_VERSION: 'Descargar Unitex/GramLab %s'
