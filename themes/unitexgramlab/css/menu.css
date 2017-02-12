@@ -22,14 +22,14 @@ Menu
   padding-top: 0.1em;
 }
 
-.nav > li.tooltip:after {
-  color: #595959;
-  background: #eee;
+.navbar-fixed-top .nav > li.tooltip:after {
+  color: #5B585B;
+  background: #ffffff;
 }
 
-.nav > li.tooltip:before {
-  color: #595959;
-  border-bottom-color: #eee;
+.navbar-fixed-top .nav > li.tooltip:before {
+  color: #5B585B;
+  border-bottom-color: #ffffff;
 }
 
 .nav > li > a {
