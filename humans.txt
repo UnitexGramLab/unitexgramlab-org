@@ -171,6 +171,10 @@
   https://github.com/getgrav/grav-plugin-error
   Released under the MIT license
 
+  Grav Featherlight Plugin by Team Grav
+  https://github.com/getgrav/grav-plugin-featherlight
+  Released under the MIT license
+
   Grav Sitemap Plugin by Team Grav
   https://github.com/getgrav/grav-plugin-sitemap
   Released under the MIT license
