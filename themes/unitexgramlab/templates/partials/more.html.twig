@@ -36,7 +36,7 @@
               {% endif %}
               {% if link.icon and ( link.title[curlang] or link.translations_fallback ) %}
                 <div class="6u(xxsmall) 6u(xsmall) 4u">
-                  <a href="{{ domain }}{{ url }}" title="{{ title }}" {% if url | contains('http') or link.external %}target="_blank"{% endif %}{% if link.atts %} {{link.atts}}{% endif %}><i class="fa fa-2x fa-fw fa-{{ link.icon }}"></i><span class="label">{{ title }}</span></a>
+                  <a href="{{ domain }}{{ url }}" {% if url | contains('http') or link.external %}target="_blank"{% endif %}{% if link.atts %} {{link.atts}}{% endif %}><i class="fa fa-2x fa-fw fa-{{ link.icon }}"></i><span class="label">{{ title }}</span></a>
                 </div>
               {% endif %}
           {% endfor %}
