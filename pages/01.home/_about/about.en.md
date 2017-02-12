@@ -6,7 +6,7 @@ menu_icon: 'anchor'
 shortcode-core:
     active: true
 ---
-[section name="header"]Unitex/GramLab is an <a class="page-scroll" href="#open-source">open source</a>, <a class="page-scroll" href="#cross-platform">cross-platform</a>, <a class="page-scroll" href="#multilingual">multilingual</a>,<br><a class="page-scroll" href="#lexicon-based">lexicon-</a> and <a class="page-scroll" href="#grammar-based">grammar-based</a> <a class="page-scroll" href="#corpus-processing-suite">corpus processing suite</a>[/section]
+[section name="header"]Unitex/GramLab is an <a class="page-scroll" href="#open-source">open source</a>, <a class="page-scroll" href="#cross-platform">cross-platform</a>, <a class="page-scroll" href="#multilingual">multilingual</a>, <br><a class="page-scroll" href="#lexicon-based">lexicon-</a> and <a class="page-scroll" href="#grammar-based">grammar-based</a> <a class="page-scroll" href="#corpus-processing-suite">corpus processing suite</a>[/section]
 
 [section name="a_image"]u.png[/section]
 [section name="a_title"]Unitex[/section]
