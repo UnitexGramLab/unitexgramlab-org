@@ -14,7 +14,10 @@ anchors:
     
 markdown:
     extra: true
-    
+
+featherlight:
+    active: true
+
 published: false
 ---
 
