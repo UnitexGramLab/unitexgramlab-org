@@ -235,8 +235,7 @@ Tasks for the Community Bonding Period :
 - [The IDE sources](https://github.com/UnitexGramLab/gramlab-ide)
 - [Plugins branch](https://github.com/UnitexGramLab/gramlab-ide/tree/feature/plugins)
 
-
-<p><strong>Mentor</strong>: <a href="http://martinec.org">Cristian Martinez</a></p> 
+**Mentor**: [Cristian Martinez](http://martinec.org?target=_blank)
       </article>
     </div>
   </section>
@@ -258,7 +257,7 @@ mask will lookup untagged instances of a token defined by constraints.
 Assume the following tagged token: **{TTT,LLL.CCC}**, to match all untagged instances of
 **TTT** the syntax is **&lt;UDIC+CCC&gt;**
 
-<p><strong>Mentor</strong>: <a target="_blank" href="http://www.univ-tours.fr/m-gupta-anubhav-452216.kjsp">Anubhav Gupta</a></p>  
+**Mentor**: [Anubhav Gupta](http://www.univ-tours.fr/m-gupta-anubhav-452216.kjsp?target=_blank)
       </article>
     </div>
   </section>
