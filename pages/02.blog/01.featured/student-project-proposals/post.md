@@ -9,7 +9,7 @@ taxonomy:
 
 anchors:
     active: true
-    selectors: '.summer-post-content h1'
+    selectors: '.autumn-post-content h1'
 
 markdown:
     extra: true

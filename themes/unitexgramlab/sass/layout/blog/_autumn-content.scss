@@ -1,0 +1,114 @@
+@import '../../libs/vars';
+@import '../../libs/functions';
+@import '../../libs/mixins';
+
+///
+/// Autumn theme by martinec
+/// Based on Notepad Grav Theme by Grav Team
+/// https://github.com/getgrav/grav-theme-notepad
+/// Released under the MIT license
+///
+
+/* Autumn Content */
+
+	.autumn-content {
+    .autumn-index-post {
+      visibility: hidden;
+
+      .autumn-post-meta {
+        display: block;
+        text-align: center;
+        margin-top: 1.8em;
+
+        @include breakpoint(small) {
+          margin-top: 3em;
+        }
+
+        .month-year {
+          text-transform: uppercase;
+        }
+      }
+
+      .autumn-post-thumbnail {
+        text-align: center;
+        margin-top: 10px;
+      }
+
+      .autumn-post-thumbnail-tag {
+        display: inherit;
+        height: 100px;
+        left: 200px;
+        margin: 0 auto;
+        text-align: center;
+        width: 100px;
+      }
+
+      .autumn-post-thumbnail-tag-letters {
+        color: #fff;
+        font-family: "Ubuntu Mono";
+        font-size: 50px;
+        font-weight: bold;
+        line-height: 50px;
+        position: relative;
+        top: 25px;
+      }
+
+      .autumn-post-header {
+        .autumn-post-title {
+          @include breakpoint(small) {
+            font-weight: 600;
+            text-align: center;
+          }
+        }
+      }
+
+      .autumn-post-excerpt {
+        @include breakpoint(small) {
+          text-align: center;
+        }
+
+        p {
+          margin: 0 0 0.7em 0;
+        }
+      }
+
+      .autumn-index-post-tags {
+        font-size: 0.8125em;
+
+        @include breakpoint(small) {
+          text-align: center;
+        }
+      }
+
+    }
+
+    .fadeInDown {
+      @include vendor('animation-duration', '1s');
+      @include vendor('animation-fill-mode', 'both');
+      @include vendor('animation-name', 'fadeInDown');
+      visibility: visible !important;
+    }
+
+    @include keyframes('fadeInDown') {
+      0% {
+          opacity: 0;
+          @include vendor('transform', 'translateY(-20px)');
+      }
+      100% {
+          opacity: 1;
+          @include vendor('transform', 'translateY(0)');
+      }
+    }
+
+    .pagination {
+      @include breakpoint(small) {
+          margin-top: 5em;
+      }
+      padding: 1px;
+      color: #4C4C4C;
+    }
+  }
+
+  html.no-js .autumn-content .autumn-index-post {
+    visibility: visible;
+  }

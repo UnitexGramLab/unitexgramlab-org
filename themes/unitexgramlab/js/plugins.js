@@ -178,8 +178,8 @@ var clipboardButton = (function() {
  * adapted from  grav-theme-notepad/js/summerb146.js
  * @see https://github.com/getgrav/grav-theme-notepad
  */ 
-var summer = (function ($) {
-    var indexPostClass = '.summer-index-post',
+var autumn = (function ($) {
+    var indexPostClass = '.autumn-index-post',
     
     // post animations on homepage
     indexPostAnimate = function () {
@@ -195,7 +195,7 @@ var summer = (function ($) {
         }
     },
     
-    // summer javascripts initialization
+    // autumn javascripts initialization
     init = function () {
         indexPostAnimate();
         $(window).on('scroll', function() {

@@ -51,163 +51,6 @@
   font-weight: bold;
 }
 
-.summer-content {
-  line-height: 1.2;
-}
-
-.summer-content .summer-index-post {
-    padding-top: 2.5em;
-    padding-bottom: 2.5em;
-    border-bottom: 0.0625em solid #d9d9d9;
-    visibility: hidden;
-}
-
-.summer-content .summer-index-post:first-of-type {
-    padding-top: 0.5em;
-}
-
-.summer-content .summer-index-post .datetime {
-    margin-bottom: 2.5em;
-}
-
-@media only screen and (min-width: 40.063em) {
-    .summer-content .summer-index-post {
-        padding-top: 4.375em;
-        padding-bottom: 4.375em;
-    }
-    .summer-content .summer-index-post:first-of-type {
-        padding-top: 0.5em;
-    }
-    .summer-content .summer-index-post .datetime {
-        margin-bottom: 0;
-    }
-}
-
-.summer-content .summer-index-post .summer-post-meta {
-    display: block;
-    text-align: center;
-}
-
-.summer-content .summer-index-post .summer-post-meta .day {
-    display: block;
-    font-size: 3.25em;
-    font-weight: 800;
-    color: #f97f4f;
-}
-
-.summer-content .summer-index-post .summer-post-meta .month-year {
-    display: block;
-    font-size: 1em;
-
-    font-size: 0.875em;
-    text-transform: uppercase;
-}
-
-.summer-content .summer-index-post .summer-post-header .summer-post-title {
-
-    font-weight: 700;
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 1.625em;
-    margin: 0;
-    padding: 0;
-    line-height: 1.2;
-}
-
-.summer-content .summer-index-post .summer-post-header .summer-post-title a {
-
-}
-
-@media only screen and (min-width: 40.063em) {
-    .summer-content .summer-index-post .summer-post-header .summer-post-title {
-        text-align: left;
-        font-size: 2.125em;
-        margin-bottom: 0.9375em;
-    }
-}
-
-.summer-content .summer-index-post .summer-post-excerpt {
-
-    font-size: 1.25em;
-    margin-top: 0.625em;
-    text-align: center;
-}
-
-.summer-content .summer-index-post .summer-post-excerpt p {
-    margin: 0;
-    font-size: 1em;
-}
-
-@media only screen and (min-width: 40.063em) {
-    .summer-content .summer-index-post .summer-post-excerpt {
-        text-align: left;
-    }
-}
-
-.summer-content .summer-index-post .summer-index-post-tags {
-    font-size: 0.8125em;
-
-    margin-top: 1.5625em;
-    text-align: center;
-}
-
-.summer-content .summer-index-post .summer-index-post-tags a {
-    display: inline-block;
-    padding: 0.3125em 0.625em;
-
-    border: 0.0625em solid black;
-    border-radius: 0.125em;
-}
-
-.summer-content .summer-index-post .summer-index-post-tags a:hover {
-    color: #f97f4f;
-    border: 0.0625em solid #f97f4f;
-}
-
-@media only screen and (min-width: 40.063em) {
-    .summer-content .summer-index-post .summer-index-post-tags {
-        text-align: left;
-    }
-}
-
-.fadeInDown {
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-    -webkit-animation-name: fadeInDown;
-    animation-name: fadeInDown;
-    visibility: visible !important;
-}
-
-@-webkit-keyframes fadeInDown {
-    0% {
-        opacity: 0;
-        -webkit-transform: translateY(-20px);
-        transform: translateY(-20px);
-    }
-    100% {
-        opacity: 1;
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
-    }
-}
-
-@keyframes fadeInDown {
-    0% {
-        opacity: 0;
-        -webkit-transform: translateY(-20px);
-        -ms-transform: translateY(-20px);
-        transform: translateY(-20px);
-    }
-    100% {
-        opacity: 1;
-        -webkit-transform: translateY(0);
-        -ms-transform: translateY(0);
-        transform: translateY(0);
-    }
-}
-
 nav.pagination {
     padding-top: 0.1em;
     padding-bottom: 0.1em;
@@ -222,7 +65,11 @@ nav.pagination .page-number {
     display: inline-block;
     padding: 0.625em 1.25em;
     border-radius: 0.1875em;
-    border: 0.125em solid black;
+}
+
+nav.pagination .newer-posts,
+nav.pagination .older-posts {
+    border: 0.125em solid #4c4c4c;
 }
 
 nav.pagination .newer-posts:hover,
@@ -295,8 +142,11 @@ nav.pagination .older-posts .fa {
   background-color: #f97f4f;
   color: #fff;
   padding-bottom: 0px;
-  border-bottom: 1px solid #e3e5e6;
-  min-height: 11vh;
+  min-height: 9vh;
+}
+
+.blog-tags.post-navigation {
+  height: 4.5em;
 }
 
 .blog-tags .navbar-nav {
@@ -334,37 +184,4 @@ nav.pagination .older-posts .fa {
       padding-right: 1px;
       padding-left: 1px;
   }
-}
-
-.summer-post-content {
-  font-size: 110%;
-  margin: 0 auto;
-  padding: 0;
-  font-weight: 300;
-}
-
-.summer-post-content > div:not(.summer-post-title) p {
-  margin: 1em auto 1.5em auto;
-}
-
-.summer-post-content > div:not(.summer-post-title) p:first-child {
-}
-
-.summer-post-content > div:not(.summer-post-title) p.with-image {
-  text-align: center;
-  padding-top: 1.125rem;
-  padding-bottom: 1.125rem;
-}
-
-.summer-post-content > div:not(.summer-post-title) a {
-  color: #f97f4f;
-}
-
-.summer-post-content > div:not(.summer-post-title) h1,
-.summer-post-content > div:not(.summer-post-title) h2 {
-  font-weight: bold;
-}
-
-#summer-post footer hr {
-  margin: 0px;
 }

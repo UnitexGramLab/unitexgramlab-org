@@ -1,0 +1,33 @@
+@import '../../libs/vars';
+@import '../../libs/functions';
+@import '../../libs/mixins';
+
+///
+/// Autumn theme by martinec
+/// Based on Notepad Grav Theme by Grav Team
+/// https://github.com/getgrav/grav-theme-notepad
+/// Released under the MIT license
+/// 
+
+/* Autumn Post Content */
+
+	.autumn-post-content {
+    > div:not(.autumn-post-title) p.with-image {
+      text-align: center;
+      padding-top: 1.125rem;
+      padding-bottom: 1.125rem;
+    }
+
+    > div:not(.autumn-post-title) a {
+      color: #f97f4f;
+    }
+
+    > div:not(.autumn-post-title) h1,
+    > div:not(.autumn-post-title) h2 {
+      font-weight: bold;
+    }  
+  }
+
+  #autumn-post footer hr {
+    margin: 0px;
+  }

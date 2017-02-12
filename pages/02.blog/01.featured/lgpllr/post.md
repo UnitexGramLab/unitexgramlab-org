@@ -9,7 +9,7 @@ taxonomy:
 
 anchors:
     active: true
-    selectors: '.summer-post-content h1, .summer-post-content h2'
+    selectors: '.autumn-post-content h1, .autumn-post-content h2'
 
 routes:
   default: '/lgpllr'    
@@ -113,7 +113,7 @@ This License, the Lesser General Public License for Linguistic Resources, applie
   window.addEventListener('DOMContentLoaded', function() {
       (function($) {
           $(document).ready(function() {
-            $('.summer-post-content ol').attr('start',0);
+            $('.autumn-post-content ol').attr('start',0);
           });
       })(jQuery);
   });
