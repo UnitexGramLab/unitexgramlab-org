@@ -17,9 +17,13 @@ To install your own copy of the Unitex/GramLab site, simply follow these steps:
 
 At this point the required plugins and vendor libraries should be installed, and your local site should be fully functional.
 
-## Translations
+## Contributing
 
-Thank you for your interest in contributing with Unitex/GramLab, currently the site is available in [English](http://unitexgramlab.org) and [Spanish](http://unitexgramlab.org/es), more translations are welcome. If you are interested in volunteering to translate email webmaster@unitexgramlab.org and we will contact you. Files to translate are located at:
+We welcome everyone to contribute to improve this project. Below are some of the things that you can do to contribute:
+
+### Translations
+
+Currently the site is available in [English](http://unitexgramlab.org) and [Spanish](http://unitexgramlab.org/es), more translations are welcome. If you are interested in volunteering to translate email webmaster@unitexgramlab.org and we will contact you. Files to translate are located at:
 
 - [Error page](pages/error)
 - [Home page](pages/01.home)
@@ -28,12 +32,36 @@ Thank you for your interest in contributing with Unitex/GramLab, currently the s
 
 Note that there are no plans to translate [blog posts](pages/02.blog).
 
-## Contributing
+### Posts
 
-We welcome everyone to contribute to improve this project. Below are some of the things that you can do to contribute:
+If you are interested in volunteering creating a new blog post about Unitex/GramLab and Natural Language Processing, please follow these steps: 
 
--  [Fork us](https://github.com/UnitexGramLab/unitexgramlab-org/fork) and [request a pull](https://github.com/UnitexGramLab/unitexgramlab-org/pulls) to the [develop branch](https://github.com/UnitexGramLab/unitexgramlab-org/tree/develop).
--  Submit [bug reports or feature requests](https://github.com/UnitexGramLab/unitexgramlab-org/issues)
+1. [**Fork us**](https://github.com/UnitexGramLab/unitexgramlab-org/fork)
+
+1. **Copy** the directory `pages/02.blog/template-post` to a new location inside `pages/02.blog`:
+
+   ```
+   cp pages/02.blog/template-post pages/02.blog/my-new-blog-post-name
+   ```   
+1. **Edit** the file named `pages/02.blog/my-new-blog-post-name/post.md`. Take care to change the `title`, `date`, `tag`, `author` and `published` attributes. A Markdown tutorial is avalaible [here](http://eherrera.net/markdowntutorial). You can use an online Markdown editor like [Stackedit.io](https://stackedit.io/editor) to review your post before commit.
+
+1. **Commit** your code:
+   
+   ```
+   git commit -m "Add my-new-blog-post-name" pages/02.blog/my-new-blog-post-name
+   ```
+
+1. **Push** the changes to your remote repository on GitHub
+   
+   ```
+   git push origin
+   ```
+   
+1. [Request a pull](https://github.com/UnitexGramLab/unitexgramlab-org/pulls) to the [develop branch](https://github.com/UnitexGramLab/unitexgramlab-org/tree/develop).
+
+### Issues
+
+Feel free to submit [bug reports or feature requests](https://github.com/UnitexGramLab/unitexgramlab-org/issues)
 
 ## Contributors and Credits
 
