@@ -33,6 +33,7 @@
     content: attr(aria-label);
     border-radius: 3px;
     -webkit-font-smoothing: subpixel-antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 
   // This is the tooltip arrow
