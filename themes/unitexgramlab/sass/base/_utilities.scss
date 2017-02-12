@@ -71,6 +71,20 @@ html.no-js .js-only {
   display: none !important;
 }
 
+// hidden when small or down
+.hidden-small-down {
+  @include breakpoint(small) {
+    display: none !important;
+  }
+}
+
+// hidden when medium
+.hidden-medium {
+  @media screen and (min-width: 737px) and (max-width: 980px) {
+    display: none !important;
+  }
+}
+
 //
 // Screenreaders
 //
