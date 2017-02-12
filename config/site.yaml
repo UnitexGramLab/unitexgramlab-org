@@ -42,7 +42,8 @@ blog:
 links:
   # Header navigation bar
   navbar:
-  - url: '#more'
+  - icon: plus-circle
+    url: '#more'
     title:
       en: 'More'
       es: 'Más'
