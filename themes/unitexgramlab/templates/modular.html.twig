@@ -2,8 +2,10 @@
 
 {% set show_navbar       = header.navbar       == true or header.navbar       is null %}
 {% set show_onpage_menu  = header.onpage_menu  == true or header.onpage_menu  is null %}
+{% set show_onpage_icons = header.onpage_icons == true %}
 {% set show_site_menu    = header.site_menu    == true or header.site_menu    is null %}
 {% set show_langswitcher = header.langswitcher == true or header.langswitcher is null %}
+{% set show_searchbar    = header.show_searchbar == true %}
 
 {% block content %}
     {{ page.content }}

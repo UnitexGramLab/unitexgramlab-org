@@ -1,33 +1,54 @@
-<article class="summer-index-post post row 0%">
+{% set tag_route = tag_route ? tag_route :  blog.url|rtrim('/')  %}
+<article class="autumn-index-post post row">
     <div class="2u 3u(medium) 12u$(small) datetime">
-        <span class="summer-post-meta">
-            <time datetime="{{ page.date | date('Y-m-d H:i:s') }}">
-                <span class="day">
-                    {{ page.date | date("d") }}
-                </span>
-                <span class="month-year">
-                    {{ page.date | date("M Y") }}
-                </span>
-            </time>
-        </span>
+      <span class="autumn-post-meta">
+          <time datetime="{{ page.date | date('Y-m-d H:i:s') }}">
+              <span class="day">
+                  {{ page.date | date("d") }}
+              </span>
+              <span class="month-year">
+                  {{ page.date | date("M Y") }}
+              </span>
+          </time>
+      </span>
+      {% set banner = page.media.images|first %}
+      <div class="autumn-post-thumbnail">
+      {% if banner %}
+          <a href="{{ page.url }}">{{ banner.cropZoom(100,100).html|raw }}</a>
+      {% else %}
+          {%  set randomColor = random(13) + 1 %}
+          {%  set tags = page.taxonomy.tag %}
+          {%  set tag  = 'UG' %}
+          <div class="autumn-post-thumbnail-tag ug-label c{{ randomColor }}">
+            {% if tags|length > 0 %}
+              {% if tags|length == 1 %}
+                 {% set tag  = tags|first|slice(0,2)|upper %}
+              {% else  %}
+                 {% set tag  = tags|first|first|upper ~ tags|slice(1,1)|first|first|upper %}
+              {% endif %}
+            {% endif %}
+            <a href="{{ page.url }}"><span class="autumn-post-thumbnail-tag-letters">{{ tag }}</span></a>
+          </div>
+      {% endif %}
+      </div>
     </div>
-    <div class="10u$ 9u$(medium) 12u$(small)">
-      <header class="summer-post-header">
+    <div class="9u -1u$ 9u$(medium) 12u$(small)">
+      <header class="autumn-post-header">
           {% if page.header.link %}
-           <h3 class="summer-post-title"><a href="{{ page.url }}" rel="bookmark" title="{{ page.title }}" itemprop="url"><i class="fa fa-bookmark"></i></a> <a href="{{ page.header.link }}">{{ page.title }}</a></h3>
+           <h3 class="autumn-post-title"><a href="{{ page.url }}" rel="bookmark" itemprop="url"><i class="fa fa-bookmark"></i></a> <a href="{{ page.header.link }}">{{ page.title }}</a></h3>
           {% else %}
-           <h3 class="summer-post-title"><a href="{{ page.url }}" itemprop="url">{{ page.title }}</a></h3>
+           <h3 class="autumn-post-title"><a href="{{ page.url }}" itemprop="url">{{ page.title }}</a></h3>
           {% endif %}
       </header>
-      <section class="summer-post-excerpt">
+      <section class="autumn-post-excerpt">
         {% if page.header.link %}
          <p><a href="{{ page.url }}" itemprop="url">{{ page.content | striptags | safe_truncate(40) | trim }}...</a></p>
         {% else %}
          <p>{{ page.summary | striptags }}</p>
         {% endif %}
       </section>       
-      <div class="summer-index-post-tags">
-        {% for tag in page.taxonomy.tag %}<span class="post-tag-{{tag|url_encode}}"><a href="{{ blog.url|rtrim('/') }}/tag{{ config.system.param_sep }}{{ tag|url_encode }}">{{ tag }}</a></span>{%if not loop.last %} {% endif %}{% endfor %}
+      <div class="autumn-index-post-tags">
+        {% for tag in page.taxonomy.tag %}<span class="ug-label post-tag-{{tag|url_encode}}"><a href="{{ tag_route }}/tag{{ config.system.param_sep }}{{ tag|url_encode }}" class="tooltip tooltip-s" aria-label="Posts tagged with {{ tag }}" rel="tag">{{ tag }}</a></span>{%if not loop.last %} {% endif %}{% endfor %}
       </div>
     </div>
 </article>

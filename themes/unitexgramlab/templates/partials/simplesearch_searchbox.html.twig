@@ -1,0 +1,3 @@
+<form class="search-box navbar-form">
+  <input class="search-input" type="text" data-close-tag="{{ 'TAG_CLOSE'|t }}" data-search-tag="{{ 'PLUGIN_SIMPLESEARCH.SEARCH_PLACEHOLDER'|t }}" placeholder="{{ 'PLUGIN_SIMPLESEARCH.SEARCH_PLACEHOLDER'|t }}" value="{{ query }}" data-param-sep="{{ config.system.param_sep }}" data-min-query-length="{{ config.get('plugins.simplesearch.min_query_length', 3) }}" data-search-input="{{ base_url }}{{ config.plugins.simplesearch.route == '@self' ? '' : (config.plugins.simplesearch.route == '/' ? '' : config.plugins.simplesearch.route) }}/query" />
+</form>

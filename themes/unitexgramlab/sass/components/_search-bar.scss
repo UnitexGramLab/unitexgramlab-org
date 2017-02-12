@@ -1,0 +1,73 @@
+@import '../libs/vars';
+@import '../libs/functions';
+@import '../libs/mixins';
+
+/* Search Bar */
+
+  .search-bar {
+    padding: 0;
+    margin: 0;
+    box-shadow: none;
+    z-index: _misc(z-index-base);
+    @include vendor('transition', 'color #{_duration(transition)} ease-in-out');
+    
+    form, form input {
+      display: inline-block;
+      margin: 0;
+      border: 0;
+      padding: 0;
+      vertical-align: middle;
+      white-space: normal;
+      line-height: inherit;
+      background: none;
+      font-size: inherit;
+      font-family: inherit;
+      width: 100%;
+    }
+
+    form input {
+      border-bottom:1px solid rgba(255, 255, 255, 0.2);
+      border-radius:0;
+      color:#fff;
+      box-sizing: border-box;
+      font-weight:500;
+      font-size:1.2em;
+      letter-spacing:0.02em;
+      height: 2em;
+    }
+
+    form input:focus, .form input[type="text"]:focus {
+      border-color:#cccccc;
+      box-shadow:none;
+    }
+
+    // Small.
+    @include breakpoint(small) {
+      padding: 10px 15px;
+      width:100% !important;
+    }    
+
+    // Medium and up.
+    @media screen and (min-width: 737px) {
+      position: absolute;
+      right: 0;
+      ///min-width: 23em;
+      background-color: transparent;
+    }
+
+    // Medium to Xlarge.
+    @media screen and (min-width: 737px) and (max-width: 1680px) {
+      top: 10px;
+    }
+
+    // Xlarge and up.
+    @media screen and (min-width: 1681px) {
+      top: 5px;
+    }
+  }
+
+  .search-button {
+    cursor: pointer;
+  }
+
+

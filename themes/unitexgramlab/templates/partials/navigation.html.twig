@@ -3,7 +3,7 @@
   <li data-nav-id="{{ page.route }}"{% if current_page %} class="{{ current_page }}"{% endif %}>
       <a href="{{ page.url }}">
           <i class="fa fa-fa-fw fa-{{ page.header.menu_icon }}"></i>
-          <span>{{ page.menu }}</span>
+          <span class="hidden-medium">{{ page.menu }}</span>
       </a>
   </li>
 {% endmacro %}
@@ -22,7 +22,7 @@
           <ul class="nav navbar-nav navbar-left">              
               <li class="hidden"></li>
               {% if show_home_menu %}
-                <li><a href="/"><i class="fa fa-1x fa-fw fa-home"></i>{{site.title}}</a></li>
+                <li><a href="/"><i class="fa fa-1x fa-fw fa-home"></i><span class="hidden-medium">{{site.title}}</span></a></li>
               {% endif %}                
               {% for link in page.header.navbar.left %}
                   {% if link.url | contains('http') %}
@@ -34,18 +34,19 @@
                   {% endif %}
                   {% set current_url  = domain~link.url %}
                   {% set current_page = (link.url == page.url) ? 'active' : '' %}
-                  <li{% if current_page %} class="{{ current_page }}"{% endif %}><a href="{{ current_url }}" {% if link.url | contains('http') or link.external %}target="_blank"{% endif %}>{% if link.icon %}<i class="fa fa-1x fa-fw fa-{{ link.icon }}"></i> {% endif %}{{ link.title }}</a></li>
+                  <li{% if current_page %} class="{{ current_page }}"{% endif %}><a href="{{ current_url }}" {% if link.url | contains('http') or link.external %}target="_blank"{% endif %}>{% if link.icon %}<i class="fa fa-1x fa-fw fa-{{ link.icon }}"></i> {% endif %}<span{% if link.icon %} class="hidden-medium"{% endif %}>{{ link.title }}</span></a></li>
               {% endfor %}              
               {% if show_onpage_menu %}
                 {% for module in page.collection() %}
                     {% set current_menu_visible = module.header.menu_visible == true or module.header.menu_visible is null %}
+                    {% set menu_icon = show_onpage_icons ? module.header.menu_icon : null %}
                     {% if current_menu_visible == true %}
-                      <li><a class="page-scroll" href="#{{ module.menu | lower | replace({' ':'_'}) }}">{{ module.title }}</a></li>
+                      <li><a class="page-scroll" href="#{{ module.menu | lower | replace({' ':'_'}) }}">{% if menu_icon %}<i class="fa fa-1x fa-fw fa-{{ menu_icon }}"></i> {% endif %}<span{% if menu_icon %} class="hidden-medium"{% endif %}>{{ module.title }}</span></a></li>
                     {% endif %}
                 {% endfor %}
               {% endif %}
               {% if show_folder_menu %}
-                {% set proot = page.find('/blog') %}
+                {% set proot = page.find(site.blog.route) %}
                 {{ _self.menu_item(proot) }}
                 {% for p in proot.children %}
                     {% if p.visible %}
@@ -63,7 +64,8 @@
                        {% set domain = base_url %}
                     {% endif %}
                     {% if link.title[langswitcher.current] %}
-                      <li><a class="page-scroll" href="{{ domain }}{{ link.url }}" {% if link.url | contains('http') or link.external %}target="_blank"{% endif %}>{{ link.title[langswitcher.current] }}</a></li>
+                      {% set link_icon = show_onpage_icons ? link.icon : null %}
+                      <li><a class="page-scroll" href="{{ domain }}{{ link.url }}" {% if link.url | contains('http') or link.external %}target="_blank"{% endif %}>{% if link_icon %}<i class="fa fa-1x fa-fw fa-{{ link_icon }}"></i> {% endif %}<span{% if link_icon %} class="hidden-medium"{% endif %}>{{ link.title[langswitcher.current] }}</span></a></li>
                     {% endif %}
                 {% endfor %}
               {% endif %}
@@ -79,18 +81,19 @@
                 {% endif %}
                 {% set current_url  = domain~link.url %}
                 {% set current_page = (link.url == page.url) ? 'active' : '' %}
-                <li{% if current_page %} class="{{ current_page }}"{% endif %}><a href="{{ current_url }}" {% if link.url | contains('http') or link.external %}target="_blank"{% endif %}>{% if link.icon %}<i class="fa fa-1x fa-fw fa-{{ link.icon }}"></i> {% endif %}{{ link.title }}</a></li>
+                <li{% if current_page %} class="{{ current_page }}"{% endif %}><a href="{{ current_url }}" {% if link.url | contains('http') or link.external %}target="_blank"{% endif %}>{% if link.icon %}<i class="fa fa-1x fa-fw fa-{{ link.icon }}"></i> {% endif %}<span>{{ link.title }}</span></a></li>
             {% endfor %}
+            {% if show_searchbar %}
+              <li><div class="search-bar invisible">{% include 'partials/simplesearch_searchbox.html.twig' %}</div></li>
+              <li class="tooltip tooltip-s" aria-label="{{ 'PLUGIN_SIMPLESEARCH.SEARCH_PLACEHOLDER'|t }}"><a class="search-button hidden-small-down"><i class="fa fa-fw fa-search"></i></a></li>
+            {% endif %}
             {% if page.header.feed %}
-              <li><a rel="alternate" type="application/atom+xml" title="{{ 'MSG_SUBSCRIBE_TO'|t(page.title|lower) }}" href="{{ page.url }}.atom"><i class="fa fa-fw fa-feed feed"></i></a></li>
+              <li class="tooltip tooltip-s" aria-label="{{ 'MSG_SUBSCRIBE_TO'|t(page.title|lower) }}"><a rel="alternate" type="application/atom+xml" href="{{ page.url }}.atom"><i class="fa fa-fw fa-feed"></i></a></li>
             {% elseif page.parent and page.parent.header.feed %}
-              <li><a rel="alternate" type="application/atom+xml" title="{{ 'MSG_SUBSCRIBE_TO'|t(page.parent.title|lower) }}" href="{{ page.parent.url }}.atom"><i class="fa fa-fw fa-feed feed"></i></a></li>
+              <li class="tooltip tooltip-s" aria-label="{{ 'MSG_SUBSCRIBE_TO'|t(page.parent.title|lower) }}"><a rel="alternate" type="application/atom+xml" href="{{ page.parent.url }}.atom"><i class="fa fa-fw fa-feed"></i></a></li>
             {% endif %}            
             {% if show_langswitcher %}
               <li>{% include 'partials/langswitcher.html.twig' %}</li>
-            {% endif %}
-            {% if show_searchbar %}
-              <li>{% include 'partials/search-bar.html.twig' %}</li>
             {% endif %}
           </ul>
       </div>

@@ -42,8 +42,8 @@
   {% block header_navigation %}
     {% if show_navbar %}
       {% include 'partials/navigation.html.twig' %}
-    {% endif %}  
-  {% endblock %}  
+    {% endif %}
+  {% endblock %}
   {% block body %}
     {% block header  %}{% endblock %}
     {% block content %}{% endblock %}
@@ -58,6 +58,7 @@
     {% do assets.add('jquery',101) %}
     {% do assets.addJs('theme://js/modernizr.js') %}
     {% do assets.addJs('theme://js/fractal/skel.min.js') %}
+    {% do assets.addJs('theme://js/fractal/skel-conditionals.js') %}
     {% do assets.addJs('theme://js/fractal/util.js') %}
     {% do assets.addJs('theme://js/fractal/main.js') %}
     {% do assets.addJs('theme://js/slick.min.js') %}
@@ -83,6 +84,9 @@
     {% do assets.addJs('theme://js/plugins.js') %}
     {% do assets.addJs('theme://js/unitex/release.js') %}
     {% do assets.addJs('theme://js/unitex/dialogbox.js') %}
+    {% if show_searchbar %}
+      {% do assets.addJs('theme://js/jquery.searchbar.js') %}
+    {% endif %}
     {% do assets.addJs('theme://js/custom.js') %}
   {% endblock %}
   {{ assets.js() }}

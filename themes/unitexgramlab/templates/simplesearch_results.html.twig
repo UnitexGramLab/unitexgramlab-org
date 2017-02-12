@@ -1,0 +1,71 @@
+{% set results_page = true                                              %}
+{% set title =  query ~ ' - ' ~ 'PLUGIN_SIMPLESEARCH.SEARCH_RESULTS'|t  %}
+{% set collection = search_results                                      %}
+{% set banner_class = 'blog'                                            %}
+{% set count = search_results ? search_results.count : 0                %}
+{% set tag_route =   page.url|rtrim('/') ~ site.blog.route              %}
+{% set show_summary = true                                              %}
+
+{% if count == 1 %}
+   {% set heading = "PLUGIN_SIMPLESEARCH.SEARCH_RESULTS_SUMMARY_SINGULAR"|t(query)|raw %}
+{% else %}
+   {% set heading = "PLUGIN_SIMPLESEARCH.SEARCH_RESULTS_SUMMARY_PLURAL"|t(query, count)|raw %}
+{% endif %}
+
+{% embed 'blog.html.twig' %}
+{# -------------------------------------------------------------------------- #}
+{% block bottom %}
+  <script>
+    (function () {
+      window.addEventListener('DOMContentLoaded', function() {
+        (function($) {
+            $(document).ready(function() {
+              if($('#main-navbar-collapse').is(":visible")) {
+                $('.navbar-right .search-button').click();
+                $('.navbar-right .search-input').val("{{query}}");
+                $('.navbar-right .search-input').keyup();
+              }
+            });
+        })(jQuery);
+      });
+      {% if count > 1 %}
+        autumn.init();
+      {% endif %}
+    })();
+  </script>
+{% endblock %}
+{# -------------------------------------------------------------------------- #}
+{% block tabs %}
+{# get all tags related to the retrieved items #}
+{% set relatedTags = [] %}
+{% for page in search_results %}
+  {% for tag in page.header.taxonomy.tag %}
+    {% if tag not in relatedTags %}
+      {% set relatedTags = relatedTags|merge([tag]) %}
+    {% endif %}
+  {% endfor %}
+{% endfor %}
+
+{# loop tags and create an array name,count #}
+{% set tags = taxonomy.taxonomy['tag'] %}
+{% set popularTags = {} %}
+{% for tag in relatedTags %}
+  {% set items = taxonomy.taxonomy['tag'][tag] %}
+  {% if popularTags['name'][tag]|length == 0 %}
+    {% set popularTags = popularTags|merge([{ 'name' : (tag),
+                                              'count' : (items|length) }]) %}
+  {% endif %}
+{% endfor %}
+<nav class="blog-tags">
+  <div class="container">
+    <ul class="nav navbar-nav">
+      {% for tag in popularTags|sort_by_key('count')|slice(-9)|reverse %}
+        <li><a href="{{ tag_route | rtrim('/') }}/tag{{ config.system.param_sep }}{{ tag.name|url_encode }}" class="tooltip tooltip-n" aria-label="Posts tagged with {{ tag.name }}" rel="tag">{{ tag.name|upper }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+</nav>
+{% endblock %}
+{# -------------------------------------------------------------------------- #}
+
+{% endembed %}

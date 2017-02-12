@@ -17,6 +17,15 @@
 		xxsmall:	'(max-width: 360px)'
 	});
 
+  // automatically generate conditional classes that hide/show
+  // elements based on whether a particular breakpoint is active
+  // or inactive, Skel will generate the following classes:
+  // only-breakpoint (e.g only-xlarge) and not-breakpoint (e.g
+  // not-xlarge)
+  skel.conditionals ({
+    enabled: true
+  });
+
 	$(function() {
 		var	$window = $(window),
     $body = $('body');
@@ -45,6 +54,7 @@
     }    
 
 		// Fix: Placeholder polyfill
+    // apply "placeholder" attribute polyfill to one or more forms
     $('form').placeholder();
 
 		// Prioritize "important" elements on medium

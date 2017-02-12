@@ -4,6 +4,7 @@
 {% set show_home_menu    = true  %}
 {% set show_folder_menu  = true  %}
 {% set show_onpage_menu  = false %}
+{% set show_onpage_icons = false %}
 {% set show_site_menu    = false %}
 {% set show_langswitcher = false %}
 {% set show_searchbar    = true  %}
@@ -11,29 +12,36 @@
 {% block bottom %}
   <script>
     (function () {
-        summer.init();
+        autumn.init();
     })();
   </script>
 {% endblock %}
-{% set collection   = page.collection() %}
+{% if collection is null %}
+  {% set collection = page.collection() %}
+{% endif %}
 {% set post         = collection|length > 0 ? collection|first : ( page.header.content is null ? page : null ) %}
-{% set banner_class = '' %}
-{% if post %}
-  {% set banner_class  = ' ' ~ ( page.header.banner_class is null ? page.template : page.header.banner_class ) %}
+{% if banner_class is null %}
+  {% set banner_class = '' %}
+  {% if post %}
+    {% set banner_class  = ' ' ~ ( page.header.banner_class is null ? page.template : page.header.banner_class ) %}
+  {% endif %}
+{% else %}
+  {% set banner_class  = ' ' ~ banner_class %}
 {% endif %}
 {% block header %}
   <header class="banner{{ banner_class }}">
     <div class="container 75%">
       <div class="content">
-        {% if post %}
-            {% if page.header.banner.heading %}
-              <span class="banner-heading">{{ page.header.banner.heading }}</span>
+        {% if ( post and not results_page ) or ( results_page and count > 0 ) %}
+            {% set heading  = heading|defined ? heading : page.header.banner.heading %}
+            {% if heading %}
+              <span class="banner-heading">{{ heading }}</span>
             {% endif %}
             {% set post_title = page.header.banner.title ?: post.title  %}
             <h1 class="banner-title">{{ post_title }}</h1>
             {% set post_author = post.taxonomy.author|first %}        
             <p>{% if post_author %}<i class="fa fa-1x fa-fw fa-user"></i> by <strong><a href="{{ base_url }}/blog/author{{ config.system.param_sep }}{{ post_author|url_encode }}" class="tooltip tooltip-s" aria-label="Posts by {{ post_author }}" rel="tag">{{ post_author }}</a></strong> &#8212; {% endif %}<i class="fa fa-1x fa-fw fa-tag"></i> in {% for tag in post.taxonomy.tag|slice(0,3) %}<a href="{{ base_url }}/blog/tag{{ config.system.param_sep }}{{ tag|url_encode }}" class="tooltip tooltip-s" aria-label="Posts tagged with {{ tag }}" rel="tag">{{ tag }}</a>{%if not loop.last %}&nbsp;&plus;&nbsp;{% endif %}{% endfor %} <i class="fa fa-1x fa-fw fa-calendar-o"></i> <strong><time datetime="{{ post.date | date('Y-m-d H:i:s') }}">{{ post.date | date("d M Y") }}</time></strong></p>
-            {% if page.header.banner.summary %}
+            {% if page.header.banner.summary or show_summary %}
               <div class="inner">
                 {{ post.summary | striptags }}
               </div>
@@ -43,18 +51,22 @@
             {% endif %}
         {% else  %}
             <h1 class="banner-title">Oops!</h1>
+            {% if results_page  %}
+            <p>{{ heading }}</p>
+            {% else  %}
             <p>We are really sorry but the information you requested cannot be found</p>
+            {% endif  %}
             <div class="inner">
-              It seems that the page you were trying to reach doesn't exits anymore or had not yet been created. Before you go, try your luck with a random blog post. You might also want to try creating a new post for your request.
+              <i>I know well what I am fleeing from but not what I am in search of</i>... Before you go, try your luck with a random blog post. You might also want to try creating a new post for your request
             </div>
             <div class="row">
               <div class="6u 12u$(small)">
                 <a href="{{ base_url }}/blog/random" class="button fit icon alt fa-retweet">I'm Feeling Lucky!</a>                
               </div>
               <div class="6u 12u$(small)">
-                <a href="{{ theme_config.github.tree ~ 'CONTRIBUTING.md#creating-a-new-post' }}" class="button fit icon alt fa-pencil">Create a new post</a>
+                <a href="{{ theme_config.github.tree ~ 'README.md#posts' }}" class="button fit icon alt fa-pencil">Contribute a new post</a>
               </div>
-            </div>            
+            </div>
         {% endif %}
       </div>
     </div>
@@ -86,7 +98,7 @@
   {% block posts %}
     {% if collection|length > 0 %}
       <section id="posts" class="wrapper style2"> 
-        <main class="summer-content container" itemscope itemtype="http://schema.org/WebPage">
+        <main class="autumn-content container" itemscope itemtype="http://schema.org/WebPage">
             {# set slice_count = collection|length > 1 ? 1 : 0 #}
             {% set slice_count = 0 %}
             {% for child in collection|slice(slice_count) %}
