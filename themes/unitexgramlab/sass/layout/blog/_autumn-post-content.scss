@@ -12,6 +12,18 @@
 /* Autumn Post Content */
 
 	.autumn-post-content {
+    p {
+      margin: 0 0 _size(element-margin) * 0.5 0;
+    }
+
+    ul li {
+      padding-top: 0;
+    }
+
+    blockquote {
+      margin: 1em 0 1em 0;
+    }
+
     > div:not(.autumn-post-title) p.with-image {
       text-align: center;
       padding-top: 1.125rem;
@@ -25,7 +37,7 @@
     > div:not(.autumn-post-title) h1,
     > div:not(.autumn-post-title) h2 {
       font-weight: bold;
-    }  
+    }
   }
 
   #autumn-post footer hr {

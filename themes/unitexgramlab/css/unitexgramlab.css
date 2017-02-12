@@ -2979,6 +2979,13 @@ img {
 .image.fit img {
   width: 100%;
 }
+.image.half {
+  margin: 0 0 1em 0;
+  width: 50%;
+}
+.image.half img {
+  width: 50%;
+}
 .image.main {
   display: block;
   margin: 0 0 3em 0;
@@ -6911,6 +6918,15 @@ html.no-js .autumn-content .autumn-index-post {
 }
 
 /* Autumn Post Content */
+.autumn-post-content p {
+  margin: 0 0 1em 0;
+}
+.autumn-post-content ul li {
+  padding-top: 0;
+}
+.autumn-post-content blockquote {
+  margin: 1em 0 1em 0;
+}
 .autumn-post-content > div:not(.autumn-post-title) p.with-image {
   text-align: center;
   padding-top: 1.125rem;
