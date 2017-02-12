@@ -194,7 +194,7 @@ If you have any questions, please do not hesitate to send a message to the [deve
 <br />
 
 {assets:js order:10}
-theme://js/jquery.accordion.min.js
+/user/themes/unitexgramlab/js/jquery.accordion.min.js
 {/assets}
 
 {assets:inline_js}
