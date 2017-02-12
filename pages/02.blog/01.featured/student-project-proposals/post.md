@@ -14,6 +14,9 @@ anchors:
 markdown:
     extra: true
 
+featherlight:
+    active: true
+
 routes:
   default: '/student-project-proposals'
 ---
@@ -71,9 +74,9 @@ This page describes several student projects that could be undertaken to learn a
         <li>Build a welcome wizard to allow users to setup a new project and to select which perspective (the visible actions and views within a window) they want to use: Classic or Project-oriented</li>
       </ul>
       <h2>Classic IDE (Unitex.jar)</h2>
-      <p><img src="/user/pages/02.blog/01.featured/student-project-proposals/unitex_screenshot.png"></p>
+      <p class="center"><img class="image half" src="/user/pages/02.blog/01.featured/student-project-proposals/unitex_screenshot.png"></p>
       <h2>Project-oriented IDE (GramLab.jar)</h2>
-      <p><img src="/user/pages/02.blog/01.featured/student-project-proposals/gramlab_screenshot.png"></p>
+      <p><img class="image half" src="/user/pages/02.blog/01.featured/student-project-proposals/gramlab_screenshot.png"></p>
       <p><strong>Mentor</strong>: <a href="http://martinec.org">Cristian Martinez</a></p>   
       </article>
     </div>
@@ -111,7 +114,7 @@ This page describes several student projects that could be undertaken to learn a
           <li><a target="_blank" href="https://en.wikipedia.org/wiki/List_of_software_package_management_systems#Application-level_package_managers">More here</a></li>
         </ul>
         <p>We wish to provide a Unitex Package Manager (UPM) for Linguistic Resources, i.e. a tool to install, upgrade and uninstall dictionnaires, grammars or a group of <a target="_blank" href="http://unitex.univ-mlv.fr/releases/latest-stable/lingua/">language-related resources</a></p>
-        <p><strong>Mentor</strong>: <a href="#">To be defined</a></p>
+        <p><strong>Mentor</strong>: <a target="_blank" href="http://martinec.org">Cristian Martinez</a></p>
       </article>
     </div>
   </section>
@@ -128,11 +131,10 @@ This page describes several student projects that could be undertaken to learn a
         <li>A function that imports GATE corpus to Unitex/GramLab</li>
         <li>A Unitex dialog box that prepares supervised learning with GATE's Learning external module</li>
         </ul>
-        <p><strong>Mentor</strong>: <a href="#">To be defined</a></p>      
+        <p><strong>Mentor</strong>: <a target="_blank" href="http://www.univ-tours.fr/m-gupta-anubhav-452216.kjsp">Anubhav Gupta</a></p>
       </article>
     </div>
   </section>
-
 
   <section data-accordion>
     <button data-control><span class="ug-label">PRJ-06</span>Support Locate Pattern function on treebanks<span class="ug-label c1">Core</span><span class="ug-label c2">C++</span><span class="ug-label c3">FSA</span><span class="ug-label c4">Priority:3/5</span></label></button>
@@ -143,7 +145,8 @@ This page describes several student projects that could be undertaken to learn a
           <li>A module that represents a treebank in the form of an acyclic automaton (each internal node of a tree is represented by a transition that bypasses the sequence dominated by the node)</li>
           <li>A variant of the search module that works on treebanks represented in this way</li>
           </ul>
-        <p><strong>Mentor</strong>: <a target="_blank" href="http://igm.univ-mlv.fr/~mconstan/">Matthieu Constant</a></p>      
+        <p><strong>Mentor</strong>: <a target="_blank" href="http://igm.univ-mlv.fr/~mconstan/">Matthieu Constant</a></p>
+        <p><strong>Co-mentor</strong>: <a href="https://github.com/patwat">Patrick Watrin</a></p>       
       </article>
     </div>
   </section>
@@ -158,7 +161,7 @@ This page describes several student projects that could be undertaken to learn a
         <p>TreeCloud is a free software visualization tool which display the most frequent words of a text as a tree cloud. A tree cloud is an extension of a <a href="https://en.wikipedia.org/wiki/Tag_cloud">tag cloud</a>, in which the words are located around a tree representing how close they appear in the text, and where attributes like size and color are used to reflect the word frequency.</p>
         <figure>
         <img class="centered" src="http://www-igm.univ-mlv.fr/~unitex/img/treecloud.png" alt="TreeCloud of the Unitex User's Manual">
-        <figcaption>TreeCloud of the Unitex User's Manual</figcaption>
+        <figcaption class="align-center">TreeCloud of the Unitex User's Manual</figcaption>
         </figure>
         <p>The aim of this project is to integrate a tree cloud visualization for the occurrences that are presented in the concordance window of the Unitex/GramLab IDE (see the User’s Manual p.89).  The project will mainly consist in:</p>
         <ul>
@@ -177,6 +180,85 @@ This page describes several student projects that could be undertaken to learn a
         </ul>
         <p><strong>Mentor</strong>: <a http://igm.univ-mlv.fr/~gambette">Philippe Gambette</a></p> 
         <p><strong>Mentor</strong>: <a href="http://martinec.org">Cristian Martinez</a></p> 
+      </article>
+    </div>
+  </section>
+
+  <section data-accordion>
+    <button data-control><span class="ug-label">PRJ-08</span>IDEs Integration: Plugins for the Unitex/GramLab IDE<span class="ug-label c1">IDE</span><span class="ug-label c2">Java</span><span class="ug-label c3">Plugins</span><span class="ug-label c4">Priority:4/5</span></label></button>
+    <div data-content>
+      <article markdown="1">
+Unitex/GramLab includes two Java IDEs, the Classic IDE (`Unitex.jar`) and the Project-oriented IDE (`Gramlab.jar`).
+During the GSoC'16 a student (see <small><span class="ug-label c5">PRJ-02</span></small> above) helped us to
+deploy a plugin-based architecture to integrate both IDEs into a new one featuring two perspectives: Classical an
+Project-oriented. His final report is available [here](https://goo.gl/G6oaVM?target=_blank)
+
+Plugins are built on [PF4J](https://github.com/decebals/pf4j?target=_blank), an open-source, lightweight plugin framework for Java,
+with minimal dependencies and easily extensible. Plugins are distributed in ZIP files with all runtime dependencies bundled,
+that can be installed without difficulty by copying them into the `App/plugins` folder.
+
+The aim of this project is to continue the integration of both IDEs. The proposed list of tasks is:
+
+1. Migrate core functionalities as plugins (see below)
+1. Add a feature to convert a projects between perspectives
+1. Create a GUI for plugin manager (see image below)
+
+  ![GramLab Plugins Manager](gramlab_plugins_manager.png?lightbox=600,600&cropResize=400,400 "GramLab Plugins Manager"){.image .half}
+
+1. Configure and deploy an online plugin registry
+
+Some core functionalities to be converted as  plugins:
+
+- Concordance viewer as illustrated in the User's Manual, Fig. 4.8.
+- Dictionary viewer as illustrated in the User's Manual, Fig. 3.2.
+- Graph editor as showed in the User's Manual, Section 5.2.
+- Graph exporter as described in the User's Manual, Section 5.4.
+- Plugin manager, a user interface to manage plugins.
+- Transcoder as illustrated in the User's Manual, Fig. 2.3.
+- Xalign as described in the User's Manual, Chapter 10.
+- Treecloud, for TreeCloud-style visualization of Unitex concordances.
+
+Tasks for the Community Bonding Period :
+
+- Reproduce and resolve an issue on the [PR #52](https://github.com/UnitexGramLab/gramlab-ide/pull/52#issuecomment-241422363)
+- Rebase the PR #52 with the latest changes on master
+- Ask developers to review the PR #52 and then merge it to master
+- Rebase the [PR #53](https://github.com/UnitexGramLab/gramlab-ide/pull/53) with the latest changes on master
+- Ask developers to review the PR #53 and then merge it to master
+- Add a 'Remember Me' feature on the select perspective dialog (see image GramLab Perspective Selection below)
+
+  ![GramLab Perspective Selection](gramlab_perspective_selection.png?lightbox=600,600&cropResize=400,400 "GramLab Perspective Selection"){.image .half}
+
+**More info**:
+
+- [An outdated overview of the Java IDE](http://www-igm.univ-mlv.fr/~unitex/docs/ide_code.pdf) (v3.0)
+- [The IDE sources](https://github.com/UnitexGramLab/gramlab-ide)
+- [Plugins branch](https://github.com/UnitexGramLab/gramlab-ide/tree/feature/plugins)
+
+
+<p><strong>Mentor</strong>: <a href="http://martinec.org">Cristian Martinez</a></p> 
+      </article>
+    </div>
+  </section>
+
+  <section data-accordion>
+    <button data-control><span class="ug-label">PRJ-09</span>Introduce the UnTagged Token on Unitex<span class="ug-label c1">Core</span><span class="ug-label c2">C++</span><span class="ug-label c3">CasSys</span><span class="ug-label c4">Priority:3/5</span></label></button>
+    <div data-content>
+      <article markdown="1">
+Unitex supports a lexical mask called **TDIC** that matches any tagged token in the text.
+Unitex/GramLab 3.1beta version introduced tagging generalization graph that matches user
+specified tagged token in text and then searches untagged instances of the token.
+The tagging generalization graph is too restrictive and works only as part of CasSys.
+
+The proposal is to create a new lexical mask, **UDIC**, in order to combine the functioning
+of **TDIC** and tagging generalization graph. This lexical mask has to be written with
+constraints i.e. **&lt;UDIC&gt;** is not allowed. It does not accept negations either (**!**). This
+mask will lookup untagged instances of a token defined by constraints.
+
+Assume the following tagged token: **{TTT,LLL.CCC}**, to match all untagged instances of
+**TTT** the syntax is **&lt;UDIC+CCC&gt;**
+
+<p><strong>Mentor</strong>: <a target="_blank" href="http://www.univ-tours.fr/m-gupta-anubhav-452216.kjsp">Anubhav Gupta</a></p>  
       </article>
     </div>
   </section>
