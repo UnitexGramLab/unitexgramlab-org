@@ -1,4 +1,4 @@
-<nav class="blog-tags">
+<nav class="blog-tags post-navigation">
   <div class="container">
     {% set cats = attribute(page.header.content.items, '@taxonomy.category') %}
     {% set progress = page.collection({'items':{'@taxonomy.category': 'blog'},'order': {'by': 'date', 'dir': 'desc'}}) %}
