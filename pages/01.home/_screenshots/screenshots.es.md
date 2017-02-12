@@ -1,6 +1,7 @@
 ---
 title: Pantallazos
 menu: screenshots
+menu_icon: 'camera-retro'
 images:
   - title: 'Ejemplo de un grafo'
     name: 'screenshots/graph.png'

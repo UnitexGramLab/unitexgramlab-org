@@ -1,6 +1,7 @@
 ---
 title: Screenshots
 menu: screenshots
+menu_icon: 'camera-retro'
 images:
   - title: 'Graph example'
     name: 'screenshots/graph.png'

@@ -1,6 +1,7 @@
 ---
 title: Acerca
 menu: about
+menu_icon: 'anchor'
 
 shortcode-core:
     active: true
