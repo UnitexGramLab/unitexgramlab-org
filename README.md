@@ -27,6 +27,7 @@ Currently the site is available in [English](http://unitexgramlab.org) and [Span
 
 - [Error page](pages/error)
 - [Home page](pages/01.home)
+- [Install instructions](pages/01.home/install-instructions)
 - [languages.yaml](themes/unitexgramlab/languages.yaml)
 - [site.yaml](config/site.yaml)
 
