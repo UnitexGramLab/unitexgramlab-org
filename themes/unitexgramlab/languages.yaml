@@ -49,8 +49,8 @@ en:
     DOWNLOAD_LINUX_DEVEL: 'Unitex/GramLab %s for Linux. Installer packages are available for download both for <a title="%s" href="%s">%s</a> and <a title="%s" href="%s">%s</a> platforms'
     DOWNLOAD_OSX_STABLE: 'Unitex/GramLab %s for Mac OS X. Supports OS X 10.7 (Lion), 10.8 (Mountain Lion), 10.9 (Mavericks), 10.10 (Yosemite), 10.11 (El Capitan) and 10.12 (Sierra)'
     DOWNLOAD_OSX_DEVEL: 'Unitex/GramLab %s for Mac OS X. Supports OS X 10.7 (Lion), 10.8 (Mountain Lion), 10.9 (Mavericks), 10.10 (Yosemite), 10.11 (El Capitan) and 10.12 (Sierra)'
-    DOWNLOAD_OTHER_STABLE: 'Unitex/GramLab %s for other platforms comes with the sources necessary to compile this release'
-    DOWNLOAD_OTHER_DEVEL: 'Unitex/GramLab %s for other platforms comes with the sources necessary to compile this release'
+    DOWNLOAD_OTHER_STABLE: 'Unitex/GramLab %s for other platforms comes with the necessary sources to compile this release'
+    DOWNLOAD_OTHER_DEVEL: 'Unitex/GramLab %s for other platforms comes with the necessary sources to compile this release'
 # mod_ install
     INSTALL_INSTRUCTIONS_CAPTION_VERSION_SOURCE: 'Installing Unitex/GramLab %s using the source distribution'
     INSTALL_INSTRUCTIONS_CAPTION_VERSION_OS: 'Installing Unitex/GramLab %s on %s'
