@@ -113,7 +113,7 @@ This page describes several student projects that could be undertaken to learn a
           <li><a target="_blank" href="http://bower.io/">Bower</a> for the web</li>
           <li><a target="_blank" href="https://en.wikipedia.org/wiki/List_of_software_package_management_systems#Application-level_package_managers">More here</a></li>
         </ul>
-        <p>We wish to provide a Unitex Package Manager (UPM) for Linguistic Resources, i.e. a tool to install, upgrade and uninstall dictionnaires, grammars or a group of <a target="_blank" href="http://unitex.univ-mlv.fr/releases/latest-stable/lingua/">language-related resources</a></p>
+        <p>We wish to provide a Unitex Package Manager (UPM) for Linguistic Resources, i.e. a tool to install, upgrade and uninstall dictionnaires, grammars or a group of <a target="_blank" href="http://unitexgramlab.org/releases/latest-stable/lingua/">language-related resources</a></p>
         <p><strong>Mentor</strong>: <a target="_blank" href="http://martinec.org">Cristian Martinez</a></p>
       </article>
     </div>

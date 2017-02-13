@@ -13,8 +13,8 @@ pack_name: 'Unitex-GramLab'
 name: 'Unitex/GramLab'
 # --------------------------------------------------------------
 url_releases: 'http://releases.unitexgramlab.org'
-url_vinber_info: 'http://unitex.univ-mlv.fr/v6/#bundle=nightly&q=2016-03-27-03-00-06&line=1'
-url_version_json: 'http://unitex.univ-mlv.fr/v6/badge/nightly/2016-03-27-03-00-06.json?subject=build.started&status=product.version.string'
+url_vinber_info: 'http://unitexgramlab.org/v6/#bundle=nightly&q=2016-03-27-03-00-06&line=1'
+url_version_json: 'http://unitexgramlab.org/v6/badge/nightly/2016-03-27-03-00-06.json?subject=build.started&status=product.version.string'
 url_support: 'http://forum.unitexgramlab.org'
 # --------------------------------------------------------------
 release_file:   'Unitex-GramLab-3.1{suffix}'

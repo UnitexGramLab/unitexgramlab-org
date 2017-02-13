@@ -70,7 +70,7 @@ It's common to refer to the Unitex/GramLab Core as "Unitex", and to the Unitex P
 
 # How to start ?
 
-Thank you for your interest in contributing with the Unitex/GramLab development! You could start downloading a [binary release](http://releases.unitexgramlab.org?target=_blank) and getting familiar with Unitex/GramLab. The User's Manual is available [here](http://unitex.univ-mlv.fr/releases/latest-stable/man/Unitex-GramLab-3.1-usermanual-en.pdf?target=_blank).
+Thank you for your interest in contributing with the Unitex/GramLab development! You could start downloading a [binary release](http://releases.unitexgramlab.org?target=_blank) and getting familiar with Unitex/GramLab. The User's Manual is available [here](http://unitexgramlab.org/releases/latest-stable/man/Unitex-GramLab-3.1-usermanual-en.pdf?target=_blank).
 
 Unitex/GramLab source code is hosted on [https://github.com/UnitexGramLab](https://github.com/UnitexGramLab?target=_blank). An overview of the C++ Core code (v3.0) is reachable [here](http://www-igm.univ-mlv.fr/~unitex/docs/core_code.pdf?target=_blank). For an overview of the Java IDE (v3.0) you could check [this presentation](http://www-igm.univ-mlv.fr/~unitex/docs/ide_code.pdf?target=_blank). There are also some contribution rules [here](#).
 
