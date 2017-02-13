@@ -274,7 +274,7 @@ If you have any questions, please do not hesitate to send a message to the [deve
 </section>
 <br />
 
-{assets:js order:10}
+{assets:js order:5}
 /user/themes/unitexgramlab/js/jquery.accordion.min.js
 {/assets}
 
