@@ -6922,7 +6922,7 @@ html.no-js .autumn-content .autumn-index-post {
   margin: 0 0 1em 0;
 }
 .autumn-post-content ul li {
-  padding-top: 0;
+  padding-top: 0.2em;
 }
 .autumn-post-content blockquote {
   margin: 1em 0 1em 0;
