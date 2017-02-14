@@ -11,7 +11,7 @@ shortcode-core:
 [section name="a_image"]u.png[/section]
 [section name="a_title"]Unitex[/section]
 [section name="a_subtitle"]The Core <abbr title="Natural Language Processing">NLP</abbr> Engine[/section]
-[section name="a_text"]Unitex is the C++ <abbr title="NLP">Natural Language Processing</abbr> engine of Unitex/GramLab. Unitex **automata-oriented technology** allows to handle electronic resources such as electronic dictionaries and grammars and apply them on a text[/section]
+[section name="a_text"]Unitex is the <abbr title="NLP">Natural Language Processing</abbr> engine of Unitex/GramLab. Unitex **automata-oriented technology** allows to handle electronic resources such as electronic dictionaries and grammars and apply them on a text[/section]
 
 [section name="b_image"]lr.png[/section]
 [section name="b_title"]/[/section]
