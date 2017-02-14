@@ -11,9 +11,9 @@
 
 {% block bottom %}
   <script>
-    (function () {
+    $( document ).ready(function() {
         autumn.init();
-    })();
+    });
   </script>
 {% endblock %}
 {% if collection is null %}

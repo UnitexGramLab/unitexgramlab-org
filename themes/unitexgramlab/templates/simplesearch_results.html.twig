@@ -26,11 +26,11 @@
                 $('.navbar-right .search-input').keyup();
               }
             });
+            {% if count > 1 %}
+              autumn.init();
+            {% endif %}
         })(jQuery);
       });
-      {% if count > 1 %}
-        autumn.init();
-      {% endif %}
     })();
   </script>
 {% endblock %}
