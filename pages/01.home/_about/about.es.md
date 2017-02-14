@@ -11,7 +11,7 @@ shortcode-core:
 [section name="a_image"]u.png[/section]
 [section name="a_title"]Unitex[/section]
 [section name="a_subtitle"]El Motor <abbr title="Procesamiento Natural del Lenguaje">NLP</abbr>[/section]
-[section name="a_text"]Unitex es el motor C++ de <abbr title="NLP">Procesamiento Natural del Lenguaje</abbr> de Unitex/GramLab. La **tecnología basada en autómatas** de Unitex le permite utilizar diccionarios electrónicos y gramáticas locales para procesar un texto[/section]
+[section name="a_text"]Unitex es el motor de <abbr title="NLP">Procesamiento Natural del Lenguaje</abbr> de Unitex/GramLab. La **tecnología basada en autómatas** de Unitex le permite utilizar diccionarios electrónicos y gramáticas locales para procesar un texto[/section]
 
 [section name="b_image"]lr.png[/section]
 [section name="b_title"]/[/section]
