@@ -14,6 +14,7 @@ anchors:
     
 markdown:
     extra: true
+    auto_url_links: true
 
 featherlight:
     active: true
