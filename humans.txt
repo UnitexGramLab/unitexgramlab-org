@@ -225,3 +225,71 @@
 
   Grav Google Analytics Plugin by John Linhart
   https://github.com/escopecz/grav-ganalytics
+
+
+
+  `  ``````.+so:.-+ooossssssssssyssyyyyyhhhhhdh/`
+  `   ````-yh+-```./oooooosooosyyysyhhdddmmmmmmhso/.``````.```
+  `   .-`.ohdyo/-.`-+ooooooooosyyhddmmmmmmmmmmmmmmmmy//shddddhho+:.`````` ``````
+  `   .+/-ossyhyo+/:+oooooooosydmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmdmdh/-.``.```````
+  .```-+::+ooooo++//ooooooooydmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmds:-...``````
+  -..-+++/:+ooo++//ooooosyhdmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmdo+:..``````
+  ::-/so+/-/+ooo/:ososydmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmds/..``````
+  ::/syso+/++//:-+yyydmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmdo:..`````
+  //sdddhhsoo+:--oddmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmd:.`..``
+  :ohddddhsoo+:--smmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmddhdddmmmmmmmmmmmm/:-:..``
+  -/ydddhysoo+:-/ymmmmmmmmmmmmmmmmmddhhhyyyyssssssssooo+++++syyyhdmmmmmds/:-::-`
+  `-+ydhyysoo/::smmmmmmmmmmmmmmddmhyyyssoo++////////:::::::::///+oydmmmho//+:.``
+   `:+syyssso//smmmmmmmmmmmddmdhhmdysoo++///::::::--:-------::::://odmmmdo-..``
+    `:/ossso+ohmmmmmmmmdyddhhhysoshmdys+/:::--::---.-...----------::+hmmmds` ``
+  `  `:shhyyydmmmmmmmmdssoooo++oo++oyhhy+/:----.-........---.....---:/ymmmds.```
+      `ommmmmmmmmmmmmdhyso+++++++////////:---..................``....-:ymmddyo/-
+       `ymmmmmmmmmmmmdhysso+++++///:::::-----..-..`..........``.````...:hmddddhs
+        :dmmmmmmmmmmmddhyyo++++////::::::-----..................```````./dmddhhy
+        `ymmmmmmmmmmmmddhyoo+++//////::::----....................```````.ydmdmdd
+         :mmmmmmmmmmmmddysoo++++////////-----.....-.........`````````````+dmmmmd
+         .dmmmmmmmmmmddhysoooo++++oyyysso+/:/:---...`.......````.....``  /dmdddd
+          ymmmmmmmmmddyssoooooosyddmmmmmdddhhhs+/:-``.....::::/++/+o+/. `+dmhyyy
+          +mmmmmmmmmdysooososhdmddhhhhhdddmmddhhs+:--:--:/oshddmddddhys:`smmhhhy
+         `/dmmmmmmmdhsoooooshmdyso+++:///+osyyyys+/://::/oyyyhhhhysooooy/ymmmmmm
+        -+ssyhmmmmmdyo++++oyhsooossooooooooooosso+/-:-..:/++ooo+/::-.--++ymmmmmm
+  -....-syysoohdmmmdyo+++o+++++oyhhhydddhyshhyso++/--.``-/osssyhyss+/:..:sddmmmm
+  /::::/so+o+ossddmdyo+++++//////:::/+oo+/+sso+o/++:--.`-/sys+hdhhoso/```oy/dmmm
+  ::::::o/o+++sooyhssooo+++/::::::::::::::://///+o+/::.`..://+++//-.```` +o/dmmm
+  /::::/so+//ody++ssoooo++//::::------::::::////+++/:-.````.----...````  //sdmmm
+  :::::/yo:+shy+:+yssoso++/::---------------:::/+o+/--.` `......```````  ::ddmmm
+  :::::+s+/sss+/:/yyysoo++//:--..........-:/::/++++/:-.````..`````````   -sddmmm
+  :::::/oo/oyooo:/yyssso++//:-.````...-/ossso++oo++/:--.`.--:/-``  `     .hdmmmm
+  :-::::+oo+/:://oyyyyoooo++/:-...--:+sso+oss+++++/:--````../sy+:``      :ddmmmm
+  /::::--o+/////+ohhyysssooo+/::::/+sso++++osyysoo+/::-.``.--:shs/-.`    +dmmmmm
+  /::::-:yhs///+oyyhyysssssso+///+ossoo++oossyyyyhhsoo+/////--/ohy+-.````sdmmmmm
+  /::---+dmmhyssho`yhhyyysssso+//ooosoooooooooooosysss+///:/:::/ohy/-.`..hdmmmmm
+  :::---ymmmmdddm/ /dhyyysssss+://+oysso++///////://+/:---..-://+oho:-.-sdmmmmmm
+  ::--.:hmmmmmmmmy:+hdhhyyyyso+/::/+yddhsysossssooo+///////:-:+++oy+:--+dmmmmmmm
+  :--..+dmmmmmmmdsydsdhhhyyyys+/:::/+ohhso/./..:`.:-.---:/ddyos+/o+:--/dmmmmmmmm
+  ::-..smmmmmmmdohmmshdhhhyyyyo+/::::/+syhyso:/:..-``..--syo-.///:---/hmdmmmmmmm
+  :-..:ymmmmmmd+hmmmyyhdddhhyyyso//:://+ossyso:://+/oyys+:-...-:---:+dmmmmmmmmmm
+  --:+sdmmmmmm+smmmmyyhhddhhyhysoo+/:://++++oooooooo++/:-```.----::odmmmmmmmmmmm
+  shdmmmmmmmmy:hmmmmysyyhddhhhhyyss+////++o+o+++++++//:-.```.::::/ymmmmmmmmmmmmm
+  dmmmmmmmmmd-/dmmmmdsyyyddddhdhhyso++:///+oo++o+++///:-.```.-:/:-mmmmmmmmmmmmmm
+  dmmmmmmmmmo.odmmmmdssyyhhddddddhhsoo+:::///:/:/:::--.`..`../o: .mmmmmmmmmmmmmm
+  dmmmmmmmmd.-ymmmmmdyssyyhhhddddddhyso+/////::---.---.--.../yo` :mmmmmmmmmmmmmm
+  dmmmmmmmdo`/ymmmmmmysssyyhhdddddddhysoo+++//:::::::://---:hy-  ommmmmmmmmmmmdm
+  dmmmmmmmd-`+ymmmmmmdssssyyhhdddddddddhysoo+//::::::::/:/+dh:   hmmmmmmmmmmmmmm
+  dmmmmmmmy``/smmmmmmdysosssyyhddddddddddhhhyso+ooooo+ossydd+`  .dmmmmmmmmmmmmmd
+  dmmmmmmd/``.+dmmmmmdhsoooossyhhdddddddmmmdddddddhhhdddmmho`   +mmmmmmmmmmmmmmd
+  dmmmmmmd.```-hmmmmmdhyso++oossyyhhhddddddddddddhhhddmmmy:.   `dmmmmmmmmmmmmmmd
+  dmmmmmmy` ``.+hmmmmmdyso++ooosssssyyhhhhhhhyyyyhddmmds/..    /mmmmmmmmmmmmmmmm
+  dmmmmmd+``  .-/+ydmmdhyso++++ossssoooosooossyhhddmho-`/yy/`  ymmmmmmmmmmmmmmmm
+  dmmmmmd-`. `.-:/:-omdhysso++++osssso+//+osyyhddddy:.`/hhdds`.dmmmmmmmmmmmmmmmm
+  dmmmmmh::osys:::-``smdhyyoo+++oossssso+osyhdddds/..`:oyhhdd.:mmmmmmmmmmmmmmmmm
+  dmmmmmo:osdddo:-:.`.sddhyysoo+++ossyyyyhhhddho-    `:/yyhd+.smmmmmmmmmmmmmmmmd
+  dmmmmmo-:shhhyo/o:-. -sddhhssoooooossssyyhhhy`    `--syyhs..dmmmmmmmmmmmmmmmmm
+  dmmmmmd../oos+o+oo/:-. .ohdhyyoooooososssyyyo    `--+sshs:`+mmmmmmmmmmmmmmmmmm
+  dmmmmmdo .:/:-:.-:/-/+:.``ohhhyyssssssssyyyy+   `/-/yoyo:`/dmmmmmmmmmmmmmmmmmm
+  dmmmmmmd` .//.-..-:-.:::-``.sdhhyyyyyyyyyyso-  `/.-yso+:`/dmmmmmmmmmmmmmmmmmmm
+  dmmmmmmd/  -+:-`..-: `-.-````.:::::----.....  ./--yho/-.smmmmmmmmmmmmmmmmmmmmd
+  dmmmmmmmh` `/:/----:`  ``` ````.....`......` .//-oh+:.+dmmmmmmmmmmmmmmmmmmmmmd
+  dmdmmmmmms``-+/-.:-/-    ``````..--------:.`-/+//o:-+hmmmmmmmmmmmmmmmmmmmmmmmd
+  dmmmmmmmmmy.`os/-:-/:. ` `.``````.-syysss/`.+o+--+ymmmmmmmmmmmmmmmmmmmmmmmmmmd
+  hhhhhhhhdddy..s+::.---`        ````.+o+/-``-//-ydddddddddddmmmdddddddddddddddh
