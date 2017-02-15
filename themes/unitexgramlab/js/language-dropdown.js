@@ -12,7 +12,6 @@ http://creativecommons.org/publicdomain/zero/1.0/legalcode
 changes made by martinec:
 
 - use classie (https://github.com/ded/bonzo) to handle class operations
-- add event listener for touchend
 
 */
 
@@ -115,12 +114,10 @@ var Dropdown = (function(){
       node.addEventListener(
           'mouseover', this.bind(this.handleMouseOver), false);
       node.addEventListener('mouseout', this.bind(this.handleMouseOut), false);
-      node.addEventListener('touchend', this.bind(this.handleMouseOut), false);
       node.addEventListener('click',    this.bind(this.handleClick),    false);
     }else{
       node.attachEvent('onmouseover', this.bind(this.handleMouseOver));
       node.attachEvent('onmouseout',  this.bind(this.handleMouseOut));
-      node.attachEvent('ontouchend',  this.bind(this.handleMouseOut));
       node.attachEvent('onclick',     this.bind(this.handleClick));
     }
 
