@@ -94,6 +94,11 @@
   {% block bottom %}
     {{ assets.js('bottom') }}
     <script>
+      $( document ).ready(function() {
+       {% if show_langswitcher %}
+        Dropdown.initialise();
+       {% endif %}
+      });
     </script>
   {% endblock %}  
 </body>

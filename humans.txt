@@ -88,6 +88,10 @@
   https://vctrfrnndz.github.io/jquery-accordion
   Released under the MIT license
 
+  Touch-friendly dropdown  by Stephen Morley
+  http://code.stephenmorley.org
+  Released under the CC0 1.0 Universal
+
   Unitex/GramLab Theme by martinec
   https://github.com/UnitexGramLab/unitexgramlab-org
   Released under the MIT license
