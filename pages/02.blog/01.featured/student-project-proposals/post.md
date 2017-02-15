@@ -275,14 +275,10 @@ If you have any questions, please do not hesitate to send a message to the [deve
 <br />
 
 {assets:inline_js}
-  window.addEventListener('DOMContentLoaded', function() {
-      (function($) {
-          $(document).ready(function() {
-            $('#only-one [data-accordion]').accordion({
-                "transitionSpeed": 400,
-                 singleOpen: false
-            });
-          });
-      })(jQuery);
+$(document).ready(function() {
+  $('#only-one [data-accordion]').accordion({
+      "transitionSpeed": 400,
+       singleOpen: false
   });
+});
 {/assets}
