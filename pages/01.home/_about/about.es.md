@@ -9,19 +9,19 @@ shortcode-core:
 [section name="header"]Unitex/GramLab es una suite <a class="page-scroll" href="#open-source">libre</a>, <a class="page-scroll" href="#cross-platform">multiplataforma</a>, <a class="page-scroll" href="#multilingual">plurilingüe</a>, basada en <br><a class="page-scroll" href="#lexicon-based">léxicos</a> y <a class="page-scroll" href="#grammar-based">gramáticas</a> <a class="page-scroll" href="#corpus-processing-suite">para el procesamiento de corpus textuales</a>[/section]
 
 [section name="a_image"]u.png[/section]
-[section name="a_title"]Unitex[/section]
-[section name="a_subtitle"]El Motor <abbr title="Procesamiento Natural del Lenguaje">NLP</abbr>[/section]
-[section name="a_text"]Unitex es el motor de <abbr title="NLP">Procesamiento Natural del Lenguaje</abbr> de Unitex/GramLab. La **tecnología basada en autómatas** de Unitex le permite utilizar diccionarios electrónicos y gramáticas locales para procesar un texto[/section]
+[section name="a_title"]Motor <br /><abbr title="Procesamiento Natural del Lenguaje">NLP</abbr>[/section]
+[section name="a_subtitle"] [/section]
+[section name="a_text"]La **tecnología basada en autómatas** del motor de <abbr title="NLP">Procesamiento Natural del Lenguaje</abbr> de Unitex/GramLab le permite utilizar diccionarios electrónicos y gramáticas locales para procesar y analizar rápidamente datos textuales[/section]
 
 [section name="b_image"]lr.png[/section]
-[section name="b_title"]/[/section]
-[section name="b_subtitle"]Los Recursos Lingüísticos[/section]
+[section name="b_title"]Recursos <br />Lingüísticos[/section]
+[section name="b_subtitle"] [/section]
 [section name="b_text"]Los recursos lingüísticos son los diccionarios electrónicos y gramáticas que permiten el análisis de datos textuales con Unitex. Recursos para **[más de 22 lenguas](/language-resources?target=_blank)** se distribuyen actualmente de forma inmediata con Unitex/GramLab[/section]
 
 [section name="c_image"]g.png[/section]
-[section name="c_title"]GramLab[/section]
-[section name="c_subtitle"]El <abbr title="Entorno de Desarrollo Integrado">IDE</abbr> Visual[/section]
-[section name="c_text"]GramLab es el <abbr title="IDE">Entorno de Desarrollo Integrado</abbr> Visual de Unitex/GramLab. GramLab cuenta con una **completa perspectiva orientada a proyectos** que permite a los usuarios trabajar en paralelo y ejecutar los proyectos en un sólo clic[/section]
+[section name="c_title"]<abbr title="Entorno de Desarrollo Integrado">IDE</abbr> <br />Visual[/section]
+[section name="c_subtitle"] [/section]
+[section name="c_text"]El <abbr title="IDE">Entorno de Desarrollo Integrado</abbr> Visual de Unitex/GramLab permite a los usuarios **diseñar y aplicar fácilmente recursos lingüísticos** a un texto. La perspectiva orientada a proyectos permite además ejecutar los proyectos en un sólo clic[/section]
 
 [section name="feature_1_image"]opensource.png[/section]
 [section name="feature_1_class"]open-source[/section]

@@ -9,19 +9,19 @@ shortcode-core:
 [section name="header"]Unitex/GramLab is an <a class="page-scroll" href="#open-source">open source</a>, <a class="page-scroll" href="#cross-platform">cross-platform</a>, <a class="page-scroll" href="#multilingual">multilingual</a>, <br><a class="page-scroll" href="#lexicon-based">lexicon-</a> and <a class="page-scroll" href="#grammar-based">grammar-based</a> <a class="page-scroll" href="#corpus-processing-suite">corpus processing suite</a>[/section]
 
 [section name="a_image"]u.png[/section]
-[section name="a_title"]Unitex[/section]
-[section name="a_subtitle"]The Core <abbr title="Natural Language Processing">NLP</abbr> Engine[/section]
-[section name="a_text"]Unitex is the <abbr title="NLP">Natural Language Processing</abbr> engine of Unitex/GramLab. Unitex **automata-oriented technology** allows to handle electronic resources such as electronic dictionaries and grammars and apply them on a text[/section]
+[section name="a_title"]Core <abbr title="Natural Language Processing">NLP</abbr> <br />Engine[/section]
+[section name="a_subtitle"] [/section]
+[section name="a_text"]The **automata-oriented technology** of the Unitex/GramLab <abbr title="NLP">Natural Language Processing</abbr> engine allows to handle electronic resources such as electronic dictionaries and grammars and apply them to a text for fast processing and analysis[/section]
 
 [section name="b_image"]lr.png[/section]
-[section name="b_title"]/[/section]
-[section name="b_subtitle"]The Language Resources[/section]
-[section name="b_text"]Language Resources are the electronic dictionaries and grammars that power Unitex analysis on textual data. Resources for **[more than 22 languages](/language-resources?target=_blank)** are currently distributed out-of-the-box with Unitex/GramLab[/section]
+[section name="b_title"]Language <br />Resources[/section]
+[section name="b_subtitle"] [/section]
+[section name="b_text"]The language resources are the electronic dictionaries and grammars that power Unitex analysis on textual data. Resources for **[more than 22 languages](/language-resources?target=_blank)** are currently distributed out-of-the-box with Unitex/GramLab[/section]
 
 [section name="c_image"]g.png[/section]
-[section name="c_title"]GramLab[/section]
-[section name="c_subtitle"]The Visual <abbr title="Integrated Development Environment">IDE</abbr>[/section]
-[section name="c_text"]GramLab is the Visual <abbr title="IDE">Integrated Development Environment</abbr> of Unitex/GramLab. GramLab features a **rich project-oriented perspective** allowing users to work on several projects in parallel and run each of them on a single click[/section]
+[section name="c_title"]Visual <br /><abbr title="Integrated Development Environment">IDE</abbr>[/section]
+[section name="c_subtitle"] [/section]
+[section name="c_text"]The Visual <abbr title="IDE">Integrated Development Environment</abbr> of Unitex/GramLab allows users to **easily design and apply language resources** to text files. Moreover, a project-oriented perspective enables to run projects on a single click[/section]
 
 [section name="feature_1_image"]opensource.png[/section]
 [section name="feature_1_class"]open-source[/section]
