@@ -35,7 +35,7 @@ To report an issue, please observe the following steps:
 1. Identify which major component from the categories below is affected. If you are having troubles with the visual user interface chose the **Visual IDE** component, if you are experimenting problems with the execution of `UnitexToolLogger`, select the **Core Engine** component. If you don't have a clue on which part of the program the issue comes from, please report what happened under the Visual IDE category.
 
 | Component          | Tracker                                                                        |
-|--------------------|--------------------------------------------------------------------------------|
+|--------------------| :----------------------------------------------------------------------------: |
 | Visual IDE         | [Issues](https://github.com/UnitexGramLab/gramlab-ide/issues)                  |
 | Core Engine        | [Issues](https://github.com/UnitexGramLab/unitex-core/issues)                  |
 | Language Resources | [Issues](https://github.com/UnitexGramLab/lingua/issues)                       |
@@ -56,29 +56,23 @@ To report an issue, please observe the following steps:
 
 
     ```
-    A detailed summary of the issue goes here. If suitable, include the steps required to reproduce the problem.
-    
-    
-    **What steps will reproduce the problem?**
+    A detailed summary of the issue goes here. 
 
-    
+    **What steps will reproduce the problem?**
 
     **What is the expected output?**
 
-
-
     **What do you see instead?**
 
-
-
     **More info**
-    
-    Any other information you want to share that is relevant to the issue being reported. For example:
-    
-    - Did this work before?: yes[] no[]
+
+    <!---  
+    Any other information you want to share that is relevant to the issue being reported. For example: 
+    --->
+
+    - Did this work before?: [ ] yes [ ] no
     - Forum thread:
     - Log (.ulp) file:
-
     ```
     
     Some examples of bugs reports using the previous template are [Segmentation fault on MultiFlex](https://github.com/UnitexGramLab/unitex-core/issues/1) and [Apply Lexical Resources Buffer Underflow Exception](https://github.com/UnitexGramLab/gramlab-ide/issues/10).  
