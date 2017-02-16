@@ -185,3 +185,9 @@ nav.pagination .older-posts .fa {
       padding-left: 1px;
   }
 }
+
+/* Expand fisarmonica content if JS is not available
+ */
+html.no-js [data-fisarmonica] [data-content] {
+  max-height: 100% !important;
+}

@@ -28,9 +28,9 @@ is hosted on [GitHub](https://github.com/UnitexGramLab?target=_blank).
 
 This page describes several student projects that could be undertaken to learn about Natural Language Processing (NLP), programming and open source software development practices while simultaneously working on the improvement of Unitex/GramLab. Anyone is welcome to participate as mentor or submitting new projects.
 
-<section id="only-one" data-accordion-group>
+<section id="only-one" class="single-open-fisarmonica" data-fisarmonica-group>
 
-  <section data-accordion>
+  <section data-fisarmonica>
     <button data-control><i class="fa fa-1x fa-fw fa-info"></i>Discover Unitex/GramLab</button>
     <div data-content>
       <article markdown="1">
@@ -39,7 +39,7 @@ This page describes several student projects that could be undertaken to learn a
     </div>
   </section>
 
-  <section data-accordion>
+  <section data-fisarmonica>
     <button class="truncate" data-control><span class="ug-label">PRJ-01</span>Build an annotation comparison module<span class="ug-label c1">Core</span><span class="ug-label c1">IDE</span><span class="ug-label c2">C++ | Java | YAML</span><span class="ug-label c3">Standoff</span><span class="ug-label c4">Priority:3/5</span></button>
     <div data-content>
       <article>
@@ -57,7 +57,7 @@ This page describes several student projects that could be undertaken to learn a
     </div>
   </section>
 
-  <section data-accordion>
+  <section data-fisarmonica>
     <button data-control><span class="ug-label c5">PRJ-02</span>Integrate the Classic IDE and the Project-oriented IDE<span class="ug-label c1">IDE</span><span class="ug-label c2">Java</span><span class="ug-label c3">GUI | Swing</span><span class="ug-label c4">Priority:4/5</span></label></button>
     <div data-content>
       <article>
@@ -83,7 +83,7 @@ This page describes several student projects that could be undertaken to learn a
   </section>
 
 
-  <section data-accordion>
+  <section data-fisarmonica>
     <button data-control><span class="ug-label">PRJ-03</span>Enhance MultiFlex: a module for automatic inﬂection of multi-word units<span class="ug-label c1">Core</span><span class="ug-label c2">C++</span><span class="ug-label c3">MWUs</span><span class="ug-label c4">Priority:2/5</span></button>
     <div data-content>
       <article markdown="1">
@@ -97,7 +97,7 @@ This page describes several student projects that could be undertaken to learn a
   </section>
 
 
-  <section data-accordion>
+  <section data-fisarmonica>
     <button data-control><span class="ug-label">PRJ-04</span>Create a Package Manager for Linguistic Resources<span class="ug-label c1">Core</span><span class="ug-label c2">C++ | JSON</span><span class="ug-label c3">UPM</span><span class="ug-label c4">Priority:3/5</span></button>
     <div data-content>
       <article>
@@ -120,7 +120,7 @@ This page describes several student projects that could be undertaken to learn a
   </section>
 
 
-  <section data-accordion>
+  <section data-fisarmonica>
     <button data-control><span class="ug-label">PRJ-05</span>Conceive an Import/Export feature between Unitex and GATE<span class="ug-label c1">Core</span><span class="ug-label c1">IDE</span><span class="ug-label c2">C++ | Java | XML</span><span class="ug-label c3">GATE</span><span class="ug-label c4">Priority:3/5</span></button>
     <div data-content>
       <article>
@@ -136,7 +136,7 @@ This page describes several student projects that could be undertaken to learn a
     </div>
   </section>
 
-  <section data-accordion>
+  <section data-fisarmonica>
     <button data-control><span class="ug-label">PRJ-06</span>Support Locate Pattern function on treebanks<span class="ug-label c1">Core</span><span class="ug-label c2">C++</span><span class="ug-label c3">FSA</span><span class="ug-label c4">Priority:3/5</span></label></button>
     <div data-content>
       <article>
@@ -151,7 +151,7 @@ This page describes several student projects that could be undertaken to learn a
     </div>
   </section>
 
-  <section data-accordion>
+  <section data-fisarmonica>
     <button data-control><span class="ug-label c5">PRJ-07</span>Integrate a tree cloud visualization into the Unitex/GramLab IDE<span class="ug-label c1">IDE</span><span class="ug-label c2">Java</span><span class="ug-label c3">TreeCloud</span><span class="ug-label c4">Priority:3/5</span></label></button>
     <div data-content>
       <article>
@@ -184,7 +184,7 @@ This page describes several student projects that could be undertaken to learn a
     </div>
   </section>
 
-  <section data-accordion>
+  <section data-fisarmonica>
     <button data-control><span class="ug-label">PRJ-08</span>IDEs Integration: Plugins for the Unitex/GramLab IDE<span class="ug-label c1">IDE</span><span class="ug-label c2">Java</span><span class="ug-label c3">Plugins</span><span class="ug-label c4">Priority:4/5</span></label></button>
     <div data-content>
       <article markdown="1">
@@ -240,7 +240,7 @@ Tasks for the Community Bonding Period :
     </div>
   </section>
 
-  <section data-accordion>
+  <section data-fisarmonica>
     <button data-control><span class="ug-label">PRJ-09</span>Introduce the UnTagged Token on Unitex<span class="ug-label c1">Core</span><span class="ug-label c2">C++</span><span class="ug-label c3">CasSys</span><span class="ug-label c4">Priority:3/5</span></label></button>
     <div data-content>
       <article markdown="1">
@@ -262,7 +262,7 @@ Assume the following tagged token: **{TTT,LLL.CCC}**, to match all untagged inst
     </div>
   </section>
 
-  <section data-accordion>
+  <section data-fisarmonica>
     <button data-control><i class="fa fa-1x fa-fw fa-question-circle"></i>Questions and next steps</button>
     <div data-content>
       <article markdown="1">
@@ -273,12 +273,3 @@ If you have any questions, please do not hesitate to send a message to the [deve
 
 </section>
 <br />
-
-{assets:inline_js}
-$(document).ready(function() {
-  $('#only-one [data-accordion]').accordion({
-      "transitionSpeed": 400,
-       singleOpen: false
-  });
-});
-{/assets}

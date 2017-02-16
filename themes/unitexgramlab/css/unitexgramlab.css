@@ -2277,7 +2277,7 @@ html.no-js .js-only {
 }
 
 /* Requirements */
-[data-accordion] [data-content] {
+[data-fisarmonica] [data-content] {
   overflow: hidden;
   max-height: 0;
 }
@@ -2288,12 +2288,12 @@ html.no-js .js-only {
   padding: 10px;
 }
 
-[data-content] [data-accordion] {
+[data-content] [data-fisarmonica] {
   border: 0;
   padding: 0;
 }
 
-[data-accordion] [data-control] {
+[data-fisarmonica] [data-control] {
   position: relative;
   width: 100%;
   line-height: 1em;
@@ -2304,7 +2304,7 @@ html.no-js .js-only {
   overflow: hidden;
 }
 
-[data-accordion] > [data-control]:after {
+[data-fisarmonica] > [data-control]:after {
   content: "";
   position: absolute;
   right: 10px;
@@ -2318,7 +2318,7 @@ html.no-js .js-only {
   background-size: 50%;
 }
 
-[data-accordion].open > [data-control]:after {
+[data-fisarmonica].open > [data-control]:after {
   -webkit-transform: rotate(-180deg);
   -ms-transform: rotate(-180deg);
   transform: rotate(-180deg);

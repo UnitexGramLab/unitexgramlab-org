@@ -8,14 +8,14 @@
 
 /* Requirements */
 
-[data-accordion] [data-content] {
+[data-fisarmonica] [data-content] {
     overflow: hidden;
     max-height: 0;
 }
 
 /* Basic Theme */
 
-[data-accordion] {
+[data-fisarmonica] {
 }
 
 [data-control],
@@ -23,12 +23,12 @@
     padding: 10px;
 }
 
-[data-content] [data-accordion] {
+[data-content] [data-fisarmonica] {
     border: 0;
     padding: 0;
 }
 
-[data-accordion] [data-control] {
+[data-fisarmonica] [data-control] {
     position: relative;
     width: 100%;
     line-height: 1em;
@@ -39,7 +39,7 @@
     overflow: hidden;
 }
 
-[data-accordion] > [data-control]:after {
+[data-fisarmonica] > [data-control]:after {
     content: "";
     position: absolute;
     right: 10px;
@@ -53,7 +53,7 @@
     background-size: 50%;
 }
 
-[data-accordion].open > [data-control]:after {
+[data-fisarmonica].open > [data-control]:after {
     -webkit-transform: rotate(-180deg); 
     -ms-transform: rotate(-180deg); 
     transform: rotate(-180deg); 

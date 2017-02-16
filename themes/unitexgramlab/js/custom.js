@@ -204,7 +204,15 @@
     'closeBtn'      : false,
     'padding'       : 0,
   });   
-      
+
+  /*
+   * Active jQuery Accordion on single-open-fisarmonica elements
+   */
+  $('.single-open-fisarmonica [data-fisarmonica]').fisarmonica({
+    transitionSpeed: 400,
+    singleOpen: false
+  });
+
   $(window).on('load', function() {
     window.setTimeout(function() { 
     console.log([
