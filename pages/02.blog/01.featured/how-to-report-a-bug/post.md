@@ -32,7 +32,7 @@ Attention! Please be clear whether you are describing an Unitex/GramLab bug or d
 
 To report an issue, please observe the following steps:
 
-1. Identify which major component of Unitex/GramLab is affected. If you are having troubles with the visual user interface chose the **Visual IDE** component, if you are experimenting problems executing the `UnitexToolLogger` tool, select the **Core Engine** component. In general, issues fall within any of the following categories:
+1. Identify which major component from the categories below is affected. If you are having troubles with the visual user interface chose the **Visual IDE** component, if you are experimenting problems with the execution of `UnitexToolLogger`, select the **Core Engine** component. If you don't have a clue on which part of the program the issue comes from, please report what happened under the Visual IDE category.
 
 | Component          | Tracker                                                                        |
 |--------------------|--------------------------------------------------------------------------------|
