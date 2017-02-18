@@ -15,7 +15,7 @@ routes:
 
 This is a non-comprehensive list of publications related to Unitex/GramLab and/or
 to the distributed language resources. If you would like to contribute to this list,
-or report a problem, please [issue a ticket](http://example.org?target=_blank)
+or report a problem, please [issue a ticket](https://github.com/UnitexGramLab/unitexgramlab-org/issues/new?title=[related-publications]&target=_blank)
 on GitHub.
 
 ===
