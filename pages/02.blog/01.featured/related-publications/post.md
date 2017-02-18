@@ -20,6 +20,14 @@ on GitHub.
 
 ===
 
+<!--
+Before adding a new entry use JabRef to convert the LaTeX encodings to Unicode
+characters as follows: Menu Edit > Select All then Menu Quality > Cleanup entries,
+finally add a new formatter for all-text-fields with the operation Latex to
+Unicode and click OK. Notice that references are ordered descending by year
+and then descending by author name.
+-->
+
 [bibtexify hideMissing=true tweet="'UnitexGramLab'"]
 @InBook{Gross1994,
   pages     = {2195--2205},
@@ -4255,3 +4263,9 @@ on GitHub.
   url       = {https://hal-upec-upem.archives-ouvertes.fr/hal-01011525/file/dico-coreen.pdf},
 }
 [/bibtexify]
+
+{assets:inline_css}
+span.bibtexify-title {
+  font-style: italic;
+}
+{/assets}
