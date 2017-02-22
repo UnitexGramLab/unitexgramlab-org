@@ -74,8 +74,8 @@ quicklinks:
       - icon: bug
         url: '/how-to-report-a-bug'
         title:
-          en: 'Report a bug'
-          es: 'Informar de un fallo'
+          en: 'Bugs'
+          es: 'Fallos'
       - icon: cube
         url: 'http://releases.unitexgramlab.org'
         external: true
@@ -91,8 +91,8 @@ quicklinks:
       - icon: code
         url:  '/how-to-contribute#how-to-start'
         title:
-          en: 'Build from sources'
-          es: 'Compilar fuentes'
+          en: 'Build'
+          es: 'Compilar'
       - icon: book
         url:  'twig://{{config.unitex.devel.release_manual}}{{manlang}}.pdf'
         external: true
@@ -108,8 +108,8 @@ quicklinks:
       - icon: bug
         url: '/how-to-report-a-bug'
         title:
-          en: 'Report a bug'
-          es: 'Informar de un fallo'
+          en: 'Bugs'
+          es: 'Fallos'
       - icon: cube
         url: 'http://releases.unitexgramlab.org'
         external: true
