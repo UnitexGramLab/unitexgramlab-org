@@ -12,6 +12,7 @@ core_name: 'Unitex'
 ide_name: 'GramLab'
 pack_name: 'Unitex-GramLab'
 name: 'Unitex/GramLab'
+logo: '/user/unitexgramlab.png'
 # --------------------------------------------------------------
 author_name: 'The Unitex/GramLab authors'
 publisher_name: 'Université Paris-Est Marne-la-Vallée'
