@@ -191,3 +191,10 @@ nav.pagination .older-posts .fa {
 html.no-js [data-fisarmonica] [data-content] {
   max-height: 100% !important;
 }
+
+/*
+ * Font Awesome small icon size
+ */
+.fa-sm {
+	font-size:0.75em;
+}
