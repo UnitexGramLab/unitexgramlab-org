@@ -4263,9 +4263,3 @@ and then descending by author name.
   url       = {https://hal-upec-upem.archives-ouvertes.fr/hal-01011525/file/dico-coreen.pdf},
 }
 [/bibtexify]
-
-{assets:inline_css}
-span.bibtexify-title {
-  font-style: italic;
-}
-{/assets}

@@ -198,3 +198,10 @@ html.no-js [data-fisarmonica] [data-content] {
 .fa-sm {
 	font-size:0.75em;
 }
+
+/*
+ * BibTeXify publication titles
+ */
+span.bibtexify-title {
+  font-style: italic;
+}
