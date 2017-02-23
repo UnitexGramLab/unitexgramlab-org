@@ -64,6 +64,7 @@
           <ul id="actions-stable" class="actions actions-release piped">
             <li><a href="{{ config.unitex.stable.url_vinber_info }}" target="_blank"><i class="fa fa-1x fa-fw fa-tag"></i><span>{{ 'v' ~ config.unitex.stable.version_string_full }}</span></a></li>
             <li><a href="{{ config.unitex.stable.url_vinber_info }}" target="_blank"><i class="fa fa-1x fa-fw fa-calendar"></i><time class="tooltip tooltip-n" aria-label="{{ config.unitex.stable.version_date | date('d M Y') }}" datetime="{{ config.unitex.stable.version_date | date('Y-m-d H:i:s') }}">{{ config.unitex.stable.version_date|nicetime(true) }}</time></a></li>            
+            <li><a href="{{ config.unitex.stable.url_license_sources }}" target="_blank"><i class="fa fa-1x fa-fw fa-balance-scale"></i><span>{{ config.unitex.stable.license_sources }}</span></a><a href="{{ config.unitex.stable.url_license_resources }}" target="_blank"><i class="fa fa-sm fa-fw fa-plus"></i><span>{{ config.unitex.stable.license_resources }}</span></a></li>
             {% for link in site.quicklinks.download.stable %}
                 {% if link.url | starts_with('twig://') %}
                    {% set url = twigobj.processString(link.url|slice(7),_context) %}
@@ -130,6 +131,7 @@
             {% set devel_version_date = devel_version_info.name|defined("now"| date('Y-m-d H:i:s')) %}
             <li><a href="{{ config.unitex.devel.url_vinber_info }}" target="_blank"><i class="fa fa-1x fa-fw fa-tag"></i><span>{{ 'v' ~ devel_version_string_full }}</span></a></li>
             <li><a href="{{ config.unitex.devel.url_vinber_info }}" target="_blank"><i class="fa fa-1x fa-fw fa-calendar"></i><time class="tooltip tooltip-n" aria-label="{{ devel_version_date | date('d M Y') }}" datetime="{{ devel_version_date | date('Y-m-d H:i:s') }}">{{ devel_version_date|nicetime(true) }}</time></a></li>
+            <li><a href="{{ config.unitex.devel.url_license_sources }}" target="_blank"><i class="fa fa-1x fa-fw fa-balance-scale"></i><span>{{ config.unitex.devel.license_sources }}</span></a><a href="{{ config.unitex.devel.url_license_resources }}" target="_blank"><i class="fa fa-sm fa-fw fa-plus"></i><span>{{ config.unitex.devel.license_resources }}</span></a></li>
             {% for link in site.quicklinks.download.devel %}
                 {% if link.url | starts_with('twig://') %}
                    {% set url = twigobj.processString(link.url|slice(7),_context) %}
