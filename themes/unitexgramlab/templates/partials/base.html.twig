@@ -37,6 +37,11 @@
         var urlQueryLang = '{{ uri.query("lang")|defined("en") }}';
       </script>
   {% endblock %}
+  {% block microdata %}
+    <script type="application/ld+json">
+      {% include 'partials/microdata.json.twig' %}
+    </script>
+  {% endblock %}
 </head>
 <body id="unitex-gramlab-org"{% if page.header.body_classes %} class="{{ page.header.body_classes }}"{% endif %}>
   {% block header_navigation %}

@@ -6,11 +6,16 @@ version_suffix: ''
 version_string: '3.1'
 version_string_full: '3.1.4314'
 version_date: '2016-03-27 03:00:06 +0200'
+version_type: 'stable'
 # --------------------------------------------------------------
 core_name: 'Unitex'
 ide_name: 'GramLab'
 pack_name: 'Unitex-GramLab'
 name: 'Unitex/GramLab'
+# --------------------------------------------------------------
+author_name: 'The Unitex/GramLab authors'
+publisher_name: 'Université Paris-Est Marne-la-Vallée'
+copyright_holder_name: 'Université Paris-Est Marne-la-Vallée'
 # --------------------------------------------------------------
 license_sources:  'LGPL'
 license_resources: 'LGPLLR'
