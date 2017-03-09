@@ -178,7 +178,7 @@ This page describes several student projects that could be undertaken to learn a
         <li>TreeCloud sources: <a target="_blank"  href="https://github.com/PhilippeGambette/treecloud">https://github.com/PhilippeGambette/treecloud</a></li>
         <li>Plotting phylogenetic trees: <a target="_blank" href="http://adamzy.github.io/PhyloPlot/">http://adamzy.github.io/PhyloPlot/</a></li>
         </ul>
-        <p><strong>Mentor</strong>: <a http://igm.univ-mlv.fr/~gambette">Philippe Gambette</a></p> 
+        <p><strong>Mentor</strong>: <a href="http://igm.univ-mlv.fr/~gambette">Philippe Gambette</a></p> 
         <p><strong>Mentor</strong>: <a href="http://martinec.org">Cristian Martinez</a></p> 
       </article>
     </div>
