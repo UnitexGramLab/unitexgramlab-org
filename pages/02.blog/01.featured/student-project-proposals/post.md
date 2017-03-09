@@ -271,6 +271,9 @@ Assume the following tagged token: **{TTT,LLL.CCC}**, to match all untagged inst
       <p>
       The project consists in implementing the reverse conversion in case all lexical ambiguity has been removed from the 'POS list' format.
       </p>
+      <p>
+      This function was suggested by users that remove lexical ambiguity from corpora manually, but do part of this revision on the 'POS list' format. They want to be able to convert the resulting corpus back to the FST-Text format, so that they can apply search queries on it later.
+      </p>
         <p><strong>Mentor</strong>: <a target="_blank" href="http://igm.univ-mlv.fr/~laporte/index_en.html/">Eric Laporte</a></p>       
       </article>
     </div>
@@ -281,6 +284,9 @@ Assume the following tagged token: **{TTT,LLL.CCC}**, to match all untagged inst
     <div data-content>
       <article>
         <p>Currently, boxes in the text automaton can be manually modified or removed in order to revise the tagging of the text, but it would be useful to be able to add new boxes with new analyses. The difficult part is to deal with the case where parts of a word are tagged separately.
+      </p>
+      <p>
+      This function was suggested by users that remove lexical ambiguity from corpora manually.
       </p>
         <p><strong>Mentor</strong>: <a target="_blank" href="http://igm.univ-mlv.fr/~laporte/index_en.html/">Eric Laporte</a></p>       
       </article>
@@ -294,9 +300,12 @@ Assume the following tagged token: **{TTT,LLL.CCC}**, to match all untagged inst
         <p>Currently, the 'Export all graph paths' function (in the FSGraph > Tools menu) lists the paths of a graph and writes them in a file.
       </p>
       <p>
-      If the graph is a morphological dictionary-graph (Manual, Section 3.8.4), it would be useful to extend this function so that is processes further the lexical masks in the graph. At each occurrence of a lexical mask, the new function will search the morphological-mode dictionaries for entries which satisfy the mask, and replace the mask with them. The resulting list will be a list of forms with lexical information. Such a list of forms can be converted into a DELAF-format dictionary.
+      If the graph is a morphological dictionary-graph (Manual, Section 3.8.4), it would be useful to extend this function so that it makes an additional processing of the lexical masks in the graph. At each occurrence of a lexical mask, the new function will search the morphological-mode dictionaries for entries which satisfy the mask, and replace the mask with them. The resulting list will be a list of forms with lexical information. Such a list of forms can be converted into a DELAF-format dictionary.
       </p>
-        <p><strong>Mentor</strong>: <a target="_blank" href="http://igm.univ-mlv.fr/~laporte/index_en.html/">Eric Laporte</a></p>       
+      <p>
+      This function would be useful for some languages in which morphosyntax has been encoded with morphological dictionary-graphs (MDG). In Malagasy and Arabic, for example, the word forms described in the MDGs are in finite number and do not run into a combinatorial explosion. It would be interesting to generate all of them into a full-form dictionary, so that Unitex/GramLab can process the language like more weakly inflected languages such as English.
+      </p>
+<p><strong>Mentor</strong>: <a target="_blank" href="http://igm.univ-mlv.fr/~laporte/index_en.html/">Eric Laporte</a></p>       
       </article>
     </div>
   </section>
@@ -305,9 +314,11 @@ Assume the following tagged token: **{TTT,LLL.CCC}**, to match all untagged inst
     <button data-control><span class="ug-label">PRJ-13</span>Integration of LexiMir<span class="ug-label c1">Core</span><span class="ug-label c1">IDE</span><span class="ug-label c2">C++ | Java</span><span class="ug-label c3">Language Resource Management</span><span class="ug-label c4">Priority:3/5</span></button>
     <div data-content>
       <article>
-        <p><a href="http://korpus.matf.bg.ac.rs/soft/LeXimir.html">LexiMir</a>, formerly ILReMaT, is an open-source language resource manager in C# created at the Language Technology Group of  the University of Belgrade (<a href="https://halshs.archives-ouvertes.fr/hal-01108253/document">Krstev <i>et al.</i>, 2004</a>; <a href="http://link.springer.com/chapter/10.1007%2F978-3-642-34399-5_6#page-1">Krstev <i>et al.</i>, 2013</a>). The project consists in rewriting LexiMir in Java and integrating it into Unitex/GramLab.
+        <p><a href="http://korpus.matf.bg.ac.rs/soft/LeXimir.html">LexiMir</a>, formerly ILReMaT, is an open-source dictionary manager in C# created at the Language Technology Group of  the University of Belgrade (<a href="https://halshs.archives-ouvertes.fr/hal-01108253/document">Krstev <i>et al.</i>, 2004</a>; <a href="http://link.springer.com/chapter/10.1007%2F978-3-642-34399-5_6#page-1">Krstev <i>et al.</i>, 2013</a>). The project consists in rewriting LexiMir in Java and integrating it into Unitex/GramLab.
       </p>
-        <p><strong>Mentor</strong>: <a target="_blank" href="http://igm.univ-mlv.fr/~laporte/index_en.html/">Eric Laporte</a></p>       
+      <p>LexiMir was designed for dictionary-management tasks not implemented in Unitex/GramLab.
+      </p>
+<p><strong>Mentor</strong>: <a target="_blank" href="http://igm.univ-mlv.fr/~laporte/index_en.html/">Eric Laporte</a></p>       
       </article>
     </div>
   </section>
