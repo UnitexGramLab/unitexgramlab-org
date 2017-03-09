@@ -178,7 +178,7 @@ This page describes several student projects that could be undertaken to learn a
         <li>TreeCloud sources: <a target="_blank"  href="https://github.com/PhilippeGambette/treecloud">https://github.com/PhilippeGambette/treecloud</a></li>
         <li>Plotting phylogenetic trees: <a target="_blank" href="http://adamzy.github.io/PhyloPlot/">http://adamzy.github.io/PhyloPlot/</a></li>
         </ul>
-        <p><strong>Mentor</strong>: <a http://igm.univ-mlv.fr/~gambette">Philippe Gambette</a></p> 
+        <p><strong>Mentor</strong>: <a href="http://igm.univ-mlv.fr/~gambette">Philippe Gambette</a></p> 
         <p><strong>Mentor</strong>: <a href="http://martinec.org">Cristian Martinez</a></p> 
       </article>
     </div>
@@ -263,6 +263,56 @@ Assume the following tagged token: **{TTT,LLL.CCC}**, to match all untagged inst
   </section>
 
   <section data-fisarmonica>
+    <button data-control><span class="ug-label">PRJ-10</span>POS-list-to-Automaton Conversion<span class="ug-label c1">Core</span><span class="ug-label c1">IDE</span><span class="ug-label c2">C++ | Java</span><span class="ug-label c3">Word tag</span><span class="ug-label c4">Priority:3/5</span></button>
+    <div data-content>
+      <article>
+        <p>Unitex has a function to convert the text automaton into a 'POS list' format (FST-Text dialog box, Table pane, 'Export all text as POS list' button).
+      </p>
+      <p>
+      The project consists in implementing the reverse conversion in case all lexical ambiguity has been removed from the 'POS list' format.
+      </p>
+        <p><strong>Mentor</strong>: <a target="_blank" href="http://igm.univ-mlv.fr/~laporte/index_en.html/">Eric Laporte</a></p>       
+      </article>
+    </div>
+  </section>
+  
+  <section data-fisarmonica>
+    <button data-control><span class="ug-label">PRJ-11</span>Add Boxes in Text Automaton<span class="ug-label c1">Core</span><span class="ug-label c1">IDE</span><span class="ug-label c2">C++ | Java</span><span class="ug-label c3">Word tag</span><span class="ug-label c4">Priority:3/5</span></button>
+    <div data-content>
+      <article>
+        <p>Currently, boxes in the text automaton can be manually modified or removed in order to revise the tagging of the text, but it would be useful to be able to add new boxes with new analyses. The difficult part is to deal with the case where parts of a word are tagged separately.
+      </p>
+        <p><strong>Mentor</strong>: <a target="_blank" href="http://igm.univ-mlv.fr/~laporte/index_en.html/">Eric Laporte</a></p>       
+      </article>
+    </div>
+  </section>
+  
+  <section data-fisarmonica>
+    <button data-control><span class="ug-label">PRJ-12</span>Morphological Graph-Dictionary to List<span class="ug-label c1">Core</span><span class="ug-label c1">IDE</span><span class="ug-label c2">C++ | Java</span><span class="ug-label c3">Word tag</span><span class="ug-label c4">Priority:3/5</span></button>
+    <div data-content>
+      <article>
+        <p>Currently, the 'Export all graph paths' function (in the FSGraph > Tools menu) lists the paths of a graph and writes them in a file.
+      </p>
+      <p>
+      If the graph is a morphological dictionary-graph (Manual, Section 3.8.4), it would be useful to extend this function so that is processes further the lexical masks in the graph. At each occurrence of a lexical mask, the new function will search the morphological-mode dictionaries for entries which satisfy the mask, and replace the mask with them. The resulting list will be a list of forms with lexical information. Such a list of forms can be converted into a DELAF-format dictionary.
+      </p>
+        <p><strong>Mentor</strong>: <a target="_blank" href="http://igm.univ-mlv.fr/~laporte/index_en.html/">Eric Laporte</a></p>       
+      </article>
+    </div>
+  </section>
+
+  <section data-fisarmonica>
+    <button data-control><span class="ug-label">PRJ-13</span>Integration of LexiMir<span class="ug-label c1">Core</span><span class="ug-label c1">IDE</span><span class="ug-label c2">C++ | Java</span><span class="ug-label c3">Language Resource Management</span><span class="ug-label c4">Priority:3/5</span></button>
+    <div data-content>
+      <article>
+        <p><a href="http://korpus.matf.bg.ac.rs/soft/LeXimir.html">LexiMir</a>, formerly ILReMaT, is an open-source language resource manager in C# created at the Language Technology Group of  the University of Belgrade (<a href="https://halshs.archives-ouvertes.fr/hal-01108253/document">Krstev <i>et al.</i>, 2004</a>; <a href="http://link.springer.com/chapter/10.1007%2F978-3-642-34399-5_6#page-1">Krstev <i>et al.</i>, 2013</a>). The project consists in rewriting LexiMir in Java and integrating it into Unitex/GramLab.
+      </p>
+        <p><strong>Mentor</strong>: <a target="_blank" href="http://igm.univ-mlv.fr/~laporte/index_en.html/">Eric Laporte</a></p>       
+      </article>
+    </div>
+  </section>
+
+<section data-fisarmonica>
     <button data-control><i class="fa fa-1x fa-fw fa-question-circle"></i>Questions and next steps</button>
     <div data-content>
       <article markdown="1">
