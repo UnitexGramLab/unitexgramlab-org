@@ -17,7 +17,7 @@ routes:
 
 ===
 
-> A plain-text version of the LGPLLR is available [here](https://raw.githubusercontent.com/UnitexGramLab/LGPLLR/master/LGPLLR?target=_blank) or through the Software Package Data Exchange [website](https://spdx.org/licenses/LGPLLR?target=_blank)
+> A plain-text version of the LGPLLR is available [here](https://raw.githubusercontent.com/UnitexGramLab/LGPLLR/master/LGPLLR?target=_blank) or through the [Software Package Data Exchange](https://spdx.org/licenses/LGPLLR?target=_blank)
 
 ## Preamble
 
