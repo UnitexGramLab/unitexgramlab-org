@@ -6,7 +6,7 @@ author:
   name:  'Unitex/GramLab'                   # Default author name
   email: 'webmaster@unitexgramlab.org'      # Default author email
 
-taxonomies: [category,tag,author]           # Arbitrary list of taxonomy types
+taxonomies: [category,tag,author,translator] # Arbitrary list of taxonomy types
 
 metadata:
   'description': 'Unitex/GramLab is an open source, cross-platform, multilingual,lexicon- and grammar-based corpus processing suite'
