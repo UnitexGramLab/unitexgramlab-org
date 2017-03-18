@@ -21,7 +21,7 @@ shortcode-core:
 [section name="c_image"]g.png[/section]
 [section name="c_title"]<abbr title="Ambiente de Desenvolvimento Integrado">IDE</abbr> <br />Visual[/section]
 [section name="c_subtitle"] [/section]
-[section name="c_text"]O <abbr title="Ambiente de Desenvolvimento Integrado">IDE</abbr> Visual do Unitex/GramLab permite que os usuários **desenvolvam e apliquem facilmente recursos linguísticos** a um texto. Partindo de uma perspectiva voltada a projetos, o Unitex/GramLab permite que projetos sejam executados com apenas um clique[/section]
+[section name="c_text"]O <abbr title="Ambiente de Desenvolvimento Integrado">IDE</abbr> Visual do Unitex/GramLab permite que os usuários **desenvolvam e apliquem facilmente recursos linguísticos** a um texto. A perspectiva orientada a projetos permite que projetos sejam executados com apenas um clique[/section]
 
 [section name="feature_1_image"]opensource.png[/section]
 [section name="feature_1_class"]open-source[/section]
