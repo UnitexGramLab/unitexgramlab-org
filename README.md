@@ -23,7 +23,7 @@ We welcome everyone to contribute to improve this project. Below are some of the
 
 ### Translations
 
-Currently the site is available in [English](http://unitexgramlab.org) and [Spanish](http://unitexgramlab.org/es), more translations are welcome. If you are interested in volunteering to translate email webmaster@unitexgramlab.org and we will contact you. Files to translate are located at:
+Currently the site is available in [English](http://unitexgramlab.org), [Spanish](http://unitexgramlab.org/es) and [Portuguese](http://unitexgramlab.org/pt), more translations are welcome. If you are interested in volunteering to translate email webmaster@unitexgramlab.org and we will contact you. Files to translate are located at:
 
 - [Error page](pages/error)
 - [Home page](pages/01.home)

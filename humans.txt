@@ -6,6 +6,10 @@
   Cristian Martinez -- Conception, website architecture and development -- https:/github/martinec
   Patrice Herault -- Web server administrator -- patrice.herault at u-pem.fr
 
+# TRANSLATORS
+
+  Aline Evers -- Portuguese translator -- https://github.com/alineevers
+
 # TECHNOLOGY COLOPHON
 
   Grav by Grav Team

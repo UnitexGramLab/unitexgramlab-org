@@ -131,3 +131,70 @@ es:
     FOOTER_THEME_BACKTOTOP: 'Llévame al cielo'
 # Error
     ERROR_TYPE: 'Error'
+
+# Portuguese
+# Aline Evers (alineevers)
+pt:
+# tags
+    TAG_WIN: 'Windows'
+    TAG_LINUX: 'Linux'
+    TAG_OSX: 'OS X'
+    TAG_OTHER: 'Outros'
+    TAG_DOWNLOAD: 'Baixar'
+    TAG_32BIT: '32 bits'
+    TAG_64BIT: '64 bits'
+    TAG_CLOSE: 'Fechar'
+# messages
+    MSG_DOWNLOAD: 'Baixar %s'
+    MSG_DOWNLOAD_VERSION: 'Baixar Unitex/GramLab %s'
+    MSG_DOWNLOAD_VERSION_FOR_OS: 'Baixar Unitex/GramLab %s para %s'
+    MSG_DOWNLOAD_VERSION_FOR_OTHER: 'Baixar Unitex/GramLab %s para outros sistemas'
+    MSG_DOWNLOAD_VERSION_FOR_ARCH_OS: 'Baixar Unitex/GramLab %s para %s %s'
+    MSG_HELP_TRANSLATE: 'Ajude-nos a traduzir'
+    MSG_READ_MORE: 'Leia mais'
+    MSG_SUBSCRIBE_TO: 'Inscreva-se em %s'
+# mod_ home
+    HOME_TITLE: 'Unitex/GramLab'
+    HOME_FEATURES: [Livre,Multiplataforma,Plurilíngue,baseada em Léxicos,baseada em Gramáticas]
+    HOME_DESCRIPTION: 'Suíte %s para o Processamento de Corpora Textuais'
+    HOME_OTHER_PLATFORMS: 'Também disponível para %s'
+    HOME_BTN_DOWNLOAD_FOR: 'Baixar para %s'
+    HOME_BTN_DOWNLOAD_SOURCES : 'Baixar código fonte'
+    HOME_BTN_LEARN: 'Conheça mais'
+# mod_ highlights
+    HIGHLIGHT_OUTDATED: 'Você está utilizando um navegador strong>desatualizado</strong>.Recomendamos que <a target="_blank" href="http://browsehappy.com/">atualize o navegador</a> para melhorar a sua experiência neste site'
+    HIGHLIGHT_JSDISABLED: 'Recomendamos que você habilite o JavaScript para aproveitar ao máximo este site'
+# mod_ download
+    DOWNLOAD_HEADER: 'Baixar Unitex/GramLab'
+    DOWNLOAD_STABLE: 'Estável'
+    DOWNLOAD_DEVEL: 'em Desenvolvimento'
+    DOWNLOAD_GET_STABLE: 'Obtenha a última versão estável'
+    DOWNLOAD_GET_DEVEL: 'Obtenha a versão em desenvolvimento mais recente'
+    DOWNLOAD_AVALAIBLE_STABLE: 'já está disponível'
+    DOWNLOAD_AVALAIBLE_DEVEL: 'está atualmente em desenvolvimento ativo'
+    DOWNLOAD_BTN: 'Baixar'
+    DOWNLOAD_BTN_SETUP: 'Instalador'
+    DOWNLOAD_BTN_SOURCE: 'Código Fonte'
+    DOWNLOAD_BTN_MANUAL: 'Manual do usuário'
+    DOWNLOAD_BTN_RELEASES: 'Todos os lançamentos'
+    DOWNLOAD_WIN_STABLE: 'Unitex/GramLab %s para Windows. Suporta Windows XP, Vista, 7, 8 e 10. Os pacotes de instalação estão disponíveis para sistemas de <a title="%s" href="%s">%s</a> e <a title="%s" href="%s">%s</a>'
+    DOWNLOAD_WIN_DEVEL: 'Unitex/GramLab %s para Windows. Suporta Windows XP, Vista, 7, 8 e 10. Os pacotes de instalação estão disponíveis para sistemas de <a title="%s" href="%s">%s</a> e <a title="%s" href="%s">%s</a>'
+    DOWNLOAD_LINUX_STABLE: 'Unitex/GramLab %s para Linux. Os pacotes de instalação estão disponíveis para sistemas de <a title="%s" href="%s">%s</a> e <a title="%s" href="%s">%s</a>'
+    DOWNLOAD_LINUX_DEVEL: 'Unitex/GramLab %s para Linux. Os pacotes de instalação estão disponíveis para <a title="%s" href="%s">%s</a> e <a title="%s" href="%s">%s</a>'
+    DOWNLOAD_OSX_STABLE: 'Unitex/GramLab %s para Mac OS X. Suporta OS X 10.7 (Lion), 10.8 (Mountain Lion), 10.9 (Mavericks), 10.10 (Yosemite), 10.11 (El Capitan) e 10.12 (Sierra)'
+    DOWNLOAD_OSX_DEVEL: 'Unitex/GramLab %s para Mac OS X. Suporta OS X 10.7 (Lion), 10.8 (Mountain Lion), 10.9 (Mavericks), 10.10 (Yosemite), 10.11 (El Capitan) e 10.12 (Sierra)'
+    DOWNLOAD_OTHER_STABLE: 'Unitex/GramLab %s para outros sistemas vem com os arquivos necessários para compilar esta versão'
+    DOWNLOAD_OTHER_DEVEL: 'Unitex/GramLab %s para outros sistemas vem com os arquivos necessários para compilar esta versão'
+# mod_ install
+    INSTALL_INSTRUCTIONS_CAPTION_VERSION_SOURCE: 'Instalar Unitex/GramLab %s utilizando o código fonte'
+    INSTALL_INSTRUCTIONS_CAPTION_VERSION_OS: 'Instalar Unitex/GramLab %s em %s'
+# part_ more
+    MORE_RECENT_POSTS: 'Entradas recentes'
+    MORE_RECENT_DISCUSSIONS: 'Discussões recentes'
+# part_ footer
+    FOOTER_COPYRIGHT: 'Os autores do Unitex/GramLab'
+    FOOTER_THEME_ABOUT: '<a href="%s" target="_blank" title="Site de %s">%s <small>v%s</small></a>'
+    FOOTER_THEME_BUGS: 'Informar um erro deste site'
+    FOOTER_THEME_BACKTOTOP: 'Leve-me ao céu'
+# Error
+    ERROR_TYPE: 'Error'

@@ -8,6 +8,7 @@ languages:
   supported:
     - en
     - es
+    - pt
   include_default_lang: false
   home_redirect:
     include_lang: true
