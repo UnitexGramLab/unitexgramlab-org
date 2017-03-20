@@ -8,12 +8,12 @@
 
 /* Footer */
 
-	#footer {
-		@include color-typography(accent3);
+  #footer {
+    @include color-typography(accent3);
     //@include icon("\f096");
-		//@include padding(1em, 1em);
+    //@include padding(1em, 1em);
     padding: 1em 0 1em 0;
-		//color: _palette(accent3, fg-light);
+    //color: _palette(accent3, fg-light);
     display: block;
     float:left;
     width:100%;
@@ -21,9 +21,9 @@
     line-height: 1.2;
     position: relative;
 
-		a {
-			color: inherit;
-		}
+    a {
+      color: inherit;
+    }
 
     //&:before {
     //  position: absolute;
@@ -43,7 +43,7 @@
       @include hide-text();
       text-decoration:none;
       position: absolute;
-      top: -1rem;
+      top: -1.45rem;
       left: 50%;
       margin-left: -0.5rem;
       text-align: center;
@@ -88,25 +88,25 @@
       margin: 0px 0px 0.5em;
     }
 
-		.credits,
+    .credits,
     .copyright {
       float: left;
       width: auto;
       text-align: center;
       color: #898b8c;
       line-height: 1.1;
-      clear:both;     
+      clear:both;
       //white-space: nowrap;
       font-size: 0.8em;
-		}
+    }
 
     .credits {
-			margin: 0px 0px 0.5em;
+      margin: 0px 0px 0.5em;
     }
-    
+
     .copyright {
       margin: 0px 0px 0.2em;
-		}
+    }
 
     // Large.
     @include breakpoint(large) {
@@ -117,12 +117,12 @@
         }
       }
     }
-    
+
     // Medium.
     @include breakpoint(medium) {
       //@include padding(4em, 4em);
       padding: 1em 4em 2em 4em ;
-      
+
       .actions,
       .credits,
       .copyright,
@@ -149,7 +149,7 @@
         width:100%;
         margin-bottom: 1em;
       }
-      
+
       .actions {
         padding-top: 2em;
       }
@@ -161,7 +161,7 @@
       .icons {
         width: 100%;
         margin-bottom: 1em;
-      }  
+      }
 
       // Landscape.
       @include orientation(landscape) {
@@ -175,4 +175,4 @@
         padding: 1em 1em 1em 2em;
       }
     }
-	}
+  }

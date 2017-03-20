@@ -6558,7 +6558,7 @@ body.is-loading #header .image img {
   white-space: nowrap;
   text-decoration: none;
   position: absolute;
-  top: -1rem;
+  top: -1.45rem;
   left: 50%;
   margin-left: -0.5rem;
   text-align: center;
