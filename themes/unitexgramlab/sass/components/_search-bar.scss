@@ -36,9 +36,10 @@
       height: 2em;
     }
 
-    form input:focus, .form input[type="text"]:focus {
+    form input:focus, .form input[type="search"]:focus {
       border-color:#cccccc;
       box-shadow:none;
+      outline: none;
     }
 
     // Small.

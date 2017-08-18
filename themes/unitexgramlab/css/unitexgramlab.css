@@ -3407,9 +3407,10 @@ header.major:after {
   letter-spacing: 0.02em;
   height: 2em;
 }
-.search-bar form input:focus, .search-bar .form input[type="text"]:focus {
+.search-bar form input:focus, .search-bar .form input[type="search"]:focus {
   border-color: #cccccc;
   box-shadow: none;
+  outline: none;
 }
 @media screen and (max-width: 736px) {
   .search-bar {
