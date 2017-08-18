@@ -4262,4 +4262,22 @@ and then descending by author name.
   keywords  = {Korean ; electronic dictionary ; agglutinative language ; morphological analysis ; finite automaton ; coréen ; dictionnaire électronique ; langue agglutinante ; analyse morphologique ; automate fini},
   url       = {https://hal-upec-upem.archives-ouvertes.fr/hal-01011525/file/dico-coreen.pdf},
 }
+
+@inproceedings{Sabirova2014,
+  title     = {Automatic Extraction of Hypernyms and Hyponyms from Russian Texts},
+  author    = {Sabirova, Kristina and Lukanin, Artem},
+  booktitle = {AIST (Supplement)},
+  pages     = {35--40},
+  year      = {2014},
+  lang      = {EN},
+}
+
+@inproceedings{Lukanin2015,
+  title     = {Normalization of Non-standard Words with Finite State Transducers for Russian Speech Synthesis},
+  author    = {Lukanin, Artem},
+  booktitle = {International Conference on Analysis of Images, Social Networks and Texts},
+  pages     = {39--48},
+  year      = {2015},
+  lang      = {EN},
+}
 [/bibtexify]
