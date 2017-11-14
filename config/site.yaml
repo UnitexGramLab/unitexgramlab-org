@@ -47,6 +47,7 @@ links:
     title:
       en: 'More'
       es: 'Más'
+      fr: 'Plus'
       pt: 'Mais'
 
 # Quick Links
@@ -67,18 +68,21 @@ quicklinks:
         title:
           en: 'Manual'
           es: 'Manual'
+          fr: 'Manuel'
           pt: 'Manual'
       - icon: life-ring
         url: 'twig://{{config.unitex.stable.url_support}}'
         title:
           en: 'Support'
           es: 'Soporte'
+          fr: 'Aide'
           pt: 'Suporte'
       - icon: bug
         url: '/how-to-report-a-bug'
         title:
           en: 'Bugs'
           es: 'Fallos'
+          fr: 'Bugs'
           pt: 'Falhas'
       - icon: cube
         url: 'http://releases.unitexgramlab.org'
@@ -86,6 +90,7 @@ quicklinks:
         title:
           en: 'All releases'
           es: 'Más versiones'
+          fr: 'Autres versions'
           pt: 'Mais versões'
     devel:
       #- icon: inbox
@@ -98,6 +103,7 @@ quicklinks:
         title:
           en: 'Build'
           es: 'Compilar'
+          fr: 'Compiler'
           pt: 'Compilar'
       - icon: book
         url:  'twig://{{config.unitex.devel.release_manual}}{{manlang}}.pdf'
@@ -106,18 +112,21 @@ quicklinks:
         title:
           en: 'Manual'
           es: 'Manual'
+          fr: 'Manuel'
           pt: 'Manual'
       - icon: life-ring
         url: 'twig://{{config.unitex.devel.url_support}}'
         title:
           en: 'Support'
           es: 'Soporte'
+          fr: 'Aide'
           pt: 'Suporte'
       - icon: bug
         url: '/how-to-report-a-bug'
         title:
           en: 'Bugs'
           es: 'Fallos'
+          fr: 'Bugs'
           pt: 'Falhas'
       - icon: cube
         url: 'http://releases.unitexgramlab.org'
@@ -125,6 +134,7 @@ quicklinks:
         title:
           en: 'All releases'
           es: 'Más versiones'
+          fr: 'Autres versions'
           pt: 'Mais versões'
   # Links to include at the left-bottom of the footer
   footer:
@@ -134,18 +144,21 @@ quicklinks:
         title:
           en: 'Built with Grav CMS'
           es: 'Construido con Grav CMS'
+          fr: 'Construit avec Grav CMS'
           pt: 'Construindo com Grav CMS'
       - url:  '/../humans.txt'
         external: true
         title:
           en: 'Made by Humans'
           es: 'Creado por Humanos'
+          fr: 'Créé par des Humains'
           pt: 'Criado por Humanos'
       - url: 'http://infolingu.univ-mlv.fr'
         external: true
         title:
           en: 'Our NLP team'
           es: 'Nuestro equipo NLP'
+          fr: 'Notre équipe TAL'
           pt: 'Nossa equipe de PLN'
 
 # Iconlinks
@@ -158,6 +171,7 @@ iconlinks:
       title:
         en: 'Home'
         es: 'Inicio'
+        fr: 'Accueil'
         pt: 'Início'
 
     - icon: quote-left
@@ -170,6 +184,7 @@ iconlinks:
       title:
         en: 'Forum'
         es: 'Foro'
+        fr: 'Forum'
         pt: 'Fórum'
     - icon: book
       url:  'twig://{{config.unitex.stable.release_manual}}{{manlang}}.pdf'
@@ -178,6 +193,7 @@ iconlinks:
       title:
         en: 'Manual'
         es: 'Manual'
+        fr: 'Manuel'
         pt: 'Manual'
     - icon: language
       url:  '/language-resources?lang=en'
@@ -187,6 +203,10 @@ iconlinks:
       url:  '/language-resources?lang=es'
       title:
         es: 'Recursos'
+    - icon: language
+      url:  '/language-resources?lang=fr'
+      title:
+        fr: 'Ressources'
     - icon: language
       url:  '/language-resources?lang=pt'
       title:
@@ -202,54 +222,63 @@ iconlinks:
       title:
         en: 'Sources'
         es: 'Código'
+        fr: 'Sources'
         pt: 'Código'
     - icon: code
       url: '/how-to-contribute'
       title:
         en: 'Contribute'
         es: 'Contribuye'
+        fr: 'Contribuer'
         pt: 'Colabore'
     - icon: envelope-o
       url: 'mailto:unitex-devel@univ-mlv.fr'
       title:
         en: 'Contact'
         es: 'Contactar'
+        fr: 'Contact'
         pt: 'Contato'
     - icon: newspaper-o
       url: '/blog/news'
       title:
         en: 'News'
         es: 'Noticias'
+        fr: 'Nouvelles'
         pt: 'Notícias'
     - icon: bullhorn
       url: '/blog/announcements'
       title:
         en: 'Announces'
         es: 'Anuncios'
+        fr: 'Annonces'
         pt: 'Anúncios'
     - icon: book
       url: '/related-publications'
       title:
         en: 'Publications'
         es: 'Artículos'
+        fr: 'Publications'
         pt: 'Publicações'
     - icon: graduation-cap
       url: '/student-project-proposals'
       title:
         en: 'Projects'
         es: 'Proyectos'
+        fr: 'Projets'
         pt: 'Projetos'
     - icon: link
       url: '/partners'
       title:
         en: 'Partners'
         es: 'Socios'
+        fr: 'Partenaires'
         pt: 'Parceiros'
     - icon: cogs
       url: '/who-uses-unitexgramlab'
       title:
         en: 'with Unitex'
         es: 'con Unitex'
+        fr: 'avec Unitex'
         pt: 'com Unitex'
 
   # Social networks
@@ -259,12 +288,14 @@ iconlinks:
       title:
         en: 'Fork us'
         es: 'Crea un fork'
+        fr: 'Créer un fork'
         pt: 'Criar um fork'
     - icon: comments-o
       url: 'http://forum.unitexgramlab.org'
       title:
         en: "User's forum"
         es: 'Foro de usuarios'
+        fr: 'Forum des utilisateurs'
         pt: 'Fórum de usuários'
     - icon: user-plus
       id:  'survey'
@@ -272,10 +303,12 @@ iconlinks:
       title:
         en: 'Please let us know more about you'
         es: 'Háganos saber más sobre usted'
+        fr: 'Dites-nous en plus sur vous'
         pt: 'Queremos saber mais sobre você'
     - icon: feed
       url: '/blog.atom'
       title:
         en: "Blog's Feed"
         es: 'Suscríbase al Blog'
+        fr: 'Souscrivez au Blog'
         pt: 'Inscreva-se no Blog'

@@ -9,6 +9,7 @@
 # TRANSLATORS
 
   Aline Evers -- Portuguese translator -- https://github.com/alineevers
+  Claude Martineau -- French translator -- https://github.com/clmartineau
 
 # TECHNOLOGY COLOPHON
 

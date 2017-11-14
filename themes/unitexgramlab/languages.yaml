@@ -95,7 +95,7 @@ es:
     HOME_BTN_DOWNLOAD_SOURCES : 'Descargar código fuente'
     HOME_BTN_LEARN: 'Aprender más'
 # mod_ highlights
-    HIGHLIGHT_OUTDATED: 'Está utilizando un navegador strong>obsoleto</strong>.Le recomendamos que <a target="_blank" href="http://browsehappy.com/">actualice el navegador</a> para mejorar su experiencia en este sitio web'
+    HIGHLIGHT_OUTDATED: 'Está utilizando un navegador <strong>obsoleto</strong>.Le recomendamos que <a target="_blank" href="http://browsehappy.com/">actualice el navegador</a> para mejorar su experiencia en este sitio web'
     HIGHLIGHT_JSDISABLED: 'Le recomendamos habilitar JavaScript para aprovechar al máximo de este sitio web'
 # mod_ download
     DOWNLOAD_HEADER: 'Descargar Unitex/GramLab'
@@ -132,6 +132,72 @@ es:
 # Error
     ERROR_TYPE: 'Error'
 
+# French
+# Claude Martineau (clmartineau)
+fr:
+# tags
+    TAG_WIN: 'Windows'
+    TAG_LINUX: 'Linux'
+    TAG_OSX: 'OS X'
+    TAG_OTHER: 'Autres'
+    TAG_DOWNLOAD: 'Télécharger'
+    TAG_32BIT: '32 bits'
+    TAG_64BIT: '64 bits'
+# messages
+    MSG_DOWNLOAD: 'Télécharger %s'
+    MSG_DOWNLOAD_VERSION: 'Télécharger Unitex/GramLab %s'
+    MSG_DOWNLOAD_VERSION_FOR_OS: 'Télécharger Unitex/GramLab %s pour %s'
+    MSG_DOWNLOAD_VERSION_FOR_OTHER: "Télécharger Unitex/GramLab %s pour d'autres systèmes"
+    MSG_DOWNLOAD_VERSION_FOR_ARCH_OS: 'Télécharger Unitex/GramLab %s pour %s %s'
+    MSG_HELP_TRANSLATE: 'Aidez-nous à traduire'
+    MSG_READ_MORE: 'Lire la suite'
+    MSG_SUBSCRIBE_TO: 'Souscrivez au flux %s'
+# mod_ home
+    HOME_TITLE: 'Unitex/GramLab'
+    HOME_FEATURES: [libre,multiplateforme,multilingue,fondée sur des dictionnaires,fondée sur des grammaires]
+    HOME_DESCRIPTION: "Suite logicielle %s pour l'analyse de corpus"
+    HOME_OTHER_PLATFORMS: 'Également disponible pour %s'
+    HOME_BTN_DOWNLOAD_FOR: 'Télécharger pour %s'
+    HOME_BTN_DOWNLOAD_SOURCES : 'Télécharger le code source'
+    HOME_BTN_LEARN: 'En savoir plus'
+# mod_ highlights
+    HIGHLIGHT_OUTDATED: 'Vous utilisez un navigateur <strong>obsolète</strong>.Nous vous recommandons <a target="_blank" href="http://browsehappy.com/">de le mettre à jour</a> pour améliorer votre expérience sur ce site web'
+    HIGHLIGHT_JSDISABLED: 'Nous vous recommandons d&apos;activer JavaScript pour profiter au maximum de ce site web'
+# mod_ download
+    DOWNLOAD_HEADER: 'Télécharger Unitex/GramLab'
+    DOWNLOAD_STABLE: 'Stable'
+    DOWNLOAD_DEVEL: 'en Développement'
+    DOWNLOAD_GET_STABLE: 'Télécharger la dernière version stable'
+    DOWNLOAD_GET_DEVEL: 'Télécharger la version de développement la plus récente'
+    DOWNLOAD_AVALAIBLE_STABLE: 'est déjà disponible'
+    DOWNLOAD_AVALAIBLE_DEVEL: 'est actuellement en cours de développement'
+    DOWNLOAD_BTN: 'Télécharger'
+    DOWNLOAD_BTN_SETUP: 'Installateur'
+    DOWNLOAD_BTN_SOURCE: 'Code Source'
+    DOWNLOAD_BTN_MANUAL: "Manuel de l'utilisateur"
+    DOWNLOAD_BTN_RELEASES: 'Toutes les versions'
+    DOWNLOAD_WIN_STABLE: 'Unitex/GramLab %s pour Windows. Compatible Windows XP, Vista, 7, 8 and 10. Les installateurs sont disponibles pour les systèmes <a title="%s" href="%s">%s</a> et <a title="%s" href="%s">%s</a>'
+    DOWNLOAD_WIN_DEVEL: 'Unitex/GramLab %s pour Windows. Compatible Windows XP, Vista, 7, 8 and 10. Les installateurs sont disponibles pour les systèmes <a title="%s" href="%s">%s</a> et <a title="%s" href="%s">%s</a>'
+    DOWNLOAD_LINUX_STABLE: 'Unitex/GramLab %s pour Linux. Les installateurs sont disponibles pour les systèmes <a title="%s" href="%s">%s</a> et <a title="%s" href="%s">%s</a>'
+    DOWNLOAD_LINUX_DEVEL: 'Unitex/GramLab %s pour Linux. Les installateurs sont disponibles pour <a title="%s" href="%s">%s</a> et <a title="%s" href="%s">%s</a>'
+    DOWNLOAD_OSX_STABLE: 'Unitex/GramLab %s pour Mac OS X. Compatible OS X 10.7 (Lion), 10.8 (Mountain Lion), 10.9 (Mavericks), 10.10 (Yosemite), 10.11 (El Capitan) et 10.12 (Sierra)'
+    DOWNLOAD_OSX_DEVEL: 'Unitex/GramLab %s pour Mac OS X. Compatible OS X 10.7 (Lion), 10.8 (Mountain Lion), 10.9 (Mavericks), 10.10 (Yosemite), 10.11 (El Capitan) et 10.12 (Sierra)'
+    DOWNLOAD_OTHER_STABLE: 'Unitex/GramLab %s pour les autres systèmes comprend les ressources nécessaires pour compiler cette version'
+    DOWNLOAD_OTHER_DEVEL: 'Unitex/GramLab %s pour les autres systèmes comprend les ressources nécessaires pour compiler cette version'
+# mod_ install
+    INSTALL_INSTRUCTIONS_CAPTION_VERSION_SOURCE: 'Installer Unitex/GramLab %s en utilisant le code source'
+    INSTALL_INSTRUCTIONS_CAPTION_VERSION_OS: 'Installer Unitex/GramLab %s en %s'
+# part_ more
+    MORE_RECENT_POSTS: 'Messages récents'
+    MORE_RECENT_DISCUSSIONS: 'Discussions récentes'
+# part_ footer
+    FOOTER_COPYRIGHT: "Les auteurs d'Unitex/GramLab"
+    FOOTER_THEME_ABOUT: '<a href="%s" target="_blank" title="Site web de %s">%s <small>v%s</small></a>'
+    FOOTER_THEME_BUGS: 'Signaler une erreur sur ce site'
+    FOOTER_THEME_BACKTOTOP: 'Enmennez-moi au ciel'
+# Error
+    ERROR_TYPE: 'Error'
+
 # Portuguese
 # Aline Evers (alineevers)
 pt:
@@ -162,7 +228,7 @@ pt:
     HOME_BTN_DOWNLOAD_SOURCES : 'Baixar código fonte'
     HOME_BTN_LEARN: 'Conheça mais'
 # mod_ highlights
-    HIGHLIGHT_OUTDATED: 'Você está utilizando um navegador strong>desatualizado</strong>.Recomendamos que <a target="_blank" href="http://browsehappy.com/">atualize o navegador</a> para melhorar a sua experiência neste site'
+    HIGHLIGHT_OUTDATED: 'Você está utilizando um navegador <strong>desatualizado</strong>.Recomendamos que <a target="_blank" href="http://browsehappy.com/">atualize o navegador</a> para melhorar a sua experiência neste site'
     HIGHLIGHT_JSDISABLED: 'Recomendamos que você habilite o JavaScript para aproveitar ao máximo este site'
 # mod_ download
     DOWNLOAD_HEADER: 'Baixar Unitex/GramLab'
