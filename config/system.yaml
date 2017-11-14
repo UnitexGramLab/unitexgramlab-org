@@ -17,7 +17,7 @@ languages:
   translations: true
   translations_fallback: false
   session_store_active: false
-  http_accept_language: false
+  http_accept_language: true
   override_locale: true    
 
 home:
