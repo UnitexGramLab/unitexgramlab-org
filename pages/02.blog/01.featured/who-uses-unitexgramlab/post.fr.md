@@ -15,11 +15,11 @@ Une liste d'entreprises qui utilisent Unitex/GramLab:
 
 ===
 
-- [Actispell](http://cental.fltr.ucl.ac.be/projects/actispell/?target=_blank)
 - [Amabis](https://www.amabis.com/?target=_blank)
 - [Bibliothèque Nationale de France (BNF)](http://www.bnf.fr/fr/acc/x.accueil.html?target=_blank)
 - [CEA](http://www.cea.fr/?target=_blank)
 - [Cogniteva](#)
+- [EarlyTracks](https://www.earlytracks.com/?target=_blank)
 - [Eptica Lingway](http://www.eptica-lingway.com/?target=_blank)
 - [Ergonotics](http://www.ergonotics.com/?target=_blank)
 - [Evercontact (ex Kwaga)](https://www.evercontact.com?target=_blank)
