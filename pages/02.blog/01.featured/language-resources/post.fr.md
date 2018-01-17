@@ -709,7 +709,7 @@ Elia, A. (1995), Per una disambiguazione semi-automatica di sintagmi composti: i
 
 | Langue                 | Nom originaire         | Famille de Langue   | IETF    | ISO 639-2 | ISO 639-1 |
 | ----------------------------- | ------------------- | ----------------- | :-----: | :-------: | :-------: |
-| [Malagache](https://github.com/UnitexGramLab/unitex-lingua/blob/master/mg?target=_blank)                | Malagasy            | Austronésienne      | mg      | mlg       | mg        |
+| [Malgache](https://github.com/UnitexGramLab/unitex-lingua/blob/master/mg?target=_blank)                | Malagasy            | Austronésienne      | mg      | mlg       | mg        |
 
 
 ## Corpus
@@ -737,7 +737,7 @@ Ranaivoarison, Joro Ny Aina; Laporte, Éric; Ralalaoherivony, Baholisoa Simone (
 
 | Langue                 | Nom originaire         | Famille de Langue   | IETF    | ISO 639-2 | ISO 639-1 |
 | ----------------------------- | ------------------- | ----------------- | :-----: | :-------: | :-------: |
-| [Norwegien Bokmål](https://github.com/UnitexGramLab/unitex-lingua/blob/master/no?target=_blank)        | Norsk bokmål        | Indo-Européenne     | no      | nob       | nb        |
+| [Norvégien Bokmål](https://github.com/UnitexGramLab/unitex-lingua/blob/master/no?target=_blank)        | Norsk bokmål        | Indo-Européenne     | no      | nob       | nb        |
 
 ## Corpus
 
@@ -754,7 +754,7 @@ Ranaivoarison, Joro Ny Aina; Laporte, Éric; Ralalaoherivony, Baholisoa Simone (
 
 | Langue                 | Nom originaire         | Famille de Langue   | IETF    | ISO 639-2 | ISO 639-1 |
 | ----------------------------- | ------------------- | ----------------- | :-----: | :-------: | :-------: |
-| [Norwegien Nynorsk](https://github.com/UnitexGramLab/unitex-lingua/blob/master/nn?target=_blank)       | Norsk nynorsk       | Indo-Européenne     | nn      | nno       | nn        |
+| [Norvégien Nynorsk](https://github.com/UnitexGramLab/unitex-lingua/blob/master/nn?target=_blank)       | Norsk nynorsk       | Indo-Européenne     | nn      | nno       | nn        |
 
 ## Corpus
 
@@ -778,7 +778,7 @@ Ranaivoarison, Joro Ny Aina; Laporte, Éric; Ralalaoherivony, Baholisoa Simone (
 
 | Langue                 | Nom originaire         | Famille de Langue   | IETF    | ISO 639-2 | ISO 639-1 |
 | ----------------------------- | ------------------- | ----------------- | :-----: | :-------: | :-------: |
-| [Portuguais (Portugal)](https://github.com/UnitexGramLab/unitex-lingua/blob/master/pt-BR?target=_blank)| Português (Portugal)| Indo-Européennee     | pt-BR   |           |           |
+| [Portugais (Brésil)](https://github.com/UnitexGramLab/unitex-lingua/blob/master/pt-BR?target=_blank)| Português (Portugal)| Indo-Européennee     | pt-BR   |           |           |
 
 ## Corpus
 
@@ -825,7 +825,7 @@ Vale, Oto Araujo. 1990. Dictionnaire électronique des conjugaisons des verbes d
 
 | Langue                 | Nom originaire         | Famille de Langue   | IETF    | ISO 639-2 | ISO 639-1 |
 | ----------------------------- | ------------------- | ----------------- | :-----: | :-------: | :-------: |
-| [Portuguais (Brésil)](https://github.com/UnitexGramLab/unitex-lingua/blob/master/pt-PT?target=_blank)  | Português (Brasil)  | Indo-Européenne     | pt-PT   |           |           |
+| [Portugais (Portugal)](https://github.com/UnitexGramLab/unitex-lingua/blob/master/pt-PT?target=_blank)  | Português (Brasil)  | Indo-Européenne     | pt-PT   |           |           |
 
 ## Corpus
 
@@ -902,7 +902,7 @@ Nagel, Sebastian 2002: Formenbildung im Russischen. Formale Beschreibung und Aut
 
 | Language                 | Nom originaire         | Famille de Langue   | IETF    | ISO 639-2 | ISO 639-1 |
 | ----------------------------- | ------------------- | ----------------- | :-----: | :-------: | :-------: |
-| [Serbe-Cyrillic](https://github.com/UnitexGramLab/unitex-lingua/blob/master/sr-Cyrl?target=_blank)   | Српски              | Indo-Européenne     | sr-Cyrl | sro       | sr        |
+| [Serbe-Cyrillique](https://github.com/UnitexGramLab/unitex-lingua/blob/master/sr-Cyrl?target=_blank)   | Српски              | Indo-Européenne     | sr-Cyrl | sro       | sr        |
 
 ## Corpus
 
@@ -923,7 +923,7 @@ Nagel, Sebastian 2002: Formenbildung im Russischen. Formale Beschreibung und Aut
 
 | Language                 | Nom originaire         | Famille de Langue   | IETF    | ISO 639-2 | ISO 639-1 |
 | ----------------------------- | ------------------- | ----------------- | :-----: | :-------: | :-------: |
-| [Serbian-Latin](https://github.com/UnitexGramLab/unitex-lingua/blob/master/sr-Latn?target=_blank)      | Srpski (latinica)   | Indo-Européenne     | sr-Latn | srm       |           |
+| [Serbe-Latin](https://github.com/UnitexGramLab/unitex-lingua/blob/master/sr-Latn?target=_blank)      | Srpski (latinica)   | Indo-Européenne     | sr-Latn | srm       |           |
 
 ## Corpus
 
