@@ -778,7 +778,7 @@ Ranaivoarison, Joro Ny Aina; Laporte, Éric; Ralalaoherivony, Baholisoa Simone (
 
 | Langue                 | Nom originaire         | Famille de Langue   | IETF    | ISO 639-2 | ISO 639-1 |
 | ----------------------------- | ------------------- | ----------------- | :-----: | :-------: | :-------: |
-| [Portugais (Brésil)](https://github.com/UnitexGramLab/unitex-lingua/blob/master/pt-BR?target=_blank)| Português (Portugal)| Indo-Européennee     | pt-BR   |           |           |
+| [Portugais (Brésil)](https://github.com/UnitexGramLab/unitex-lingua/blob/master/pt-BR?target=_blank)| Português (Portugal)| Indo-Européenne     | pt-BR   |           |           |
 
 ## Corpus
 
