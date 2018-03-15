@@ -110,5 +110,5 @@ git clone https://github.com/UnitexGramLab/lingua
 # Where to start ?
 
 All contributions are welcome. If you are a new comer and want to help with the Unitex/GramLab
-codebase, look the GitHub issues under the label [`first-timers-only`](http://goo.gl/zfIsQZ?target=_blank).
+codebase, look the GitHub issues under the label [`good first issue`](https://goo.gl/4tP9Hk?target=_blank).
 

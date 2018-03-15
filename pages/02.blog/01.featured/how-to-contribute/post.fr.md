@@ -110,5 +110,5 @@ git clone https://github.com/UnitexGramLab/lingua
 
 # Où commencer ?
 
-Toutes les contributions sont les bienvenues. Si vous êtes un nouveau venu et que vous souhaitez contribuer au code d'  Unitex/GramLab, regardez  sur GitHub les demandes sous l'étiquette [`first-timers-only`](http://goo.gl/zfIsQZ?target=_blank).
+Toutes les contributions sont les bienvenues. Si vous êtes un nouveau venu et que vous souhaitez contribuer au code d'  Unitex/GramLab, regardez  sur GitHub les demandes sous l'étiquette [`good first issue`](https://goo.gl/4tP9Hk?target=_blank).
 
