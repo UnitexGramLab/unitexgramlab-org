@@ -82,12 +82,20 @@ To start hacking the code, checkout the sources with git:
 git clone https://github.com/UnitexGramLab/unitex-core.git
 ```
 
-To compile under Linux use e.g.:
+To compile under Linux use :
 
 ```
 cd build
 make DEBUG=yes UNITEXTOOLLOGGERONLY=yes
 ```
+
+On Windows:
+
+```
+cd build
+make ADDITIONAL_CFLAG+=-DUNITEX_PREVENT_USING_WINRT_API DEBUG=yes UNITEXTOOLLOGGERONLY=yes
+```
+
 
 ## Java GramLab IDE
 
