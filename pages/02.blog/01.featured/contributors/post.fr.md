@@ -5,7 +5,7 @@ date:   04/30/2009
 
 taxonomy:
 - category: [blog, featured]
-- tag: [contributors]
+- tag: [contributeurs]
 - 
 routes:
   default: '/contributeurs'
