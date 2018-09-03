@@ -56,4 +56,5 @@ d'un logiciel. Avec :
 - Un format binaire INP remplaçant le format INF pour les dictionnaires Unitex 2.1, immédiat à charger et ne demandant pas d'allocation mémoire (mais uniquement un fichier mappé en mémoire, ce qui est plus efficace, notamment sur iPhone)
 
 Si vous souhaitez bénéficier du savoir faire d'Ergonotics pour mettre en marche votre
-projet basé Unitex/GramLab. Vous pouvez les contacter à l'adresse info@winimage.com 
+projet basé Unitex/GramLab. Vous pouvez les contacter à <a href="mailto:{{'info@winimage.com'|safe_email}}">
+cette adresse</a>
