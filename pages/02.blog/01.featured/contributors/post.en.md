@@ -1,5 +1,5 @@
 ---
-title: "Unitex/GramLab contributors"
+title: "Unitex/GramLab Contributors"
 
 date:   06/30/2009
 
