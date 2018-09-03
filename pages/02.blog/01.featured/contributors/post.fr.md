@@ -4,11 +4,14 @@ title: "Contributeurs à Unitex/GramLab"
 date:   04/30/2009
 
 taxonomy:
-- category: [blog, featured]
-- tag: [contributeurs]
-- 
+    category: [blog, featured]
+    tag: [contributeurs]
+
 routes:
   default: '/contributeurs'
+
+process:
+    twig: true
 ---
 
 En plus des contributeurs aux [Ressources Linguistiques](/language-resources) de Unitex/GramLab,
