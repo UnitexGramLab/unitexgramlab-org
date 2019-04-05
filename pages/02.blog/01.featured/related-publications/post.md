@@ -4252,7 +4252,7 @@ and then descending by author name.
 
 @InCollection{Paumier2014,
   author    = {Paumier, Sébastien and Nam, Jee-Sun},
-  title     = {Un systéme de dictionnaire de mots simples du coréen},
+  title     = {Un système de dictionnaire de mots simples du coréen},
   booktitle = {Penser le Lexique-Grammaire. Perspectives actuelles},
   publisher = {Honoré Champion},
   year      = {2014},
