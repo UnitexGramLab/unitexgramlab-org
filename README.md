@@ -58,7 +58,7 @@ If you are interested in volunteering creating a new blog post about Unitex/Gram
    git push origin
    ```
    
-1. [Request a pull](https://github.com/UnitexGramLab/unitexgramlab-org/pulls) to the [master branch](https://github.com/UnitexGramLab/unitexgramlab-org/tree/master).
+1. [Request a pull](https://github.com/UnitexGramLab/unitexgramlab-org/pulls) to the [develop branch](https://github.com/UnitexGramLab/unitexgramlab-org/tree/develop).
 
 ### Issues
 
