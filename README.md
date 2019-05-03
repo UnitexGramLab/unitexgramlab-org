@@ -1,8 +1,8 @@
 # Unitex/GramLab website  [![Code Climate](https://codeclimate.com/github/UnitexGramLab/unitexgramlab-org/badges/gpa.svg)](https://codeclimate.com/github/UnitexGramLab/unitexgramlab-org)
 
-> [Unitex/GramLab][unitex] is an open source, cross-platform, multilingual, lexicon- and grammar-based corpus processing suite
+> [Unitex/GramLab][unitex] is the open source, cross-platform, multilingual, lexicon- and grammar-based corpus processing suite
 
-This is the repository for the website running at http://unitexgramlab.org. The site is maintained by the Unitex/GramLab [Website Editors Team](https://github.com/UnitexGramLab/unitexgramlab-org/graphs/contributors)
+This is the repository for the website running at https://unitexgramlab.org. The site is maintained by the Unitex/GramLab [Website Editors Team](https://github.com/UnitexGramLab/unitexgramlab-org/graphs/contributors)
 
 ![UnitexGramLab](screenshot.jpg)
 
@@ -69,4 +69,4 @@ Feel free to submit [bug reports or feature requests](https://github.com/UnitexG
 * Developed by [Cristian Martinez](http://martinec.org) and powered by [Grav](http://getgrav.org). A complete list of contributors is avalaible [here](https://github.com/UnitexGramLab/unitexgramlab-org/graphs/contributors). A comprehensive list of credits can be found [here](humans.txt).
 
 ---
-[unitex]: http://unitexgramlab.org
+[unitex]: https://unitexgramlab.org

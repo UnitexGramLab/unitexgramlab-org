@@ -21,7 +21,7 @@ A list of companies using Unitex/GramLab:
 - [Cogniteva](#)
 - [EarlyTracks](https://www.earlytracks.com/?target=_blank)
 - [Eptica Lingway](http://www.eptica-lingway.com/?target=_blank)
-- [Ergonotics](http://www.ergonotics.com/?target=_blank)
+- [Ergonotics](http://www.smartversion.com/unitex-contribution?target=_blank)
 - [Evercontact (ex Kwaga)](https://www.evercontact.com?target=_blank)
 - [Jobanova](http://www.jobanova.com/?target=_blank)
 - [Knowbel](http://cental.fltr.ucl.ac.be/projects/knowbel/?target=_blank)

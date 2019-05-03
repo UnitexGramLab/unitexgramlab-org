@@ -2,7 +2,7 @@
   {% set current_page = page.active() ? 'active' : '' %}
   <li data-nav-id="{{ page.route }}"{% if current_page %} class="{{ current_page }}"{% endif %}>
       <a href="{{ page.url }}">
-          <i class="fa fa-fa-fw fa-{{ page.header.menu_icon }}"></i>
+          <i class="fa fa-fw fa-{{ page.header.menu_icon }}"></i>
           <span class="hidden-medium">{{ page.menu }}</span>
       </a>
   </li>
