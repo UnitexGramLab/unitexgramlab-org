@@ -1,6 +1,6 @@
 ---
 title: 'Versão estável Unitex/GramLab'
-date:   14/01/2020
+date:   01/14/2020
 taxonomy:
     category: [blog, announcements]
     tag: [releases]

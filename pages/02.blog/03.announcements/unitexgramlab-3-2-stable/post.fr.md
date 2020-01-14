@@ -1,6 +1,6 @@
 ---
 title: 'Version Unitex/GramLab 3.2'
-date:   14/01/2020
+date:   01/14/2020
 taxonomy:
     category: [blog, announcements]
     tag: [versions]
