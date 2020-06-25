@@ -1,8 +1,8 @@
 # --------------------------------------------------------------
-version_major_number: '4'
-version_minor_number: '0'
+version_major_number: '3'
+version_minor_number: '3'
 version_suffix: 'alpha'
-version_string: '4.0alpha'
+version_string: '3.3alpha'
 version_type: 'unstable'
 # --------------------------------------------------------------
 core_name: 'Unitex'
@@ -26,16 +26,16 @@ url_support: 'mailto:unitex-devel@univ-mlv.fr'
 url_license_sources: 'https://opensource.org/licenses/lgpl-2.1'
 url_license_resources: 'http://unitexgramlab.org/lgpllr'
 # --------------------------------------------------------------
-release_file: "Unitex-GramLab-4.0alpha{suffix}"
-release_link: "http://releases.unitexgramlab.org/4.0alpha/{arch}/Unitex-GramLab-4.0alpha{suffix}"
+release_file: "Unitex-GramLab-3.3alpha{suffix}"
+release_link: "http://releases.unitexgramlab.org/3.3alpha/{arch}/Unitex-GramLab-3.3alpha{suffix}"
 # --------------------------------------------------------------
-release_linux32: 'http://releases.unitexgramlab.org/4.0alpha/linux-i686/Unitex-GramLab-4.0alpha-linux-i686.run'
-release_linux64: 'http://releases.unitexgramlab.org/4.0alpha/linux-x86_64/Unitex-GramLab-4.0alpha-linux-x86_64.run'
-release_osx:     'http://releases.unitexgramlab.org/4.0alpha/osx/Unitex-GramLab-4.0alpha-osx.run'
-release_win32:   'http://releases.unitexgramlab.org/4.0alpha/win32/Unitex-GramLab-4.0alpha_win32-setup.exe'
-release_win64:   'http://releases.unitexgramlab.org/4.0alpha/win64/Unitex-GramLab-4.0alpha_win64-setup.exe'
-release_other:   'http://releases.unitexgramlab.org/4.0alpha/source/Unitex-GramLab-4.0alpha-source-distribution.zip'
-release_manual:  'http://releases.unitexgramlab.org/4.0alpha/man/Unitex-GramLab-4.0alpha-usermanual-'
+release_linux32: 'http://releases.unitexgramlab.org/3.3alpha/linux-i686/Unitex-GramLab-3.3alpha-linux-i686.run'
+release_linux64: 'http://releases.unitexgramlab.org/3.3alpha/linux-x86_64/Unitex-GramLab-3.3alpha-linux-x86_64.run'
+release_osx:     'http://releases.unitexgramlab.org/3.3alpha/osx/Unitex-GramLab-3.3alpha-osx.run'
+release_win32:   'http://releases.unitexgramlab.org/3.3alpha/win32/Unitex-GramLab-3.3alpha_win32-setup.exe'
+release_win64:   'http://releases.unitexgramlab.org/3.3alpha/win64/Unitex-GramLab-3.3alpha_win64-setup.exe'
+release_other:   'http://releases.unitexgramlab.org/3.3alpha/source/Unitex-GramLab-3.3alpha-source-distribution.zip'
+release_manual:  'http://releases.unitexgramlab.org/3.3alpha/man/Unitex-GramLab-3.3alpha-usermanual-'
 # --------------------------------------------------------------
 usermanual_langs: [ en, fr ]
 # --------------------------------------------------------------
