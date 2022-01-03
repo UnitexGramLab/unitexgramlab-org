@@ -85,7 +85,7 @@ quicklinks:
           fr: 'Bugs'
           pt: 'Falhas'
       - icon: cube
-        url: 'http://releases.unitexgramlab.org'
+        url: 'https://unitexgramlab.org/releases'
         external: true
         title:
           en: 'All releases'
@@ -129,7 +129,7 @@ quicklinks:
           fr: 'Bugs'
           pt: 'Falhas'
       - icon: cube
-        url: 'http://releases.unitexgramlab.org'
+        url: 'https://unitexgramlab.org/releases'
         external: true
         title:
           en: 'All releases'

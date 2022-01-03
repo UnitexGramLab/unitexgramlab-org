@@ -1,11 +1,11 @@
 # --------------------------------------------------------------
 version_major_number: '3'
-version_minor_number: '1'
-version_patch_number: '4314'
+version_minor_number: '2'
+version_patch_number: '7'
 version_suffix: ''
-version_string: '3.1'
-version_string_full: '3.1.4314'
-version_date: '2016-03-27 03:00:06 +0200'
+version_string: '3.3'
+version_string_full: '3.3.7'
+version_date: '2021-08-06 03:00:06 +0200'
 version_type: 'stable'
 # --------------------------------------------------------------
 core_name: 'Unitex'
@@ -21,24 +21,23 @@ copyright_holder_name: 'Université Paris-Est Marne-la-Vallée'
 license_sources:  'LGPL'
 license_resources: 'LGPLLR'
 # --------------------------------------------------------------
-url_releases: 'http://releases.unitexgramlab.org'
-url_vinber_info: 'http://unitexgramlab.org/v6/#bundle=nightly&q=2016-03-27-03-00-06&line=1'
-url_version_json: 'http://unitexgramlab.org/v6/badge/nightly/2016-03-27-03-00-06.json?subject=build.finished&status=product.version.string'
+url_releases: 'https://unitexgramlab.org/releases'
+url_vinber_info: 'http://unitexgramlab.org/v6/#bundle=nightly&q=2020-01-14-20-22-13&line=1'
+url_version_json: 'http://unitexgramlab.org/v6/badge/nightly/2020-01-14-20-22-13.json?subject=build.finished&status=product.version.string'
 url_support: 'http://forum.unitexgramlab.org'
 url_license_sources: 'https://opensource.org/licenses/lgpl-2.1'
 url_license_resources: 'http://unitexgramlab.org/lgpllr'
 # --------------------------------------------------------------
-release_file:   'Unitex-GramLab-3.1{suffix}'
-release_link:   'http://releases.unitexgramlab.org/3.1/{arch}/Unitex-GramLab-3.1{suffix}'
+release_file:   'Unitex-GramLab-3.3{suffix}'
+release_link:   'https://unitexgramlab.org/releases/3.3/{arch}/Unitex-GramLab-3.3{suffix}'
 # --------------------------------------------------------------
-release_linux32: 'http://releases.unitexgramlab.org/3.1/linux-i686/Unitex-GramLab-3.1-linux-i686.run'
-release_linux64: 'http://releases.unitexgramlab.org/3.1/linux-x86_64/Unitex-GramLab-3.1-linux-x86_64.run'
-release_osx:     'http://releases.unitexgramlab.org/3.1/osx/Unitex-GramLab-3.1-osx.run'
-release_win32:   'http://releases.unitexgramlab.org/3.1/win32/Unitex-GramLab-3.1_win32-setup.exe'
-release_win64:   'http://releases.unitexgramlab.org/3.1/win64/Unitex-GramLab-3.1_win64-setup.exe'
-release_other:   'http://releases.unitexgramlab.org/3.1/source/Unitex-GramLab-3.1-source-distribution.zip'
-release_manual:  'http://releases.unitexgramlab.org/3.1/man/Unitex-GramLab-3.1-usermanual-'
+release_linux32: 'https://unitexgramlab.org/releases/3.3/linux-i686/Unitex-GramLab-3.3-linux-i686.run'
+release_linux64: 'https://unitexgramlab.org/releases/3.3/linux-x86_64/Unitex-GramLab-3.3-linux-x86_64.run'
+release_osx:     'https://unitexgramlab.org/releases/3.3/osx/Unitex-GramLab-3.3-osx.run'
+release_win32:   'https://unitexgramlab.org/releases/3.3/win32/Unitex-GramLab-3.3_win32-setup.exe'
+release_win64:   'https://unitexgramlab.org/releases/3.3/win64/Unitex-GramLab-3.3_win64-setup.exe'
+release_other:   'https://unitexgramlab.org/releases/3.3/source/Unitex-GramLab-3.3-source-distribution.zip'
+release_manual:  'https://unitexgramlab.org/releases/3.3/man/Unitex-GramLab-3.3-usermanual-'
 # --------------------------------------------------------------
 usermanual_langs: [ en, fr ]
 # --------------------------------------------------------------
-
