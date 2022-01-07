@@ -14,7 +14,7 @@ markdown:
 
 ---
 
-Unitex/GramLab [tutorials] (https://tln.lifat.univ-tours.fr/version-francaise/ressources/tutoriels-unitex) in French are available
+Unitex/GramLab [tutorials](https://tln.lifat.univ-tours.fr/version-francaise/ressources/tutoriels-unitex) in French are available
 
 ===
 
