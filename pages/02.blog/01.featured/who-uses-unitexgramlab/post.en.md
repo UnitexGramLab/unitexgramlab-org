@@ -27,6 +27,7 @@ A list of companies using Unitex/GramLab:
 - [La maison du dictionnaire](http://www.dicoland.com/?target=_blank)
 - [LanguageTools](http://www.virtualworks.de?target=_blank)
 - [LCI](http://www.lci-europe.com/?target=_blank)
+- [Linito](http://linito.kr)
 - [Phrasys](https://phrasys.net/?target=_blank)
 - [Sinequa](http://www.sinequa.com/?target=_blank)
 - [Systran](http://www.systran.fr/?target=_blank)
