@@ -18,7 +18,7 @@ A list of companies using Unitex/GramLab:
 - [Amabis](https://www.amabis.com/?target=_blank)
 - [Bibliothèque Nationale de France (BNF)](http://www.bnf.fr/fr/acc/x.accueil.html?target=_blank)
 - [CEA](http://www.cea.fr/?target=_blank)
-- [Cogniteva](https://cogniteva.fr/?target=_blank)
+- [Cogniteva](https://cogniteva.com/?target=_blank)
 - [EarlyTracks](https://www.earlytracks.com/?target=_blank)
 - [Eptica Lingway](http://www.eptica-lingway.com/?target=_blank)
 - [Ergonotics](http://www.smartversion.com/unitex-contribution?target=_blank)
