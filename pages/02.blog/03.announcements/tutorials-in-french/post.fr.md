@@ -1,7 +1,7 @@
 ---
 title: 'Tutoriels en français'
 
-date:   3/1/2022
+date:   03/01/2022
 
 taxonomy:
     category: [blog, announcements]
@@ -14,9 +14,9 @@ markdown:
 
 ---
 
-Des [tutoriels](https://tln.lifat.univ-tours.fr/version-francaise/ressources/tutoriels-unitex) en français sur Unitex/GramLab sont disponibles
+Des [tutoriels](https://tln.lifat.univ-tours.fr/version-francaise/ressources/tutoriels-unitex?target=_blank) en français sur Unitex/GramLab sont disponibles
 
 ===
 
-Merci à [Denis Maurel](https://www.univ-tours.fr/annuaire/m-denis-maurel), de l'Université de Tours, qui a créé et publié ces tutoriels.
+Merci à [Denis Maurel](https://www.univ-tours.fr/annuaire/m-denis-maurel?target=_blank), de l'Université de Tours, qui a créé et publié ces tutoriels.
 
