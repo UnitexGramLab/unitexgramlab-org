@@ -18,14 +18,14 @@ Des tutoriels en anglais sur Unitex/GramLab sont disponibles.
 
 #### Prise en main
 
-- [Diaporama](https://unitexgramlab.org/blog/announcements/tutorials-in-english/local-grammar-graphs.pdf)
-- [Exercices](https://unitexgramlab.org/blog/announcements/tutorials-in-english/getting-started.pdf)
+- [Diaporama](https://infolingu.univ-mlv.fr/english/unitex/local-grammar-graphs.pdf)
+- [Exercices](https://infolingu.univ-mlv.fr/english/unitex/getting-started.pdf)
 
 #### Reconnaissance d'entités nommées
 
-- [Préparation](https://unitexgramlab.org/blog/announcements/tutorials-in-english/Unitex_install.pdf)
-- [Diaporama](https://unitexgramlab.org/blog/announcements/tutorials-in-english/Unitex_NER.pdf)
-- [Exercices](https://unitexgramlab.org/blog/announcements/tutorials-in-english/Unitex_NER_exercises.pdf)
+- [Préparation](https://infolingu.univ-mlv.fr/english/unitex/Unitex_install.pdf)
+- [Diaporama](https://infolingu.univ-mlv.fr/english/unitex/Unitex_NER.pdf)
+- [Exercices](https://infolingu.univ-mlv.fr/english/unitex/Unitex_NER_exercises.pdf)
 
 ===
 
