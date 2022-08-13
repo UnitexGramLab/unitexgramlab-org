@@ -32,7 +32,7 @@ pages:
   list:
     count: 20
   dateformat:
-    default: null
+    default: 'd.m.Y H:i'
     short: 'jS M Y'
     long: 'F jS \a\t g:ia'
   publish_dates: true
