@@ -10,69 +10,69 @@
 
 /* Header */
 
-	#header {
-		@include color(accent1);
-		@include padding(4.5em, 0);
-		@include vendor('align-items', 'center');
-		@include vendor('display', 'flex');
-		@include vendor('justify-content', 'center');
+  #header {
+    @include color(accent1);
+    @include padding(4.5em, 0);
+    @include vendor('align-items', 'center');
+    @include vendor('display', 'flex');
+    @include vendor('justify-content', 'center');
     @include background-overlay("images/overlay.png",
                                 "images/unitex-pattern.png");
-		height: 100vh;
-		min-height: 35em;
+    height: 100vh;
+    min-height: 35em;
 
-		h1 {
-			font-size: 3.25em;
-			font-weight: _font(weight-bold);
-			margin-bottom: _size(element-margin) * 0.25;
-		}
+    h1 {
+      font-size: 3.25em;
+      font-weight: _font(weight-bold);
+      margin-bottom: _size(element-margin) * 0.25;
+    }
 
-		p {
-			font-size: 1.5em;
-			line-height: 1.35;
+    p {
+      font-size: 1.5em;
+      line-height: 1.35;
 
-			br {
-				display: inline;
-			}
-		}
+      br {
+        display: inline;
+      }
+    }
 
     @include os-customs();
 
-		.content {
-			@include vendor('transition', ('opacity 0.5s ease', 'transform 1s ease'));
-			@include vendor('transform', 'translateX(0)');
-			opacity: 1;
-			text-align: center;
-			//margin: (_size(element-margin) * -1.75) (_size(element-margin) * 2) 0 0;
+    .content {
+      @include vendor('transition', ('opacity 0.5s ease', 'transform 1s ease'));
+      @include vendor('transform', 'translateX(0)');
+      opacity: 1;
+      text-align: center;
+      //margin: (_size(element-margin) * -1.75) (_size(element-margin) * 2) 0 0;
 
-			> :last-child {
-				margin-bottom: 0;
-			}
+      > :last-child {
+        margin-bottom: 0;
+      }
 
       > .inner {
         margin-left: auto;
         margin-right: auto;
-        width: 35em;
+        width: 50em;
       }
-		}
+    }
 
-		.image {
-			@include vendor('transition', ('opacity 1s ease', 'transform 1s ease'));
-			@include vendor('transform', 'translateY(0)');
-			opacity: 1;
+    .image {
+      @include vendor('transition', ('opacity 1s ease', 'transform 1s ease'));
+      @include vendor('transform', 'translateY(0)');
+      opacity: 1;
 
-			img {
-				@include vendor('transition', 'opacity 0.75s ease');
-				@include vendor('transition-delay', '0.75s');
-				opacity: 1;
-			}
-		}
+      img {
+        @include vendor('transition', 'opacity 0.75s ease');
+        @include vendor('transition-delay', '0.75s');
+        opacity: 1;
+      }
+    }
 
-		// Large.
+    // Large.
     @include breakpoint(large) {
     }
 
-		// Medium.
+    // Medium.
     @include breakpoint(medium) {
       height: auto;
       min-height: 0;
@@ -103,7 +103,7 @@
       }
     }
 
-		// Small.
+    // Small.
     @include breakpoint(small) {
       .content {
         > .inner {
@@ -151,7 +151,7 @@
       }
     }
 
-		// XSmall.
+    // XSmall.
     @include breakpoint(xsmall) {
 
       // Landscape.
@@ -174,12 +174,12 @@
 
     }
 
-		// Mobile.
+    // Mobile.
     body.is-mobile & {
       background-attachment: scroll, scroll;
     }
 
-		// Loading.
+    // Loading.
     body.is-loading & {
       .content {
         @include vendor('transform', 'translateX(2em)');
@@ -211,4 +211,4 @@
         }
       }
     }
-	}
+  }

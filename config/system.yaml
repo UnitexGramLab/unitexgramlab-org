@@ -92,6 +92,11 @@ twig:
   undefined_filters: false
   umask_fix: false
 
+strict_mode:
+  yaml_compat: true
+  twig_compat: true
+  blueprint_compat: true
+
 assets:
   css_pipeline: true
   css_minify: true

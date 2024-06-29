@@ -67,17 +67,9 @@ git:
         url: https://github.com/getgrav/grav-plugin-shortcode-ui
         path: user/plugins/shortcode-ui
         branch: develop
-    simplesearch:
-        url: https://github.com/getgrav/grav-plugin-simplesearch
-        path: user/plugins/simplesearch
-        branch: develop
     sitemap:
         url: https://github.com/getgrav/grav-plugin-sitemap
         path: user/plugins/sitemap
-        branch: develop
-    twigfeeds:
-        url: https://github.com/olevik/grav-plugin-twigfeeds
-        path: user/plugins/twigfeeds
         branch: develop
     unitexgramlab:
         url: https://github.com/UnitexGramLab/unitexgramlab-org
@@ -140,10 +132,6 @@ links:
         src: grav-plugin-random
         path: user/plugins/random
         scm: github
-    simplesearch:
-        src: grav-plugin-simplesearch
-        path: user/plugins/simplesearch
-        scm: github
     shortcode-core:
         src: grav-plugin-shortcode-core
         path: user/plugins/shortcode-core
@@ -159,10 +147,6 @@ links:
     sitemap:
         src: grav-plugin-sitemap
         path: user/plugins/sitemap
-        scm: github
-    twigfeeds:
-        src: grav-plugin-twigfeeds
-        path: user/plugins/twigfeeds
         scm: github
     unitexgramlab:
         src: unitexgramlab-org

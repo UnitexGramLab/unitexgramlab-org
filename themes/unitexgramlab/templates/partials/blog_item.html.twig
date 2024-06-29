@@ -42,7 +42,7 @@
       </header>
       <section class="autumn-post-excerpt">
         {% if page.header.link %}
-         <p><a href="{{ page.url }}" itemprop="url">{{ page.content | striptags | safe_truncate(40) | trim }}...</a></p>
+         <p><a href="{{ page.url }}" itemprop="url">{{ page.content  | striptags | safe_truncate(40) | trim | raw }}...</a></p>
         {% else %}
          <p>{{ page.summary | striptags }}</p>
         {% endif %}

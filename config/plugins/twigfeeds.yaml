@@ -1,4 +1,4 @@
-enabled: true
+enabled: false
 twig_feeds:
   - source: https://groups.google.com/forum/feed/unitex-gramlab/msgs/rss.xml
     name: 'Unitex/GramLab Forum'

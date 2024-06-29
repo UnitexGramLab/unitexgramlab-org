@@ -10,14 +10,14 @@
         {% for post in posts %}
           {% set post_highlight = post.summary|split('</p>')|first|trim|slice(3)|trim %}
           {% if post_highlight is not empty %}
-            <div><h4 class="highlight-text">{{ post_highlight }}&nbsp;<small><a target="_blank" href="{{ post.url }}">{{ 'MSG_READ_MORE'|t }}</a>&nbsp;<i class="icon fa-external-link"></i></small></h4></div>
+            <div><h4 class="highlight-text">{{ post_highlight|raw }}&nbsp;<small><a target="_blank" href="{{ post.url }}">{{ 'MSG_READ_MORE'|t }}</a>&nbsp;<i class="icon fa-external-link"></i></small></h4></div>
           {% endif %}
         {% endfor %}
         {% set items = page.content|split('</p>')|randomize %}
         {% for paragraph in items %}
           {% set highlight = paragraph|trim|slice(3)|trim %}
           {% if highlight is not empty %}
-            <div><h4 class="highlight-text">{{ highlight }}</h4></div>
+            <div><h4 class="highlight-text">{{ highlight|raw }}</h4></div>
           {% endif %}
         {% endfor %}
       </div>

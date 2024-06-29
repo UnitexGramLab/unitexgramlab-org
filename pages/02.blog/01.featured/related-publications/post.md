@@ -28,7 +28,7 @@ Unicode and click OK. Notice that references are ordered descending by year
 and then descending by author name.
 -->
 
-[bibtexify hideMissing=true tweet="'UnitexGramLab'"]
+[bibtexify hideMissing=true]
 @InBook{Gross1994,
   pages     = {2195--2205},
   title     = {The Encyclopedia of Language and Linguistics},

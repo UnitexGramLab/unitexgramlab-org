@@ -142,7 +142,7 @@ nav.pagination .older-posts .fa {
   background-color: #f97f4f;
   color: #fff;
   padding-bottom: 0px;
-  min-height: 9vh;
+  min-height: 6vh;
 }
 
 .blog-tags.post-navigation {
@@ -186,6 +186,12 @@ nav.pagination .older-posts .fa {
   }
 }
 
+@media only screen and (max-width: 736px) {
+  .getting-started {
+      margin-bottom: 16px !important;
+  }
+}
+
 /* Expand fisarmonica content if JS is not available
  */
 html.no-js [data-fisarmonica] [data-content] {
@@ -196,7 +202,7 @@ html.no-js [data-fisarmonica] [data-content] {
  * Font Awesome small icon size
  */
 .fa-sm {
-	font-size:0.75em;
+  font-size:0.75em;
 }
 
 /*

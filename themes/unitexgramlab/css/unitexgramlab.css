@@ -5608,7 +5608,7 @@ table.alt tbody tr td {
   min-height: 14em;
 }
 .banner.blog, .banner.category {
-  height: 91vh;
+  height: 94vh;
   min-height: 23em;
   padding: 8em 0 8em 0;
 }
@@ -6139,7 +6139,7 @@ body.is-loading .banner .image img {
 #header .content > .inner {
   margin-left: auto;
   margin-right: auto;
-  width: 35em;
+  width: 50em;
 }
 #header .image {
   -moz-transition: opacity 1s ease, -moz-transform 1s ease;

@@ -1,7 +1,7 @@
 <section id="about" class="wrapper style2 special section-features">
   <div class="container 125%">
     <header class="major">
-      <h2>{{ shortcode.section.header }}</h2>
+      <h2>{{ shortcode.section.header|raw }}</h2>
     </header>
     <div class="row">
       <div class="4u 12u$(medium)">
@@ -11,9 +11,9 @@
             <div class="image">
               <img src="{{ url(image_a) }}" alt="{{ shortcode.section.a_title|striptags }}" />
             </div>
-            <h4 class="card-title">{{ shortcode.section.a_title }}</h4>
-            <h6 class="card-subtitle text-muted">{{ shortcode.section.a_subtitle }}</h6>
-            <p class="card-text">{{ shortcode.section.a_text }}</p>
+            <h4 class="card-title">{{ shortcode.section.a_title|raw }}</h4>
+            <h6 class="card-subtitle text-muted">{{ shortcode.section.a_subtitle|raw }}</h6>
+            <p class="card-text">{{ shortcode.section.a_text|raw}}</p>
           </div>
         </div>
       </div>
@@ -24,9 +24,9 @@
             <div class="image">
               <img src="{{ url(image_b) }}" alt="{{ shortcode.section.b_title|striptags }}" />
             </div>
-            <h4 class="card-title">{{ shortcode.section.b_title }}</h4>
-            <h6 class="card-subtitle text-muted">{{ shortcode.section.b_subtitle }}</h6>
-            <p class="card-text">{{ shortcode.section.b_text }}</p>
+            <h4 class="card-title">{{ shortcode.section.b_title|raw }}</h4>
+            <h6 class="card-subtitle text-muted">{{ shortcode.section.b_subtitle|raw }}</h6>
+            <p class="card-text">{{ shortcode.section.b_text|raw }}</p>
           </div>
         </div>
       </div>
@@ -37,9 +37,9 @@
             <div class="image">
               <img src="{{ url(image_c) }}" alt="{{ shortcode.section.c_title|striptags }}" />
             </div>
-            <h4 class="card-title">{{ shortcode.section.c_title }}</h4>
-            <h6 class="card-subtitle text-muted">{{ shortcode.section.c_subtitle }}</h6>
-            <p class="card-text">{{ shortcode.section.c_text }}</p>
+            <h4 class="card-title">{{ shortcode.section.c_title|raw }}</h4>
+            <h6 class="card-subtitle text-muted">{{ shortcode.section.c_subtitle|raw }}</h6>
+            <p class="card-text">{{ shortcode.section.c_text|raw }}</p>
           </div>
         </div>
       </div>
@@ -54,8 +54,8 @@
         <img src="{{ url(image_feature_1) }}" alt="{{ shortcode.section.feature_1_title|striptags }}" />
       </div>
       <div class="content">
-        <h3>{{ shortcode.section.feature_1_title }}</h3>
-        <p>{{ shortcode.section.feature_1_description }}</p>
+        <h3>{{ shortcode.section.feature_1_title|raw }}</h3>
+        <p>{{ shortcode.section.feature_1_description|raw }}</p>
       </div>
     </section>
     <section class="spotlight" id="{{ shortcode.section.feature_2_class|striptags }}">
@@ -64,8 +64,8 @@
         <img src="{{ url(image_feature_2) }}" alt="{{ shortcode.section.feature_2_title|striptags }}" />
       </div>
       <div class="content">
-        <h3>{{ shortcode.section.feature_2_title }}</h3>
-        <p>{{ shortcode.section.feature_2_description }}</p>
+        <h3>{{ shortcode.section.feature_2_title|raw }}</h3>
+        <p>{{ shortcode.section.feature_2_description|raw }}</p>
       </div>
     </section>
     <section class="spotlight" id="{{ shortcode.section.feature_3_class|striptags }}">
@@ -74,8 +74,8 @@
         <img src="{{ url(image_feature_3) }}" alt="{{ shortcode.section.feature_3_title|striptags }}" />
       </div>
       <div class="content">
-        <h3>{{ shortcode.section.feature_3_title }}</h3>
-        <p>{{ shortcode.section.feature_3_description }}</p>
+        <h3>{{ shortcode.section.feature_3_title|raw }}</h3>
+        <p>{{ shortcode.section.feature_3_description|raw }}</p>
       </div>
     </section>
     <section class="spotlight" id="{{ shortcode.section.feature_4_class|striptags }}">
@@ -84,8 +84,8 @@
         <img src="{{ url(image_feature_4) }}" alt="{{ shortcode.section.feature_4_title|striptags }}" />
       </div>
       <div class="content">
-        <h3>{{ shortcode.section.feature_4_title }}</h3>
-        <p>{{ shortcode.section.feature_4_description }}</p>
+        <h3>{{ shortcode.section.feature_4_title|raw }}</h3>
+        <p>{{ shortcode.section.feature_4_description|raw }}</p>
       </div>
     </section>
     <section class="spotlight" id="{{ shortcode.section.feature_5_class|striptags }}">
@@ -94,14 +94,14 @@
         <img src="{{ url(image_feature_5) }}" alt="{{ shortcode.section.feature_5_title|striptags }}" />
       </div>
       <div class="content">
-        <h3>{{ shortcode.section.feature_5_title }}</h3>
-        <p>{{ shortcode.section.feature_5_description }}</p>
+        <h3>{{ shortcode.section.feature_5_title|raw }}</h3>
+        <p>{{ shortcode.section.feature_5_description|raw }}</p>
       </div>
     </section>    
     <section class="special" id="{{ shortcode.section.special_class|striptags }}">
       <div class="content">
-      <h2>{{ shortcode.section.special_title }}</h2>
-      {{ shortcode.section.special_description }}
+      <h2>{{ shortcode.section.special_title|raw }}</h2>
+      {{ shortcode.section.special_description|raw }}
       </div>
     </section>
   </div>

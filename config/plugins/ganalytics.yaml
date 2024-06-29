@@ -1,4 +1,4 @@
-enabled: true               # Global enable/disable the entire plugin
+enabled: false               # Global enable/disable the entire plugin
 trackingId: "UA-48459140-2" # GA Tracking ID `REQUIRED`
 
 position: "head"            # Code Position in the HTML document

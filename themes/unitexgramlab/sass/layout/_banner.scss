@@ -8,17 +8,17 @@
 
 /* Banner */
 
-	.banner {
-		@include color(accent1);
+  .banner {
+    @include color(accent1);
     @include padding(6em, 0);
-		@include vendor('align-items', 'center');
-		@include vendor('display', 'flex');
-		@include vendor('justify-content', 'center');
+    @include vendor('align-items', 'center');
+    @include vendor('display', 'flex');
+    @include vendor('justify-content', 'center');
     @include background-overlay("images/overlay.png",
                                 "images/unitex-pattern.png");
                                 
     height: 100vh;
-		min-height: 35em;
+    min-height: 35em;
     
     &.post {
       height: 15em;
@@ -27,37 +27,37 @@
 
     &.blog,
     &.category {
-      height: 91vh;
+      height: 94vh;
       min-height: 23em;
       padding: 8em 0 8em 0;
     }
   
-		h1 {
+    h1 {
       display: block;
       color: #fff;
       line-height: 1.1em;
       text-shadow: 0px 1px 0px rgba(50, 59, 64, 0.56);
-			font-size: 3em;
-			font-weight: _font(weight-bold);
-			margin-bottom: _size(element-margin) * 0.1;
+      font-size: 3em;
+      font-weight: _font(weight-bold);
+      margin-bottom: _size(element-margin) * 0.1;
       margin-top: _size(element-margin) * 0.1;
-		}
+    }
 
-		p {
-			font-size: 1.1em;
-			line-height: 1;
+    p {
+      font-size: 1.1em;
+      line-height: 1;
       margin-bottom: _size(element-margin) * 0.5;
 
-			br {
-				display: inline;
-			}
-		}
+      br {
+        display: inline;
+      }
+    }
 
-		.content {
-			@include vendor('transition', ('opacity 0.5s ease', 'transform 1s ease'));
-			@include vendor('transform', 'translateX(0)');
-			opacity: 1;
-			text-align: center;
+    .content {
+      @include vendor('transition', ('opacity 0.5s ease', 'transform 1s ease'));
+      @include vendor('transform', 'translateX(0)');
+      opacity: 1;
+      text-align: center;
 
       .banner-heading {
         display: inline-block;
@@ -71,9 +71,9 @@
         text-transform: uppercase;
       }
 
-			> :last-child {
-				margin-bottom: 0;
-			}
+      > :last-child {
+        margin-bottom: 0;
+      }
 
       > .inner {
         margin-left: auto;
@@ -87,25 +87,25 @@
         margin-top: _size(element-margin) * 1;
         margin-bottom: _size(element-margin) * 1;
       }
-		}
+    }
 
-		.image {
-			@include vendor('transition', ('opacity 1s ease', 'transform 1s ease'));
-			@include vendor('transform', 'translateY(0)');
-			opacity: 1;
+    .image {
+      @include vendor('transition', ('opacity 1s ease', 'transform 1s ease'));
+      @include vendor('transform', 'translateY(0)');
+      opacity: 1;
 
-			img {
-				@include vendor('transition', 'opacity 0.75s ease');
-				@include vendor('transition-delay', '0.75s');
-				opacity: 1;
-			}
-		}
+      img {
+        @include vendor('transition', 'opacity 0.75s ease');
+        @include vendor('transition-delay', '0.75s');
+        opacity: 1;
+      }
+    }
 
-		// Large.
+    // Large.
     @include breakpoint(large) {
     }
 
-		// Medium.
+    // Medium.
     @include breakpoint(medium) {
       &.summary {
         height: auto;
@@ -141,7 +141,7 @@
       }
     }
 
-		// Small.
+    // Small.
     @include breakpoint(small) {
       .content {
         > .inner {
@@ -189,7 +189,7 @@
       }
     }
 
-		// XSmall.
+    // XSmall.
     @include breakpoint(xsmall) {
 
       // Landscape.
@@ -213,12 +213,12 @@
 
     }
 
-		// Mobile.
+    // Mobile.
     body.is-mobile & {
       background-attachment: scroll, scroll;
     }
 
-		// Loading.
+    // Loading.
     body.is-loading & {
       .content {
         @include vendor('transform', 'translateX(2em)');
@@ -250,4 +250,4 @@
         }
       }
     }
-	}
+  }

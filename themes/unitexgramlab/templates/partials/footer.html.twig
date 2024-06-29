@@ -23,7 +23,7 @@
           </ul>
           <ul id="footer-about-credits" class="actions piped">
             <li>&copy; {{ "now"|date("Y") }} {{ "FOOTER_COPYRIGHT"|t }}</li>
-            <li>{{ "FOOTER_THEME_ABOUT"|t(themeinfo.homepage,themeinfo.name,themeinfo.name,themeinfo.version) }}</li>            
+            <li>{{ "FOOTER_THEME_ABOUT"|t(themeinfo.homepage,themeinfo.name,themeinfo.name,themeinfo.version)|raw }}</li>            
           </ul> 
         </div>
       </div>

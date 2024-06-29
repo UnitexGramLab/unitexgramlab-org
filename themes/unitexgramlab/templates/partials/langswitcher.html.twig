@@ -14,7 +14,7 @@
             <li><a hreflang="{{key}}" rel="alternate" href="{{ lang_url ~ uri.params }}"><span>{{ native_name(key)|capitalize }}</span></a></li>
         {% endif %}
     {% endfor %}
-    <li><a target="_blank" href="{{ theme_config.github.tree ~ 'README.md#translations' }}"><i class="fa fa-github"></i>&nbsp;<span>{{ "MSG_HELP_TRANSLATE"|t }}</span></a></li>
+    <li><a target="_blank" href="{{ theme_config.github.tree ~ 'README.md#translations' }}"><i class="fa fa-github"></i>&nbsp;<span>{{ "MSG_HELP_TRANSLATE"|t|raw }}</span></a></li>
   </ul>
   </li>
 </ul>

@@ -27,10 +27,10 @@
     {% do assets.addCss('theme://css/dialogbox.css') %}
     {% do assets.addCss('theme://css/custom.css') %}
   {% endblock %}
-  {{ assets.css() }}
+  {{ assets.css()|raw }}
   {% endblock head%}
   {% block top %}
-      {{ assets.js('top') }}
+      {{ assets.js('top')|raw }}
       <script>
         const RELEASE_STABLE  = '{{ config.unitex.stable.version_string }}';
         const RELEASE_DEVEL   = '{{ config.unitex.devel.version_string }}';
@@ -95,9 +95,9 @@
     {% endif %}
     {% do assets.addJs('theme://js/custom.js') %}
   {% endblock %}
-  {{ assets.js() }}
+  {{ assets.js()|raw }}
   {% block bottom %}
-    {{ assets.js('bottom') }}
+    {{ assets.js('bottom')|raw }}
     <script>
       $( document ).ready(function() {
        {% if show_langswitcher %}

@@ -26,7 +26,7 @@ shortcode-core:
 [section name="feature_1_image"]opensource.png[/section]
 [section name="feature_1_class"]open-source[/section]
 [section name="feature_1_title"]Open Source[/section]
-[section name="feature_1_description"]Unitex/GramLab is freely distributed under the terms of the <a href='http://www.gnu.org/licenses/lgpl.html'>Lesser General	Public License (LGPL)</a>. This means that everyone can redistribute Unitex freely within the terms of the LGPL license. It also means that you have access to the source code of all the Unitex programs, which is included in the zip file you download. The LGPL license is more permissive than the GPL one, because it allows you to reuse the own code of Unitex/GramLab in non-free software[/section]
+[section name="feature_1_description"]Unitex/GramLab is freely distributed under the terms of the <a href='http://www.gnu.org/licenses/lgpl.html'>Lesser General    Public License (LGPL)</a>. This means that everyone can redistribute Unitex freely within the terms of the LGPL license. It also means that you have access to the source code of all the Unitex programs, which is included in the zip file you download. The LGPL license is more permissive than the GPL one, because it allows you to reuse the own code of Unitex/GramLab in non-free software[/section]
 
 [section name="feature_2_image"]cross-platform.png[/section]
 [section name="feature_2_class"]cross-platform[/section]
@@ -52,11 +52,11 @@ shortcode-core:
 [section name="special_title"]Corpus Processing Suite[/section]
 [section name="special_description"]
 <ul id="functions-items" class="actions piped truncate-items">
- <li><span class="ug-label c9">Build, check and apply electronic dictionaries</span></li>
- <li><span class="ug-label c10">Apply lexicon-grammar tables</span></li>
- <li><span class="ug-label c11">Align texts</span></li> 
- <li><span class="ug-label c12">Handle ambiguity via the text automaton</span></li>
- <li><span class="ug-label c13">Build an automaton from a certified corpus</span></li>
- <li><span class="ug-label c14">Pattern matching with regular expressions and recursive transition networks</span></li> 
+ <li><span class="ug-label">Build, check and apply electronic dictionaries</span></li>
+ <li><span class="ug-label">Apply lexicon-grammar tables</span></li>
+ <li><span class="ug-label">Align texts</span></li> 
+ <li><span class="ug-label">Handle ambiguity via the text automaton</span></li>
+ <li><span class="ug-label">Build an automaton from a certified corpus</span></li>
+ <li><span class="ug-label">Pattern matching with regular expressions and recursive transition networks</span></li> 
 </ul>
 [/section]
