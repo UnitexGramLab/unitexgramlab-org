@@ -58,7 +58,7 @@ You have to accept the [Creative Commons CC-BY license](https://creativecommons.
 
 <span class="icon alt fa-archive">``version 1.0 - 06/2024``</span>[Download the MyUnitex compressed file](https://github.com/UnitexGramLab/unitex-doc-resources/raw/master/books/unitex-getting-started-denis-maurel-cvetana-krstev/MyUnitex.zip?target=_blank)
 
-Additionally, a [printed version](https://amzn.eu/d/i2u0j4U?target=_blank) is available for purchase on Amazon, though it requires a fee.
+Additionally, a printed version is available for purchase on Amazon, though it requires a fee.
 
 Comments, suggestions, and questions may be sent to unitex-getting-started AT univ-tours DOT fr
 
