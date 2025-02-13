@@ -64,7 +64,7 @@ Il est habituel de faire référence au noyau d'Unitex/GramLab comme "Unitex", e
 - Manuel utilisateur: 	[http://releases.unitexgramlab.org/latest-stable/man](http://releases.unitexgramlab.org/latest-stable/man)
 - Signaler un bogue: [http://unitexgramlab.org/how-to-report-a-bug](http://unitexgramlab.org/how-to-report-a-bug)
 - Forum utilisateurs: 	[http://forum.unitexgramlab.org](http://forum.unitexgramlab.org)
-- Liste développeurs: 	[unitex-devel at univ-mlv.fr](mailto://unitex-devel@univ-mlv.fr)
+- Liste développeurs: 	[unitex-devel at univ-eiffel.fr](mailto://unitex-devel@univ-eiffel.fr)
 - Hébergement du code: 	[http://code.unitexgramlab.org](http://code.unitexgramlab.org)
 - Votre contribution: 	[Contribution rules](#)
 - Gouvernance: 	[http://governance.unitexgramlab.org](http://governance.unitexgramlab.org)
