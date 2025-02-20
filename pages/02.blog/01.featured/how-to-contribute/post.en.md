@@ -63,7 +63,7 @@ It's common to refer to the Unitex/GramLab Core as "Unitex", and to the Unitex P
 - User's manual: 	[http://releases.unitexgramlab.org/latest-stable/man](http://releases.unitexgramlab.org/latest-stable/man)
 - Bug reporting: [http://unitexgramlab.org/how-to-report-a-bug](http://unitexgramlab.org/how-to-report-a-bug)
 - User's forum: 	[http://forum.unitexgramlab.org](http://forum.unitexgramlab.org)
-- Developers list: 	[unitex-devel at univ-mlv.fr](mailto://unitex-devel@univ-mlv.fr)
+- Developers list: 	[unitex-devel at univ-eiffel.fr](mailto://unitex-devel@univ-eiffel.fr)
 - Code hosting: 	[http://code.unitexgramlab.org](http://code.unitexgramlab.org)
 - Your contribution: 	[Contribution rules](#)
 - Governance: 	[http://governance.unitexgramlab.org](http://governance.unitexgramlab.org)
